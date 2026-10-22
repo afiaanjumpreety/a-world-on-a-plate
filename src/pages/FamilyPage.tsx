@@ -1,5 +1,7 @@
 import { Link, useParams } from 'react-router-dom';
-import { families, getFamily } from '../data';
+import { families, getFamily, photoFor } from '../data';
+import { Cited, SourceList } from '../components/Cite';
+import { Credit } from '../components/Photo';
 import { CompareTable, ConfidenceBadge, CountryTag, FamilyCard, FamilyMap, Reveal, Timeline, VariantCard, familyIndex } from '../components/Dish';
 import { Plate } from '../components/Motif';
 import { NotFound } from './NotFound';
@@ -15,6 +17,8 @@ export function FamilyPage() {
   const others = families.filter((f) => f.id !== family.id).slice(0, 3);
   const i = familyIndex(family);
   const next = families[(i + 1) % families.length];
+  const hero = photoFor(family.id);
+  const sourceCount = family.sources?.length ?? 0;
 
   return (
     <article className="family-page" style={{ ['--c' as string]: family.color }}>
@@ -29,17 +33,32 @@ export function FamilyPage() {
             <span className="eyebrow">{family.category} · born in {family.origin.region}</span>
             <h1 className="display">{family.name}</h1>
             <p className="family-aka">{family.alsoKnownAs.join(' · ')}</p>
-            <p className="lede">{family.intro}</p>
+            <p className="lede">
+              <Cited text={family.intro} family={family} />
+            </p>
             <div className="family-hero-meta">
               <ConfidenceBadge level={family.origin.confidence} note={family.origin.confidenceNote} />
               <span className="meta-pill">{family.origin.era}</span>
               <span className="meta-pill">
                 {family.variants.length} versions · {countries.length} countries
               </span>
+              {sourceCount > 0 && (
+                <a
+                  href="#sources"
+                  className="meta-pill meta-link"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    document.getElementById('sources')?.scrollIntoView({ behavior: 'smooth' });
+                  }}
+                >
+                  {sourceCount} sources
+                </a>
+              )}
             </div>
           </div>
-          <div className="family-hero-art" aria-hidden="true">
-            <Plate motif={family.motif} color={family.color} size={300} pattern={i} className="plate-hero" />
+          <div className="family-hero-art">
+            <Plate motif={family.motif} color={family.color} size={340} pattern={i} className="plate-hero" photo={hero} />
+            {hero && <Credit photo={hero} />}
           </div>
         </div>
       </header>
@@ -66,16 +85,22 @@ export function FamilyPage() {
           </h2>
           <div className="prose dropcap">
             {family.history.map((p, k) => (
-              <p key={k}>{p}</p>
+              <p key={k}>
+                <Cited text={p} family={family} />
+              </p>
             ))}
           </div>
           <aside className="etymology">
             <span className="eyebrow">In a name</span>
-            <p>{family.etymology}</p>
+            <p>
+              <Cited text={family.etymology} family={family} />
+            </p>
           </aside>
           <aside className="origin-note">
             <span className="eyebrow">How sure are we?</span>
-            <p>{family.origin.confidenceNote}</p>
+            <p>
+              <Cited text={family.origin.confidenceNote} family={family} />
+            </p>
           </aside>
         </div>
         <div className="history-side">
@@ -89,7 +114,9 @@ export function FamilyPage() {
           <h2 className="section-title small">What they all share</h2>
           <ul className="check-list">
             {family.commonThreads.map((t, k) => (
-              <li key={k}>{t}</li>
+              <li key={k}>
+                <Cited text={t} family={family} />
+              </li>
             ))}
           </ul>
         </Reveal>
@@ -99,7 +126,9 @@ export function FamilyPage() {
             {family.divergences.map((d, k) => (
               <div key={k}>
                 <dt>{d.title}</dt>
-                <dd>{d.text}</dd>
+                <dd>
+                  <Cited text={d.text} family={family} />
+                </dd>
               </div>
             ))}
           </dl>
@@ -142,6 +171,23 @@ export function FamilyPage() {
           ))}
         </div>
       </section>
+
+      {sourceCount > 0 && (
+        <section className="wrap section" id="sources" aria-labelledby="sources-title">
+          <div className="section-head">
+            <div>
+              <h2 id="sources-title" className="section-title">
+                Sources
+              </h2>
+              <p className="section-sub">
+                The numbers in the text point here. Each source was read for this page; where they disagree, the text
+                says so.
+              </p>
+            </div>
+          </div>
+          <SourceList family={family} />
+        </section>
+      )}
 
       <section className="wrap section next-up" aria-label="More dish families">
         <Link to={`/dish/${next.id}`} className="next-card" style={{ ['--c' as string]: next.color }}>

@@ -43,13 +43,18 @@ export function Layout() {
   const [paletteOpen, setPaletteOpen] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const { saved } = useSaved();
-  const { pathname } = useLocation();
+  const { pathname, hash } = useLocation();
 
-  // Each page starts at the top; the menu closes on navigation.
+  // Each page starts at the top (or at its #anchor); the menu closes on navigation.
   useEffect(() => {
-    window.scrollTo({ top: 0 });
     setMenuOpen(false);
-  }, [pathname]);
+    if (!hash) {
+      window.scrollTo({ top: 0 });
+      return;
+    }
+    const t = setTimeout(() => document.getElementById(hash.slice(1))?.scrollIntoView({ behavior: 'smooth' }), 120);
+    return () => clearTimeout(t);
+  }, [pathname, hash]);
 
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
@@ -130,6 +135,7 @@ export function Layout() {
             <Link to="/countries">Countries</Link>
             <Link to="/cookbook">My cookbook</Link>
             <Link to="/about">About & sources</Link>
+            <Link to="/credits">Photo credits</Link>
           </nav>
         </div>
       </footer>

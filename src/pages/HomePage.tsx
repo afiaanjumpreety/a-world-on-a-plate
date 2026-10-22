@@ -1,10 +1,11 @@
 import { useMemo, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { activeCountries, countryRefs, families, getFamily, stats } from '../data';
+import { activeCountries, countryRefs, families, getFamily, photoFor, stats } from '../data';
 import { country, countryByNumeric } from '../data/countries';
 import { WorldMap, type MapPin } from '../components/WorldMap';
 import { CountryTooltip, FamilyCard, Reveal, familyLayers, ConfidenceBadge } from '../components/Dish';
 import { Motif, Plate } from '../components/Motif';
+import { PhotoImg } from '../components/Photo';
 import { plural } from '../lib/format';
 
 const STEPS = [22, 38, 54, 70, 86];
@@ -75,7 +76,7 @@ export function HomePage() {
           </div>
           <div className="hero-plates" aria-hidden="true">
             {families.slice(0, 5).map((f, i) => (
-              <Plate key={f.id} motif={f.motif} color={f.color} pattern={i} size={[200, 132, 116, 104, 92][i]} className={`hero-plate hp-${i}`} />
+              <Plate key={f.id} motif={f.motif} color={f.color} pattern={i} size={[220, 140, 124, 112, 100][i]} className={`hero-plate hp-${i}`} photo={photoFor(f.id)} />
             ))}
           </div>
         </div>
@@ -155,6 +156,11 @@ export function HomePage() {
             ) : family ? (
               <div className="panel-family" style={{ ['--c' as string]: family.color }}>
                 <span className="eyebrow">{family.category}</span>
+                {photoFor(family.id) && (
+                  <div className="panel-photo">
+                    <PhotoImg photo={photoFor(family.id)!} />
+                  </div>
+                )}
                 <h3>{family.name}</h3>
                 <p className="panel-aka">{family.alsoKnownAs.join(' · ')}</p>
                 <p>{family.tagline}</p>

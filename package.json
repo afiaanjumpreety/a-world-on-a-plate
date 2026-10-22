@@ -8,7 +8,9 @@
     "build": "tsc --noEmit && vite build",
     "preview": "vite preview",
     "typecheck": "tsc --noEmit",
-    "validate": "tsx scripts/validate-data.ts"
+    "validate": "tsx scripts/validate-data.ts",
+    "photos": "tsx scripts/fetch-photos.ts",
+    "sources": "tsx scripts/check-sources.ts"
   },
   "dependencies": {
     "d3-geo": "^3.1.1",

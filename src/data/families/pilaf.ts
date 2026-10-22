@@ -15,47 +15,50 @@ export const pilaf: DishFamily = {
     era: "By the early medieval period; refined at Persian courts by the 1500s",
     confidence: "contested",
     confidenceNote:
-      "Persia gave the dish its name and its courtly method, but Central Asians claim plov as their own ancient invention, and Sanskrit texts describe rice cooked with meat in India long before.",
+      "Persian gave the dish its name and early Arabic cookbooks its first recipes, but Central Asians claim plov as their own ancient invention, and some historians point to rice-and-meat dishes in ancient Indian texts, a link others reject. [1, 2]",
   },
   intro:
     "Rice cooked in seasoned stock, or layered with meat and sealed to steam, is one of the great shared ideas of Asia, East Africa and the Mediterranean. In Tehran it is polow with a golden crust; in Tashkent, plov built over carrots in an iron kazan; in Hyderabad, biryani cooked under a seal of dough. Follow the grain and you trace caravan roads, royal kitchens and the monsoon trade.",
   history: [
-    "Rice reached the Iranian plateau and Central Asia from India in antiquity, and by the early medieval period cooks across the Persian-speaking world were simmering it with meat, fat and broth. Who did it first is unresolved. Ancient Sanskrit texts mention rice cooked with meat; Persian gives us the word polow; Uzbeks and Tajiks tell of Alexander the Great or the physician Ibn Sina devising plov, stories best treated as legends. What is clear is that rice cooked in stock became a prestige dish across the Persianate world.",
-    "At the Safavid court in Iran, in the 1500s and 1600s, polow was refined into an art. Cookbooks of the period describe a great many versions, and the method of parboiling rice, draining it and steaming it gently became the Persian signature. Turkic dynasties carried their own pilav west into Anatolia, where it became central to Ottoman palace and household cooking, and from there it spread into the Balkans and the Levant.",
-    "In South Asia, Persian-speaking rulers, from the Delhi Sultanate to the Mughals and the Deccan sultanates, brought polow into kitchens already rich in spice. There it met Indian techniques and became pulao and biryani, the latter layered and sealed to cook in its own steam. Popular stories credit Timur or the empress Mumtaz Mahal with inventing biryani, but no source supports them. Each court and city, from Lucknow to Hyderabad to Dhaka, settled on its own style.",
-    "The idea also moved by sea and by conquest. Arab, Persian and Indian merchants sailing the monsoon winds brought pilau to the Swahili coast of East Africa. Further west, rice arrived in Spain with al-Andalus and took root in the wetlands around Valencia. Paella, a nineteenth-century Valencian dish, is a distant cousin rather than a direct descendant, but it inherits that rice and a similar instinct: grains cooked in a rich, seasoned broth until every drop is absorbed.",
+    "Who first cooked rice in stock with meat is unresolved. The food historian Charles Perry calls pilaf a post-10th-century eastern Arabic innovation, and an early 13th-century cookbook from Aleppo gives a recipe of rice, meat, chickpeas and garlic that resembles it. [1] The historian K. T. Achaya pointed to rice cooked with meat in ancient Indian texts, though other scholars argue those dishes were something else. [1, 2] Central Asians tell of Alexander the Great bringing plov home from Samarkand, a story historians treat as apocryphal. [1] What is clear is that rice cooked in stock became a prestige dish across the Persianate world.",
+    "In Persian the dish is first attested in a 14th-century satirical poem, and the earliest named pilaf recipe appears in a cookbook written in 1521 for the court of the Safavid shah Ismail I. [1] A second Safavid cookbook, by a chef to Shah Abbas I, gives four of its six chapters to rice dishes, and by the end of the 1500s rice had grown from a court speciality into a major branch of Iranian cookery. [3] The method of parboiling rice, draining it and steaming it gently became the Persian signature. [1] In the Ottoman Empire, pilaf was central to palace cooking, where new cooks were reportedly tested on how they cooked rice, and it spread into the Balkans and the Levant. [8, 1]",
+    "In South Asia, Persianate courts brought pilau into kitchens already rich in spice. There it met Indian techniques and became pulao and biryani, the latter layered and often sealed to cook in its own steam. [2] Both dishes are listed in the Ain-i-Akbari, a record of Akbar's court written in the 1590s, and the historian Lizzie Collingham places the birth of modern biryani in the Mughal kitchens; others think it reached the Deccan earlier. [2] A popular story credits Timur with bringing biryani to India, but there is no record of it in his Central Asian homeland at the time. [2] Each court and city, from Lucknow to Hyderabad to Dhaka, settled on its own style.",
+    "The idea also moved by sea and by conquest. Omani, Yemeni and Persian settlers and the Indian Ocean trade brought rice and spices to the Swahili coast, where pilau is now a festive staple. [17, 18] Further west, Arabs in al-Andalus began cultivating rice around the 10th century, and it took root in the wetlands around Valencia. [19] Paella, a nineteenth-century Valencian dish, is a distant cousin rather than a direct descendant, but it inherits that rice and a similar instinct: grains cooked in a rich, seasoned broth until every drop is absorbed. [19, 1]",
   ],
   etymology:
-    "English pilaf and pilau come from Turkish pilav, itself from Persian polow; some scholars trace the Persian word further back to Sanskrit pulāka, a ball of boiled rice, though this is debated. Biryani comes from Persian beryān, 'fried' or 'roasted', and paella is the Valencian word for the wide pan, from Latin patella.",
+    "English pilau was borrowed from Persian by way of Turkish; the Oxford English Dictionary traces Persian pulaw further back to Sanskrit pulāka, a ball of rice, though the food historian Charles Perry argues the Sanskrit word meant something quite different. [1] Biryani comes from Persian beryān, 'fried' or 'roasted' [2], and paella is the Valencian word for the wide pan, from Latin patella. [19]",
   timeline: [
-    { when: "Antiquity", event: "Rice spreads from South Asia to the Iranian plateau and Central Asia." },
     {
-      when: "c. 900s–1200s",
-      event: "Arabic and Persian writers of the Abbasid world describe rice cooked with meat, fat and broth.",
+      when: "c. 900s",
+      event: "Arabs in al-Andalus begin cultivating rice; pilaf-like rice cooking spreads across the Abbasid world. [19, 1]",
     },
     {
-      when: "Medieval period",
-      event: "Rice is cultivated in al-Andalus, including the wetlands around Valencia.",
+      when: "Early 1200s",
+      event: "A cookbook from Aleppo gives an early recipe resembling pilaf: rice, meat, chickpeas and garlic. [1]",
     },
     {
-      when: "1500s–1600s",
-      event: "Safavid Persian cookbooks record many polow recipes; Ottoman kitchens make pilav a staple.",
+      when: "1300s",
+      event: "The word for pilaf is first attested in Persian, in a satirical poem by Ubayd Zakani. [1]",
     },
     {
-      when: "1500s–1700s",
-      event: "Mughal and Deccan courts develop pulao and biryani in the Indian subcontinent.",
+      when: "1521",
+      event: "A Safavid court cookbook gives the earliest known recipe under the name pilaf. [1, 3]",
+    },
+    {
+      when: "1590s",
+      event: "The Ain-i-Akbari, a record of Mughal emperor Akbar's court, lists both pilau and biryani. [2]",
     },
     {
       when: "1700s–1800s",
-      event: "The Nawabs of Awadh and the Nizams of Hyderabad shape the courtly biryanis of Lucknow and Hyderabad.",
+      event: "The Nawabs of Awadh and the Nizams of Hyderabad shape the courtly biryanis of Lucknow and Hyderabad. [9, 10, 11]",
     },
     {
       when: "1800s",
-      event: "Paella takes shape as a named dish in rural Valencia; Zanzibar thrives as an Omani-ruled spice port.",
+      event: "Paella takes shape as a named dish in rural Valencia; Zanzibar thrives as an Omani-ruled clove port. [19, 17]",
     },
     {
       when: "2016",
-      event: "UNESCO inscribes the palov traditions of Uzbekistan and Tajikistan as intangible cultural heritage.",
+      event: "UNESCO inscribes the palov traditions of Uzbekistan and Tajikistan as intangible cultural heritage. [4, 5]",
     },
   ],
   commonThreads: [

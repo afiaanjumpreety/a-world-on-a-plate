@@ -153,6 +153,23 @@ export interface TimelineEvent {
   event: string;
 }
 
+/**
+ * A reference that was actually read and supports specific claims.
+ * Text fields cite it with markers like "[2]" or "[1, 3]" (1-based index into `sources`).
+ */
+export interface Source {
+  /** Article, page or book title. */
+  title: string;
+  /** Site or publisher: "Wikipedia", "Encyclopaedia Britannica", "BBC Travel". */
+  publisher: string;
+  author?: string;
+  /** Publication year if known: "2019". */
+  year?: string;
+  url: string;
+  /** Plain description of what it supports: "Mughal-era spread; Tamil migration to Penang". */
+  supports: string;
+}
+
 export interface DishFamily {
   /** kebab-case, matches the file name: "paratha". Used in the URL. */
   id: string;
@@ -191,4 +208,22 @@ export interface DishFamily {
   /** 5-7 axes for the side-by-side comparison table. */
   compareAxes: CompareAxis[];
   variants: Variant[];
+  /** Numbered references for the family and all its variants. Cited as "[n]" in text. */
+  sources?: Source[];
+}
+
+/** A freely licensed photo, downloaded by scripts/fetch-photos.ts. */
+export interface Photo {
+  /** Path under public/: "images/paratha/roti-canai.jpg". */
+  src: string;
+  width: number;
+  height: number;
+  alt: string;
+  /** Photographer as credited on Wikimedia Commons (plain text). */
+  author: string;
+  /** "CC BY-SA 4.0", "CC0", "Public domain". */
+  license: string;
+  licenseUrl?: string;
+  /** The file's page on Wikimedia Commons. */
+  sourceUrl: string;
 }

@@ -677,3 +677,17 @@
     opacity: 0;
   }
 }
+.family-hero-art {
+  flex-direction: column;
+  gap: 4px;
+  text-align: center;
+}
+.family-hero-art .photo-credit {
+  max-width: 340px;
+}
+.variant-photo .photo-frame {
+  aspect-ratio: 3 / 2;
+}
+.region-title a {
+  text-decoration: none;
+}

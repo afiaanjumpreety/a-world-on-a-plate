@@ -27,6 +27,20 @@ export function AboutPage() {
           <em>Likely</em> means the best-supported account still has gaps. <em>Contested</em> means more than one place
           has a serious claim, and the history section lays out each one. Popular legends are labelled as legends.
         </p>
+        <h2>Sources</h2>
+        <p>
+          Small numbers in the text, like this<sup className="cite"><a href="#/about">1</a></sup>, point to the
+          numbered sources at the bottom of each dish page. Every source is a page that was read while checking that
+          dish: encyclopaedias, UNESCO listings, university and museum pages, and food journalism. Claims that no
+          source supported were softened or removed. Online sources were preferred so you can check them yourself.
+        </p>
+        <h2>Photographs</h2>
+        <p>
+          The photos come from Wikimedia Commons under free licences (Creative Commons, public domain or GFDL), with
+          the photographer credited under each one. Every photo was checked by eye to make sure it shows the dish it
+          is labelled as. Where no good free photo exists, the dish keeps its line drawing. The{' '}
+          <a href="#/credits">photo credits</a> page lists them all.
+        </p>
         <h2>The recipes</h2>
         <p>
           Each version has a home-kitchen recipe written to show what makes it distinct. Quantities are metric and scale

@@ -9,6 +9,7 @@ import { CountryPage } from './pages/CountryPage';
 import { CookbookPage } from './pages/CookbookPage';
 import { AboutPage } from './pages/AboutPage';
 import { NotFound } from './pages/NotFound';
+import { CreditsPage } from './pages/CreditsPage';
 
 // Hash routing keeps the built site working on any static host without rewrites.
 export function App() {
@@ -24,6 +25,7 @@ export function App() {
           <Route path="country/:code" element={<CountryPage />} />
           <Route path="cookbook" element={<CookbookPage />} />
           <Route path="about" element={<AboutPage />} />
+          <Route path="credits" element={<CreditsPage />} />
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>

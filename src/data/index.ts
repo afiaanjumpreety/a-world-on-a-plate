@@ -1,4 +1,4 @@
-import type { CountryCode, DishFamily, Variant } from './types';
+import type { CountryCode, DishFamily, Photo, Variant } from './types';
 import { country } from './countries';
 
 // Every file in ./families that exports a DishFamily is picked up automatically,
@@ -93,6 +93,22 @@ export function parentOf(family: DishFamily, variant: Variant): Variant | undefi
 export function childrenOf(family: DishFamily, id: string): Variant[] {
   return family.variants.filter((v) => v.from === id);
 }
+
+// Photos are written by scripts/fetch-photos.ts, one JSON file per family.
+const photoModules = import.meta.glob<Record<string, Photo>>('./photos/*.json', { eager: true, import: 'default' });
+const photos: Record<string, Photo> = Object.assign({}, ...Object.values(photoModules));
+
+/** The family's hero photo, or a variant's photo when `variantId` is given. */
+export function photoFor(familyId: string, variantId?: string): Photo | undefined {
+  return photos[variantId ? `${familyId}/${variantId}` : familyId];
+}
+
+export const allPhotos = Object.entries(photos)
+  .map(([key, photo]) => {
+    const [familyId, variantId] = key.split('/');
+    return { key, photo, family: getFamily(familyId), variant: variantId ? getVariant(familyId, variantId)?.variant : undefined };
+  })
+  .filter((p) => p.family);
 
 export const stats = {
   families: families.length,

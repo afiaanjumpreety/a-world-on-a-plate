@@ -1,6 +1,8 @@
 import { useMemo } from 'react';
 import { Link, useParams } from 'react-router-dom';
-import { childrenOf, countryRefs, getVariant, parentOf } from '../data';
+import { childrenOf, countryRefs, getVariant, parentOf, photoFor } from '../data';
+import { Cited, SourceList, citedNumbers, stripCites } from '../components/Cite';
+import { PhotoFigure } from '../components/Photo';
 import { country } from '../data/countries';
 import type { DishFamily, Variant } from '../data/types';
 import { CompareTable, CountryTag, VariantCard, mapLabel, originLabel } from '../components/Dish';
@@ -28,6 +30,8 @@ export function VariantPage() {
   const sameCountry = countryRefs(variant.country).filter((r) => r.family.id !== family.id);
   const cousins = family.variants.filter((v) => v.id !== variant.id);
   const [title, gloss] = splitName(variant.name);
+  const photo = photoFor(family.id, variant.id);
+  const cited = citedNumbers(variant.arrival, variant.summary, ...variant.story, ...variant.signature);
 
   return (
     <article className="variant-page" style={{ ['--c' as string]: family.color }}>
@@ -57,7 +61,7 @@ export function VariantPage() {
                 ))}
               </ul>
             )}
-            <p className="lede">{variant.summary}</p>
+            <p className="lede">{stripCites(variant.summary)}</p>
             <div className="variant-actions">
               <a href="#recipe" className="btn btn-primary" onClick={(e) => { e.preventDefault(); document.getElementById('recipe')?.scrollIntoView({ behavior: 'smooth' }); }}>
                 Jump to recipe ↓
@@ -76,10 +80,11 @@ export function VariantPage() {
             </div>
           </div>
           <div className="variant-hero-map">
+            {photo && <PhotoFigure photo={photo} className="variant-photo" eager />}
             <LineageMap family={family} variant={variant} parent={parent} />
             <p className="lineage-line">
               <span className="eyebrow">Arrived</span>
-              {variant.arrival}
+              <Cited text={variant.arrival} family={family} />
               {parent ? (
                 <>
                   {' '}
@@ -96,7 +101,9 @@ export function VariantPage() {
       <section className="wrap section variant-story">
         <div className="prose dropcap">
           {variant.story.map((p, k) => (
-            <p key={k}>{p}</p>
+            <p key={k}>
+              <Cited text={p} family={family} />
+            </p>
           ))}
         </div>
         <aside className="variant-facts">
@@ -104,7 +111,9 @@ export function VariantPage() {
             <h2 className="side-title">What makes it this version</h2>
             <ul className="check-list">
               {variant.signature.map((s, k) => (
-                <li key={k}>{s}</li>
+                <li key={k}>
+                  <Cited text={s} family={family} />
+                </li>
               ))}
             </ul>
           </div>
@@ -174,6 +183,18 @@ export function VariantPage() {
               <VariantCard key={`${r.family.id}-${r.variant.id}`} family={r.family} variant={r.variant} showFamily />
             ))}
           </div>
+        </section>
+      )}
+
+      {cited.length > 0 && (
+        <section className="wrap section" id="sources" aria-labelledby="vsrc-title">
+          <h2 id="vsrc-title" className="section-title">
+            Sources for this page
+          </h2>
+          <SourceList family={family} only={cited} />
+          <p className="section-sub sources-more">
+            <Link to={`/dish/${family.id}`}>All {family.sources?.length} sources for {family.name} →</Link>
+          </p>
         </section>
       )}
 

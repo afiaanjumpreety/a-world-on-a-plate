@@ -2,7 +2,9 @@ import { useEffect, useMemo, useRef, useState, type ReactNode } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import type { Confidence, DishFamily, Variant } from '../data/types';
 import { country, countryByNumeric } from '../data/countries';
-import { countryRefs, families } from '../data';
+import { countryRefs, families, photoFor } from '../data';
+import { Cited, stripCites } from './Cite';
+import { PhotoImg } from './Photo';
 import { Plate } from './Motif';
 import { WorldMap, type MapArc, type MapPin } from './WorldMap';
 import { formatMinutes, plural, totalMinutes } from '../lib/format';
@@ -18,7 +20,10 @@ export function Reveal({ children, className = '', as: Tag = 'div', delay = 0 }:
   useEffect(() => {
     const el = ref.current;
     if (!el) return;
-    if (!('IntersectionObserver' in window)) return setShown(true);
+    if (!('IntersectionObserver' in window)) {
+      setShown(true);
+      return;
+    }
     const io = new IntersectionObserver(
       ([e]) => {
         if (e.isIntersecting) {
@@ -85,7 +90,7 @@ export function FamilyCard({ family, compact = false }: { family: DishFamily; co
   return (
     <Link to={`/dish/${family.id}`} className={`family-card ${compact ? 'is-compact' : ''}`} style={{ ['--c' as string]: family.color }}>
       <div className="family-card-plate">
-        <Plate motif={family.motif} color={family.color} size={compact ? 92 : 128} pattern={familyIndex(family)} />
+        <Plate motif={family.motif} color={family.color} size={compact ? 92 : 128} pattern={familyIndex(family)} photo={photoFor(family.id)} />
       </div>
       <div className="family-card-body">
         <span className="eyebrow">{family.category}</span>
@@ -104,24 +109,32 @@ export function FamilyCard({ family, compact = false }: { family: DishFamily; co
 export function VariantCard({ family, variant, showFamily = false }: { family: DishFamily; variant: Variant; showFamily?: boolean }) {
   const c = country(variant.country);
   const native = variant.native?.[0];
+  const photo = photoFor(family.id, variant.id);
   return (
-    <Link to={`/dish/${family.id}/${variant.id}`} className="variant-card" style={{ ['--c' as string]: family.color }}>
-      <div className="variant-card-top">
-        <span className="variant-card-country">{c.name}</span>
-        <span className="variant-card-time">{formatMinutes(totalMinutes(variant.recipe))}</span>
-      </div>
-      <h3>{variant.name}</h3>
-      {native && native.text !== variant.name && (
-        <p className="variant-card-native" lang="und">
-          {native.text}
-        </p>
+    <Link to={`/dish/${family.id}/${variant.id}`} className={`variant-card ${photo ? 'has-photo' : ''}`} style={{ ['--c' as string]: family.color }}>
+      {photo && (
+        <div className="variant-card-photo">
+          <PhotoImg photo={photo} />
+        </div>
       )}
-      <p className="variant-card-summary">{variant.summary}</p>
-      <div className="variant-card-foot">
-        {showFamily ? <span className="chip-dot">{family.name}</span> : <span>{variant.place}</span>}
-        <span className="arrow" aria-hidden="true">
-          →
-        </span>
+      <div className="variant-card-body">
+        <div className="variant-card-top">
+          <span className="variant-card-country">{c.name}</span>
+          <span className="variant-card-time">{formatMinutes(totalMinutes(variant.recipe))}</span>
+        </div>
+        <h3>{variant.name}</h3>
+        {native && native.text !== variant.name && (
+          <p className="variant-card-native" lang="und">
+            {native.text}
+          </p>
+        )}
+        <p className="variant-card-summary">{stripCites(variant.summary)}</p>
+        <div className="variant-card-foot">
+          {showFamily ? <span className="chip-dot">{family.name}</span> : <span>{variant.place}</span>}
+          <span className="arrow" aria-hidden="true">
+            →
+          </span>
+        </div>
       </div>
     </Link>
   );
@@ -154,7 +167,7 @@ export function CompareTable({ family, highlight }: { family: DishFamily; highli
               <th scope="row">{axis.label}</th>
               {family.variants.map((v) => (
                 <td key={v.id} className={v.id === highlight ? 'is-highlight' : ''}>
-                  {v.traits[axis.key] ?? '—'}
+                  {stripCites(v.traits[axis.key] ?? '—')}
                 </td>
               ))}
             </tr>
@@ -171,7 +184,9 @@ export function Timeline({ family }: { family: DishFamily }) {
       {family.timeline.map((e, i) => (
         <li key={i}>
           <span className="timeline-when">{e.when}</span>
-          <p>{e.event}</p>
+          <p>
+            <Cited text={e.event} family={family} />
+          </p>
         </li>
       ))}
     </ol>

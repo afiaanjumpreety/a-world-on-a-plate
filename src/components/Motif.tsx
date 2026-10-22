@@ -1,4 +1,5 @@
-import type { Motif as MotifId } from '../data/types';
+import type { Motif as MotifId, Photo } from '../data/types';
+import { PhotoImg } from './Photo';
 
 /* Hand-drawn style line art, one per dish family. 64×64, stroked in currentColor. */
 
@@ -150,17 +151,20 @@ export function Plate({
   size = 160,
   pattern = 0,
   className = '',
+  photo,
 }: {
   motif: MotifId;
   color: string;
   size?: number;
   pattern?: number;
   className?: string;
+  /** When present, the photo sits in the plate's well instead of the line drawing. */
+  photo?: Photo;
 }) {
   const rim = RIMS[pattern % RIMS.length];
   const ticks = Array.from({ length: 36 }, (_, i) => (i / 36) * Math.PI * 2);
   return (
-    <div className={`plate ${className}`} style={{ width: size, height: size, ['--c' as string]: color }}>
+    <div className={`plate ${photo ? 'has-photo' : ''} ${className}`} style={{ width: size, height: size, ['--c' as string]: color }}>
       <svg viewBox="0 0 100 100" className="plate-svg" aria-hidden="true">
         <circle cx="50" cy="50" r="48" className="plate-base" />
         <circle cx="50" cy="50" r="34" className="plate-well" />
@@ -193,6 +197,11 @@ export function Plate({
       <div className="plate-motif">
         <Motif id={motif} size={size * 0.46} />
       </div>
+      {photo && (
+        <div className="plate-photo">
+          <PhotoImg photo={photo} />
+        </div>
+      )}
     </div>
   );
 }
