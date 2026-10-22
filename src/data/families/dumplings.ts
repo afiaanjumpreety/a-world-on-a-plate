@@ -20,10 +20,9 @@ export const dumplings: DishFamily = {
   intro:
     'From Beijing to Kraków, cooks roll out a thin wheat dough, wrap it around chopped meat and onion, and pinch it shut. The shapes change, and so do the fillings and the sauces, but the method is plainly one family. It may have spread out of China or across the steppe, and nobody can yet say which.',
   history: [
-    'Wrapping a little meat in dough and cooking it in water or steam is an old idea across the wheat-growing belt of Asia, and it is hard to say where it began. China holds the oldest physical evidence: crescent-shaped dumplings, dried hard and preserved in Tang-dynasty tombs at Astana near Turpan, look much like jiaozi made today. A popular story credits the Han-era physician Zhang Zhongjing with inventing them to warm frostbitten ears, but it is a legend with no record from his own time.',
-    'The competing view looks to the steppe. Turkic and Mongol peoples, herding sheep across Central Asia, made steamed lamb-and-onion parcels called manti, and the name echoes Chinese mantou, which once meant a filled steamed bun. Scholars still argue about which way the word travelled. What is broadly agreed is that the Mongol Empire of the 1200s and 1300s, which joined northern China to Central Asia, Persia and the edge of Europe, helped carry filled dumplings and their names along its roads.',
-    'From there the family branches. To the west, manti went with Turkic peoples into Anatolia, where it shrank into tiny boiled mantı under garlic yoghurt, and it reached the Caucasus, where Georgian khinkali hold a mouthful of broth. To the north, dumplings settled among the peoples of the Urals and Siberia and became Russian pelmeni, with Polish pierogi a more distant cousin whose ties to the rest are still debated.',
-    'In the east the routes are better documented. A Korean song from the late 1200s describes a dumpling shop run by a Central Asian man, and mandu has been part of Korean cooking ever since. Tibetan momo took its name from a northern Chinese word for bun and travelled to Kathmandu with Newar traders. Japan came last: gyoza became popular after the Second World War, when settlers and soldiers returned from Manchuria with a taste for jiaozi.',
+    "Filled dough parcels belong to many cuisines. Chinese archaeological finds and early writing establish a long dumpling tradition, but they do not prove that every dumpling elsewhere descends from a single invention. The map groups related techniques and names, with uncertain connections left open. [1]",
+    "Jiaozi enclose meat or vegetables in a thin wrapper and can be boiled, steamed or pan-fried. In northern China they are especially associated with Lunar New Year. The Japanese gyoza tradition is closely connected to Chinese jiaozi. [2]",
+    "Manti belong to Central Asian, Turkish and neighbouring cuisines. Their names resemble other Asian dumpling names, but their sizes, fillings and cooking methods vary. Similarities between a steamed Uzbek parcel, a small Turkish dumpling and Chinese jiaozi are a starting point for comparison, rather than proof of one exact migration route. [3]"
   ],
   etymology:
     'Manti, mantı and mandu are clearly related to Chinese mantou, but whether the word passed from Chinese into Turkic languages or the other way round is disputed. Momo is usually traced to a northern Chinese word for bun, buuz to Chinese baozi, gyoza to a regional pronunciation of jiaozi, and pelmeni to Komi and Udmurt words meaning "bread ear".',
@@ -104,7 +103,7 @@ export const dumplings: DishFamily = {
       coords: [116.4, 39.9],
       from: 'origin',
       arrival: 'Native to the northern Chinese wheat belt; evidenced by the Tang dynasty',
-      summary: 'Boiled pork and cabbage crescents, the new-year food of northern China.',
+      summary: "Boiled pork and cabbage crescents, the new-year food of northern China. [2]",
       story: [
         'In northern China, where wheat rather than rice is the staple, jiaozi are both everyday food and ritual. On Lunar New Year\'s Eve families gather to make them together, rolling wrappers with a short pin and pleating them in seconds, and eat them as the year turns. Their crescent shape is often compared to old silver ingots, so they carry wishes for prosperity.',
         'Most jiaozi are boiled and eaten with black vinegar and garlic, and leftovers are pan-fried the next day. Fillings run from pork and cabbage to lamb and carrot in the northwest, or egg and chives for a meatless version. In restaurants they are often ordered by weight, by the liang.',
@@ -125,6 +124,7 @@ export const dumplings: DishFamily = {
       },
       servedWith: ['Chinkiang black vinegar', 'Chilli oil', 'Raw garlic cloves', 'Smashed cucumber salad'],
       whenEaten: 'Lunar New Year\'s Eve, and any day in the north',
+      sourceRefs: [2],
       recipe: {
         serves: 4,
         prepMinutes: 75,
@@ -191,7 +191,7 @@ export const dumplings: DishFamily = {
       coords: [139.88, 36.56],
       from: 'jiaozi',
       arrival: 'Late 1940s–1950s, with Japanese returning from Manchuria',
-      summary: 'Thin-skinned pork dumplings fried crisp on the bottom and steamed on top.',
+      summary: "Thin-skinned pork dumplings fried crisp on the bottom and steamed on top. [2]",
       story: [
         'Chinese dumplings were known in Japan earlier, but gyoza became popular only after the Second World War, when settlers and soldiers returning from Manchuria opened small shops selling the dumplings they had eaten there. The name comes from a northern Chinese pronunciation of jiaozi. Cities such as Utsunomiya and Hamamatsu now treat gyoza as a local speciality.',
         'Where northern Chinese cooks mostly boil, the Japanese default is yaki-gyoza: fried until the bases crisp, then steamed under a lid in the same pan. Wrappers are thin and usually bought ready-made, and garlic is common in the filling. Gyoza come as a side to ramen, as a main with rice, or with a beer.',
@@ -213,6 +213,7 @@ export const dumplings: DishFamily = {
       },
       servedWith: ['Ramen', 'Steamed rice', 'Cold beer'],
       whenEaten: 'Lunch and dinner, often alongside ramen',
+      sourceRefs: [2],
       recipe: {
         serves: 3,
         prepMinutes: 40,
@@ -279,7 +280,7 @@ export const dumplings: DishFamily = {
       coords: [126.98, 37.57],
       from: 'jiaozi',
       arrival: 'By the late 1200s, during close contact with the Mongol Yuan court',
-      summary: 'Generous dumplings of pork, tofu, glass noodles and kimchi, steamed, fried or in soup.',
+      summary: "Generous dumplings of pork, tofu, glass noodles and kimchi, steamed, fried or in soup. [2]",
       story: [
         'Mandu was in Korea by the Goryeo period. Ssanghwajeom, a song from the late 1200s, when Goryeo was closely tied to the Mongol Yuan court, describes a shop selling filled buns run by a Central Asian man. The name is related to Chinese mantou and to manti further west. Over the following centuries the dumpling became thoroughly Korean.',
         'Modern mandu are large and juicy, often filled with pork, tofu, glass noodles and sour kimchi, all squeezed dry so the wrapper holds. They are steamed, boiled, pan-fried or dropped into broth. At Seollal, the lunar new year, many families eat tteokmanduguk, a soup of rice cakes and dumplings, and fold big batches together to freeze.',
@@ -300,6 +301,7 @@ export const dumplings: DishFamily = {
       },
       servedWith: ['Soy-vinegar dipping sauce', 'Kimchi', 'Tteokmanduguk (rice cake and dumpling soup)'],
       whenEaten: 'Seollal, winter, and as a snack all year',
+      sourceRefs: [2],
       recipe: {
         serves: 4,
         prepMinutes: 60,
@@ -366,7 +368,7 @@ export const dumplings: DishFamily = {
       coords: [85.32, 27.72],
       from: 'origin',
       arrival: 'Via Tibet, with Newar traders on the Lhasa route; dates uncertain',
-      summary: 'Small steamed Himalayan dumplings served with a sharp tomato and sesame achar.',
+      summary: "Small steamed Himalayan dumplings served with a sharp tomato and sesame achar. [4]",
       story: [
         'Momo belongs to the Tibetan plateau and the Himalaya. Its name is usually traced to a northern Chinese word for bun, and in Tibet it was filled with yak or mutton. Newar merchants from the Kathmandu Valley, who traded in Lhasa for centuries, are widely credited with bringing it home, where it took on Nepali spices.',
         'Today momo is Kathmandu\'s favourite snack, sold steaming from small shops all day. The filling is often water buffalo, chicken or vegetables, seasoned with onion, ginger, garlic and coriander. Its essential partner is achar, a tomato and sesame sauce sharpened with timur, a Himalayan relative of Sichuan pepper. After 1959, Tibetan exiles helped make momo popular across India.',
@@ -387,6 +389,7 @@ export const dumplings: DishFamily = {
       },
       servedWith: ['Tomato and sesame achar', 'Jhol achar (thin, soupy sauce)', 'Milk tea'],
       whenEaten: 'Afternoon snack, and street food at any hour',
+      sourceRefs: [4],
       recipe: {
         serves: 4,
         prepMinutes: 70,
@@ -460,7 +463,7 @@ export const dumplings: DishFamily = {
       coords: [106.92, 47.92],
       from: 'jiaozi',
       arrival: 'Through long contact with northern China; the name comes from baozi',
-      summary: 'Open-topped steamed mutton dumplings, made by the hundred for the lunar new year.',
+      summary: "Open-topped steamed mutton dumplings, made by the hundred for the lunar new year. [5]",
       story: [
         'Buuz takes its name from Chinese baozi, but in Mongolia it became a herder\'s food: chopped mutton, onion and a little garlic in a fairly thick wrapper, steamed until the fat melts into a broth inside. Each one is pleated around the top and left with a small opening, so the steam escapes and the juice shows.',
         'Buuz are central to Tsagaan Sar, the lunar new year, when families make hundreds in the days beforehand and freeze them outdoors in the winter cold. Visitors are served buuz with salty milk tea. The polite way to eat one is to bite a small hole first and sip the juice before it runs.',
@@ -481,6 +484,7 @@ export const dumplings: DishFamily = {
       },
       servedWith: ['Suutei tsai (salty milk tea)', 'Cabbage or carrot salad'],
       whenEaten: 'Tsagaan Sar, and winter meals',
+      sourceRefs: [5],
       recipe: {
         serves: 4,
         prepMinutes: 60,
@@ -533,7 +537,7 @@ export const dumplings: DishFamily = {
       coords: [66.97, 39.65],
       from: 'origin',
       arrival: 'Spread along steppe and Silk Road routes; widespread by the Mongol era',
-      summary: 'Large steamed parcels of hand-cut lamb, onion and tail fat, served with yoghurt.',
+      summary: "Large steamed parcels of hand-cut lamb, onion and tail fat, served with yoghurt. [3]",
       story: [
         'Across Central Asia, from Kazakhstan to Afghanistan, manti are large steamed dumplings, and Uzbekistan makes some of the best known. The filling is lamb cut small with a knife rather than minced, mixed with plenty of onion and nuggets of fat from the tail of fat-tailed sheep, which melt as the manti steam.',
         'Manti are cooked in a tall tiered steamer, each greased layer filled with the folded parcels. In autumn, cubes of pumpkin often join or replace the meat. They come to the table piled on a platter with yoghurt or sour cream and black pepper, and are eaten at family meals and gatherings.',
@@ -555,6 +559,7 @@ export const dumplings: DishFamily = {
       },
       servedWith: ['Suzma or katyk (strained yoghurt)', 'Sour cream', 'Achichuk (tomato and onion salad)', 'Green tea'],
       whenEaten: 'Family lunches and dinners, and festive spreads',
+      sourceRefs: [3],
       recipe: {
         serves: 5,
         prepMinutes: 80,
@@ -617,7 +622,7 @@ export const dumplings: DishFamily = {
       coords: [35.49, 38.73],
       from: 'manti',
       arrival: 'Probably with Turkic migrations into Anatolia, from the 1000s onward',
-      summary: 'Tiny boiled meat dumplings under garlic yoghurt and red pepper butter.',
+      summary: "Tiny boiled meat dumplings under garlic yoghurt and red pepper butter. [3]",
       story: [
         'In Anatolia the steppe dumpling shrank. Turkish mantı, most famously from Kayseri in central Anatolia, are tiny squares of very thin dough pinched around a pea-sized ball of seasoned meat. A popular saying holds that a skilled cook\'s mantı are so small that forty fit on a single spoon.',
         'They are boiled rather than steamed and served as one dish: a bowl of dumplings under garlicky yoghurt, finished with butter sizzled with red pepper flakes and often dried mint or sumac. Making them is slow work, often shared around a family table, and good homemade mantı is a point of pride.',
@@ -639,6 +644,7 @@ export const dumplings: DishFamily = {
       },
       servedWith: ['Garlic yoghurt', 'Pul biber butter', 'Ayran'],
       whenEaten: 'Weekend family meals and special occasions',
+      sourceRefs: [3],
       recipe: {
         serves: 4,
         prepMinutes: 110,
@@ -703,7 +709,7 @@ export const dumplings: DishFamily = {
       coords: [44.69, 42.35],
       from: 'manti',
       arrival: 'Often linked to the Mongol era (1200s); the origin is debated in Georgia',
-      summary: 'Big twisted dumplings full of peppery broth, eaten by hand from the topknot.',
+      summary: "Big twisted dumplings full of peppery broth, eaten by hand from the topknot. [6]",
       story: [
         'Khinkali belong to the Georgian highlands, to mountain regions such as Pshavi, Mtiuleti, Tusheti and Khevsureti, where they were made with mutton or beef and onion. A common view links them to the Mongol campaigns in the Caucasus in the 1200s, though many Georgians see them as a native mountain dish, and early evidence is thin. Pasanauri, on the Georgian Military Road, is famous for them.',
         'A khinkali is gathered into many pleats and twisted into a knob at the top, the kudi. Raw meat and water in the filling turn to broth as it boils. You hold it by the knob, bite a small hole, sip the broth, then eat the rest and leave the knob on the plate. Black pepper is the only seasoning added at the table.',
@@ -725,6 +731,7 @@ export const dumplings: DishFamily = {
       },
       servedWith: ['Freshly ground black pepper', 'Georgian beer', 'Chacha (grape spirit)'],
       whenEaten: 'Tavern meals and supras, all year round',
+      sourceRefs: [6],
       recipe: {
         serves: 4,
         prepMinutes: 70,
@@ -784,7 +791,7 @@ export const dumplings: DishFamily = {
       coords: [56.23, 58.01],
       from: 'manti',
       arrival: 'Adopted by Russians in the Urals and Siberia; mainstream by the 1800s',
-      summary: 'Small ear-shaped meat dumplings, frozen by the hundred and boiled for winter suppers.',
+      summary: "Small ear-shaped meat dumplings, frozen by the hundred and boiled for winter suppers. [7]",
       story: [
         'Pelmeni grew up in the Urals and Siberia, where Russian settlers met Finno-Ugric peoples such as the Komi and Udmurts. The name is usually traced to their words for "bread ear", after the shape. How the dumpling reached the region is unclear; a link with Turkic and Mongol manti is often proposed but hard to prove. By the 1800s pelmeni were part of wider Russian cookery.',
         'They are small, with a thin egg dough around raw beef and pork with onion. In Siberian winters families made them by the hundred and froze them outdoors, which also made them good travelling food. They are still made and bought by the bag for the freezer, boiled in minutes and eaten with butter, sour cream or vinegar, or in broth.',
@@ -806,6 +813,7 @@ export const dumplings: DishFamily = {
       },
       servedWith: ['Smetana (sour cream)', 'Melted butter', 'Vinegar or mustard', 'Chopped dill'],
       whenEaten: 'Winter suppers and quick weeknight meals',
+      sourceRefs: [7],
       recipe: {
         serves: 4,
         prepMinutes: 80,
@@ -870,7 +878,7 @@ export const dumplings: DishFamily = {
       coords: [19.94, 50.06],
       from: 'pelmeni',
       arrival: 'Probably from the east through Rus lands; recorded in Poland by the 1600s',
-      summary: 'Half-moon dumplings with potato and curd cheese, boiled and topped with fried onion.',
+      summary: "Half-moon dumplings with potato and curd cheese, boiled and topped with fried onion. [8]",
       story: [
         'Pierogi are the most distant cousin here, and their link to the Silk Road family is debated. A popular legend credits St Hyacinth with bringing them from Kyiv in the 1200s. Historians say more cautiously that they probably came from the east through Rus lands, and they appear in Polish cookery by the 1600s. Ukrainian varenyky are close relatives.',
         'Unlike their eastern relations, pierogi are often meatless. The best known, pierogi ruskie, are named after the old region of Ruthenia rather than Russia, and filled with potato, curd cheese and fried onion. On Christmas Eve, Wigilia, families make cabbage and mushroom pierogi, and in summer sweet ones with berries. They are boiled, then often fried in butter.',
@@ -892,6 +900,7 @@ export const dumplings: DishFamily = {
       },
       servedWith: ['Onions fried in butter', 'Sour cream', 'Skwarki (crisp pork bits)', 'Beetroot barszcz at Wigilia'],
       whenEaten: 'Christmas Eve, and everyday lunches',
+      sourceRefs: [8],
       recipe: {
         serves: 4,
         prepMinutes: 80,
@@ -945,5 +954,63 @@ export const dumplings: DishFamily = {
         ],
       },
     },
+  ],
+  sources: [
+    {
+      "title": "Dumpling",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Dumpling",
+      "supports": "Family overview, preparation and regional context; historical accounts are secondary and should be read with their footnotes.",
+      "accessed": "2026-10-22"
+    },
+    {
+      "title": "Jiaozi",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Jiaozi",
+      "supports": "Chinese filled dumplings, New Year customs and the Japanese gyoza connection.",
+      "accessed": "2026-10-22"
+    },
+    {
+      "title": "Manti (food)",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Manti_%28food%29",
+      "supports": "Central Asian and Turkish dumplings, related names and variations in cooking method.",
+      "accessed": "2026-10-22"
+    },
+    {
+      "title": "Momo (food)",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Momo_%28food%29",
+      "supports": "Dish description, ingredients and regional preparation; see the article’s footnotes for further reading.",
+      "accessed": "2026-10-22"
+    },
+    {
+      "title": "Buuz",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Buuz",
+      "supports": "Dish description, ingredients and regional preparation; see the article’s footnotes for further reading.",
+      "accessed": "2026-10-22"
+    },
+    {
+      "title": "Khinkali",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Khinkali",
+      "supports": "Dish description, ingredients and regional preparation; see the article’s footnotes for further reading.",
+      "accessed": "2026-10-22"
+    },
+    {
+      "title": "Pelmeni",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Pelmeni",
+      "supports": "Dish description, ingredients and regional preparation; see the article’s footnotes for further reading.",
+      "accessed": "2026-10-22"
+    },
+    {
+      "title": "Pierogi",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Pierogi",
+      "supports": "Dish description, ingredients and regional preparation; see the article’s footnotes for further reading.",
+      "accessed": "2026-10-22"
+    }
   ],
 };

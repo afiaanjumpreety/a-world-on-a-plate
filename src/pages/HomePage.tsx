@@ -59,6 +59,7 @@ export function HomePage() {
               one idea, carried by traders, workers and families. Trace where each dish began, see how every country
               made it its own, then cook every version.
             </p>
+            <p className="hero-reading-links"><Link to="/sources">Explore the research ↗</Link><span aria-hidden="true"> · </span><Link to="/credits">Meet the photographers ↗</Link></p>
             <div className="hero-stats">
               <div>
                 <strong>{stats.families}</strong>

@@ -1,7 +1,7 @@
 import { useMemo } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { childrenOf, countryRefs, getVariant, parentOf, photoFor } from '../data';
-import { Cited, SourceList, citedNumbers, stripCites } from '../components/Cite';
+import { Cited, SourceList, citedNumbers } from '../components/Cite';
 import { PhotoFigure } from '../components/Photo';
 import { country } from '../data/countries';
 import type { DishFamily, Variant } from '../data/types';
@@ -31,7 +31,7 @@ export function VariantPage() {
   const cousins = family.variants.filter((v) => v.id !== variant.id);
   const [title, gloss] = splitName(variant.name);
   const photo = photoFor(family.id, variant.id);
-  const cited = citedNumbers(variant.arrival, variant.summary, ...variant.story, ...variant.signature);
+  const cited = [...new Set([...(variant.sourceRefs ?? []), ...citedNumbers(variant.arrival, variant.summary, ...variant.story, ...variant.signature)])].sort((a, b) => a - b);
 
   return (
     <article className="variant-page" style={{ ['--c' as string]: family.color }}>
@@ -61,8 +61,9 @@ export function VariantPage() {
                 ))}
               </ul>
             )}
-            <p className="lede">{stripCites(variant.summary)}</p>
+            <p className="lede"><Cited text={variant.summary} family={family} /></p>
             <div className="variant-actions">
+              {cited.length > 0 && <a className="btn btn-ghost" href="#sources" onClick={(e) => { e.preventDefault(); document.getElementById('sources')?.scrollIntoView({ behavior: 'smooth' }); }}>References ({cited.length}) ↗</a>}
               <a href="#recipe" className="btn btn-primary" onClick={(e) => { e.preventDefault(); document.getElementById('recipe')?.scrollIntoView({ behavior: 'smooth' }); }}>
                 Jump to recipe ↓
               </a>
@@ -191,6 +192,7 @@ export function VariantPage() {
           <h2 id="vsrc-title" className="section-title">
             Sources for this page
           </h2>
+          <p className="section-sub">References for the dish’s ingredients, preparation and cultural context. The home-kitchen recipe is an editorial adaptation.</p>
           <SourceList family={family} only={cited} />
           <p className="section-sub sources-more">
             <Link to={`/dish/${family.id}`}>All {family.sources?.length} sources for {family.name} →</Link>

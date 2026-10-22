@@ -23,15 +23,14 @@ export const paratha: DishFamily = {
     era: 'Established by the Mughal era (1500s–1700s); earlier roots debated',
     confidence: 'likely',
     confidenceNote:
-      "Historians agree the paratha belongs to North India's wheat belt, but how early it took its layered form is unclear, and the medieval texts sometimes cited are open to interpretation.",
+      "Layered flatbreads have several proposed histories. The references document paratha in the Indian subcontinent and related Southeast Asian breads, but do not establish one precise birthplace. [1, 2]",
   },
   intro:
     'Take a wheat dough, brush it with fat, fold or coil it, roll it out again and cook it on a hot iron plate: that is a paratha. The idea began in the wheat-growing north of the Indian subcontinent and travelled east to Bengal, south to Tamil Nadu and Sri Lanka, across the Bay of Bengal to Penang, Singapore and Rangoon, and over the oceans to the Caribbean. Every stop changed the flour, the fat and the fold, but the layers stayed.',
   history: [
-    "The paratha belongs to the wheat-growing north of the Indian subcontinent, where flatbreads cooked on an iron tawa are everyday food. A paratha is what happens when that dough is brushed with fat, folded or rolled up, and rolled out again, so it cooks into layers rather than a single sheet. The 12th-century Sanskrit text Manasollasa is sometimes cited for its descriptions of wheat breads made with ghee, and some writers read these as early parathas. The match is plausible rather than certain, so the safest claim is that ghee-layered breads were part of North Indian cooking well before the word itself is widely recorded.",
-    'By the Mughal era, from the 1500s onward, breads rich with ghee were a mark of good eating in the courts and towns of the north, and the paratha took the shape most South Asians would recognise: whole-wheat or plain flour, generous fat, and a fold that traps layers. In Punjab it became the backbone of breakfast, eaten plain or stuffed with potato, radish or cauliflower. From there it spread down the Gangetic plain to Bengal and south across the peninsula, changing its flour and its fat as it went.',
-    'A second journey ran through South India and across the Bay of Bengal. In Tamil Nadu and Kerala a plain-flour version, stretched thin and coiled, became the parotta of roadside eateries. From the late 1700s, Tamil Muslim traders and workers from the Coromandel coast settled in Penang, Singapore and the other ports of British Malaya and Burma, and their stalls made a stretched, griddle-cooked bread that became roti canai, roti prata and palata. Exactly how the South Indian parotta and the Malayan roti relate, and which came first, is still argued over.',
-    "Indentured labour carried the bread further still. In the 19th and early 20th centuries, workers from India, many from the Bhojpuri-speaking regions of today's Uttar Pradesh and Bihar, were shipped to plantations in the Caribbean, the Indian Ocean and the Pacific. Trinidad's indenture period ran from 1845 to 1917, and there the layered roti, beaten into shreds after cooking, became buss-up-shut. Today the family runs from breakfast in Lahore and teatime in Dhaka to late nights at Singapore hawker centres and Sunday lunch in Port of Spain.",
+    "Paratha is a layered flatbread of the Indian subcontinent: wheat dough is folded with fat, rolled out and cooked on a griddle. Its early history has competing accounts, so a precise inventor or single birthplace cannot be established from the references here. [1]",
+    "The South Indian parotta is a related bread with a distinct preparation, commonly using refined flour and oil. Its stretched, coiled layers differ from the folded whole-wheat versions associated with northern India. The relationship between these traditions is more complicated than a single straight route on a map. [1, 3]",
+    "In Southeast Asia, related breads became roti canai and roti prata. Singapore’s National Heritage Board connects the local prata tradition to Indian migrants and describes a living craft passed between cooks. Curry, eggs and sweet fillings give these breads a different place at the table. [2, 4]"
   ],
   etymology:
     'Paratha is usually explained as a joining of parat, meaning layer, and atta, wheat flour. Porota, parotta, prata and palata are local renderings of the same word, while the "canai" in roti canai has several competing explanations and no settled one.',
@@ -121,8 +120,7 @@ export const paratha: DishFamily = {
       coords: [74.87, 31.63],
       from: 'origin',
       arrival: 'A Punjabi refinement of the everyday paratha; date unrecorded',
-      summary:
-        'A whole-wheat paratha pleated and coiled so it opens into crisp, ghee-rich rings.',
+      summary: "A whole-wheat paratha pleated and coiled so it opens into crisp, ghee-rich rings. [1]",
       story: [
         'In Punjab the paratha is a breakfast institution, most often stuffed with spiced potato, cauliflower or radish and served with butter, yoghurt and pickle. The lachha paratha is its unstuffed, showier sibling, made purely for its layers. Lachha means something like rings or strands, which is exactly what you see when it is crushed in the hand after cooking.',
         "Amritsar's dhabas serve it with chole, dal makhani or a tall glass of lassi. Its spiral structure, made by pleating a ghee-brushed sheet like a paper fan and coiling it up, gives it more crisp edges than a simply folded paratha, and it holds up well when packed for later.",
@@ -143,6 +141,7 @@ export const paratha: DishFamily = {
       },
       servedWith: ['Chole', 'Dal makhani', 'Paneer curry', 'Lassi', 'Pickle'],
       whenEaten: 'Breakfast and dhaba meals, any time of day',
+      sourceRefs: [1],
       recipe: {
         serves: 4,
         prepMinutes: 35,
@@ -220,8 +219,7 @@ export const paratha: DishFamily = {
       coords: [74.36, 31.55],
       from: 'origin',
       arrival: "Long part of Lahore's breakfast culture; date unrecorded",
-      summary:
-        'A thick, square paratha fried slowly in desi ghee until the outside shatters.',
+      summary: "A thick, square paratha fried slowly in desi ghee until the outside shatters. [1]",
       story: [
         'Lahore takes its breakfast seriously, and the desi ghee paratha sits at the centre of it. Desi ghee means clarified butter made from cow or buffalo milk, as opposed to vegetable ghee, and Lahori cooks use plenty. The paratha is rolled thicker than most of its cousins and fried slowly, so the outside turns crisp while the inside stays soft and layered.',
         'On weekend mornings it arrives with an omelette, chanay (spiced chickpeas), aloo bhujia or halwa, alongside sweet milky tea or lassi. The square shape comes from folding a ghee-brushed round in from four sides, a quick home method that traps a few thick layers rather than dozens of thin ones.',
@@ -242,6 +240,7 @@ export const paratha: DishFamily = {
       },
       servedWith: ['Omelette', 'Chanay (spiced chickpeas)', 'Aloo bhujia', 'Halwa', 'Lassi or doodh patti tea'],
       whenEaten: 'Weekend and festive breakfasts',
+      sourceRefs: [1],
       recipe: {
         serves: 4,
         prepMinutes: 30,
@@ -315,8 +314,7 @@ export const paratha: DishFamily = {
       coords: [90.41, 23.81],
       from: 'origin',
       arrival: 'Likely with North Indian cooking under Mughal rule, 1600s onward',
-      summary:
-        "Bangladesh's soft, triangle-folded flatbread, torn into dal, bhaji or egg at breakfast.",
+      summary: "Bangladesh's soft, triangle-folded flatbread, torn into dal, bhaji or egg at breakfast. [1]",
       story: [
         'In Bangladesh the paratha is porota, and it is everywhere: on the griddles of roadside restaurants at dawn, in tiffin boxes and at home on weekend mornings. It most likely came east with the North Indian cooking that followed Mughal rule into Bengal, though there is no record of exactly when. Dhaka was the Mughal capital of the province from the early 1600s.',
         'Restaurant porota uses plain flour and soybean oil or dalda, a vegetable shortening; home cooks may use ghee. It is folded into a triangle or coiled for extra layers, then torn and dipped into dal, mixed vegetable bhaji, egg, beef curry or semolina halwa. Soft and slightly chewy, it sits between the crisp Punjabi paratha and the stretched roti of Southeast Asia.',
@@ -337,6 +335,7 @@ export const paratha: DishFamily = {
       },
       servedWith: ['Dal', 'Mixed vegetable bhaji', 'Fried egg or omelette', 'Beef curry', 'Suji halwa'],
       whenEaten: 'Breakfast at home and roadside restaurants; evening snacks',
+      sourceRefs: [1],
       recipe: {
         serves: 4,
         prepMinutes: 30,
@@ -414,8 +413,7 @@ export const paratha: DishFamily = {
       coords: [78.12, 9.93],
       from: 'origin',
       arrival: 'Widespread by the mid-1900s; the route south is debated',
-      summary:
-        'A plain-flour flatbread stretched, pleated and coiled, then clapped into flaky ribbons.',
+      summary: "A plain-flour flatbread stretched, pleated and coiled, then clapped into flaky ribbons. [3]",
       story: [
         "Across Tamil Nadu and Kerala, the parotta (porotta in Malayalam) is the standard order at roadside eateries, cooked on wide griddles and clapped between the cook's palms until it falls into flaky ribbons. It is made with plain flour rather than whole wheat, and the dough is stretched paper-thin before being pleated and coiled.",
         'Its history is hazy. It became widespread in the mid-1900s, and accounts differ on whether it grew from the North Indian paratha, came back from Sri Lanka or Malaya with returning workers, or developed in Tamil port towns that had long traded across the Bay of Bengal. What is clear is how close it is to the roti of Penang and Singapore, made by communities from the same coast.',
@@ -436,6 +434,7 @@ export const paratha: DishFamily = {
       },
       servedWith: ['Salna (thin meat or vegetable curry)', 'Kurma', 'Beef fry (Kerala)', 'Egg curry'],
       whenEaten: 'Dinner and late-night meals at roadside eateries',
+      sourceRefs: [3],
       recipe: {
         serves: 4,
         prepMinutes: 50,
@@ -515,8 +514,7 @@ export const paratha: DishFamily = {
       coords: [100.33, 5.41],
       from: 'parotta',
       arrival: '1800s–early 1900s, with Tamil Muslim migrants to Penang',
-      summary:
-        'Dough rested in oil, stretched paper-thin, folded into a square and griddled in ghee.',
+      summary: "Dough rested in oil, stretched paper-thin, folded into a square and griddled in ghee. [4]",
       story: [
         "Roti canai is one of Malaysia's best-loved breakfasts, sold at mamak stalls, the open-fronted restaurants run by Tamil Muslim families. Its roots lie with Tamil Muslim traders and workers from India's Coromandel coast who settled in Penang and the other Straits ports from the late 1700s onward.",
         'The name is debated. Some link canai to Chennai, others to a Malay word for rolling out dough, and others to the chana dal once served with it; none is proven. The technique is the same everywhere: dough rested in oil, spun or spread until paper-thin, folded into a square and griddled in ghee or margarine.',
@@ -538,6 +536,7 @@ export const paratha: DishFamily = {
       },
       servedWith: ['Dal curry', 'Fish curry', 'Chicken curry', 'Sambal', 'Teh tarik'],
       whenEaten: 'Breakfast at mamak stalls, and late at night',
+      sourceRefs: [4],
       recipe: {
         serves: 4,
         prepMinutes: 45,
@@ -613,8 +612,7 @@ export const paratha: DishFamily = {
       coords: [103.85, 1.29],
       from: 'parotta',
       arrival: '1800s–1900s, with Tamil Muslim migrants to Singapore',
-      summary:
-        "Singapore's crisp-edged stretched flatbread, ordered plain, with egg or with toppings.",
+      summary: "Singapore's crisp-edged stretched flatbread, ordered plain, with egg or with toppings. [4]",
       story: [
         'Roti prata grew up in Singapore through the same Tamil Muslim networks that produced roti canai across the Causeway; prata is a local rendering of paratha. It was long a hawker food, and today it is cooked to order in hawker centres and coffee shops, some of them open around the clock.',
         'Singaporeans often say their prata is crisper than Malaysian roti canai, though both vary from cook to cook. Ordering has its own vocabulary: kosong is plain, telur has an egg folded inside, and plaster has a fried egg on top. Fish or chicken curry is the usual dip, and plain prata is often eaten with a sprinkle of sugar.',
@@ -635,6 +633,7 @@ export const paratha: DishFamily = {
       },
       servedWith: ['Fish curry', 'Chicken curry', 'Sugar', 'Teh tarik or kopi'],
       whenEaten: 'Breakfast and supper at hawker centres, any hour',
+      sourceRefs: [4],
       recipe: {
         serves: 4,
         prepMinutes: 40,
@@ -715,8 +714,7 @@ export const paratha: DishFamily = {
       coords: [79.86, 6.93],
       from: 'parotta',
       arrival: 'Probably 1800s–1900s, via Tamil-speaking trade networks; undocumented',
-      summary:
-        'A thin, soft Sri Lankan stretched roti, eaten with curry and chopped into kottu.',
+      summary: "A thin, soft Sri Lankan stretched roti, eaten with curry and chopped into kottu. [5]",
       story: [
         'In Sri Lanka the stretched, folded flatbread is godamba roti, made in the small eateries Sri Lankans call hotels, many of them run by Muslim families. It is thinner and softer than most of its cousins: stretched until translucent, folded into a neat square and cooked with little oil, so it stays pliable rather than crisp.',
         'Its arrival on the island is not well documented, but it shares its technique with the South Indian parotta and the Malayan roti and probably came through the same Tamil-speaking trade networks. Godamba roti is eaten with curry, and it is also the raw material for kottu roti, shredded on the griddle with vegetables, egg, meat and curry gravy using clattering metal blades.',
@@ -737,6 +735,7 @@ export const paratha: DishFamily = {
       },
       servedWith: ['Chicken curry', 'Dhal curry', 'Pol sambol', 'Kottu (chopped with curry)'],
       whenEaten: 'Evening meals at hotels and street stalls',
+      sourceRefs: [5],
       recipe: {
         serves: 4,
         prepMinutes: 35,
@@ -805,8 +804,7 @@ export const paratha: DishFamily = {
       coords: [96.16, 16.84],
       from: 'parotta',
       arrival: 'Late 1800s–early 1900s, with Indian migrants to colonial Rangoon',
-      summary:
-        "Myanmar's teashop flatbread, eaten with curry or simply sprinkled with sugar.",
+      summary: "Myanmar's teashop flatbread, eaten with curry or simply sprinkled with sugar. [5]",
       story: [
         "Palata arrived in Burma with the Indian migrants who made up a large share of colonial Rangoon's population in the late 1800s and early 1900s. It is still sold in teashops and at breakfast stalls, stretched and cooked to order on a flat iron pan.",
         "Burmese cooks serve it in two moods: savoury, with chicken or mutton curry, or sweet, sprinkled with sugar and sometimes drizzled with condensed milk. Egg palata has an egg cooked inside the folds. A many-layered version made by pleating and coiling the dough is known as htat-taya, which means 'a hundred layers'.",
@@ -827,6 +825,7 @@ export const paratha: DishFamily = {
       },
       servedWith: ['Sugar', 'Chicken curry', 'Mutton curry', 'Sweet milky tea'],
       whenEaten: 'Breakfast and afternoon snacks in teashops',
+      sourceRefs: [5],
       recipe: {
         serves: 4,
         prepMinutes: 30,
@@ -902,8 +901,7 @@ export const paratha: DishFamily = {
       coords: [100.47, 7.01],
       from: 'roti-canai',
       arrival: '1900s, through Muslim communities near the Malaysian border',
-      summary:
-        'Stretched roti fried in margarine around banana and egg, finished with condensed milk.',
+      summary: "Stretched roti fried in margarine around banana and egg, finished with condensed milk. [5]",
       story: [
         'In southern Thailand, where Muslim communities have long ties to the Malay peninsula, roti is eaten much as it is in Malaysia: stretched, folded and served with curry for breakfast. Roti with curry remains a morning staple in towns such as Hat Yai and Pattani.',
         'Further north, and especially in Bangkok, roti became a sweet street snack sold from carts. The sheet is fried in plenty of margarine, often wrapped around egg and sliced banana, cut into squares and finished with sweetened condensed milk and sugar. It is the version most visitors know, and it shows how far a breakfast bread can drift as it travels.',
@@ -924,6 +922,7 @@ export const paratha: DishFamily = {
       },
       servedWith: ['Sweetened condensed milk', 'Sugar', 'Thai iced tea', 'Curry (in the south)'],
       whenEaten: 'Evening street snack; breakfast with curry in the south',
+      sourceRefs: [5],
       recipe: {
         serves: 4,
         prepMinutes: 30,
@@ -1004,8 +1003,7 @@ export const paratha: DishFamily = {
       coords: [-61.52, 10.66],
       from: 'origin',
       arrival: '1845–1917, with indentured labourers from North India',
-      summary:
-        'A large, butter-layered roti beaten into soft shreds and served with Trinidadian curries.',
+      summary: "A large, butter-layered roti beaten into soft shreds and served with Trinidadian curries. [5]",
       story: [
         "Indentured workers from India, many of them from the Bhojpuri-speaking regions of today's Uttar Pradesh and Bihar, arrived in Trinidad between 1845 and 1917 and brought their tawa breads with them. Over the generations those breads became a family of Trinidadian roti, of which paratha roti is the most festive.",
         "It is cooked on a tawah (tawa), then beaten with wooden paddles or clapped between the hands until it tears into soft, buttery shreds. That torn look gave it its Trinidadian name, buss-up-shut, from 'burst-up shirt'. It is served with curried goat, channa and aloo, pumpkin and mango at weddings, Hindu religious gatherings and Sunday lunches, and is eaten by Trinidadians of every background.",
@@ -1026,6 +1024,7 @@ export const paratha: DishFamily = {
       },
       servedWith: ['Curried goat', 'Curried channa and aloo', 'Pumpkin (talkari)', 'Curried mango', 'Pepper sauce'],
       whenEaten: 'Sunday lunch, weddings and religious gatherings',
+      sourceRefs: [5],
       recipe: {
         serves: 4,
         prepMinutes: 35,
@@ -1090,5 +1089,42 @@ export const paratha: DishFamily = {
         ],
       },
     },
+  ],
+  sources: [
+    {
+      "title": "Paratha",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Paratha",
+      "supports": "Family overview, preparation and regional context; historical accounts are secondary and should be read with their footnotes.",
+      "accessed": "2026-10-22"
+    },
+    {
+      "title": "Roti Prata",
+      "publisher": "National Heritage Board, Singapore",
+      "url": "https://www.roots.gov.sg/ich-landing/ich/roti-prata",
+      "supports": "Indian migrant connections, prata-making skills and the dish’s place in Singapore.",
+      "accessed": "2026-10-22"
+    },
+    {
+      "title": "South Indian parotta",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/South_Indian_parotta",
+      "supports": "Refined-flour dough, oil, layered shaping and the distinction from North Indian paratha.",
+      "accessed": "2026-10-22"
+    },
+    {
+      "title": "Roti canai",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Roti_canai",
+      "supports": "Southeast Asian flatbread names, curry accompaniments and regional adaptations.",
+      "accessed": "2026-10-22"
+    },
+    {
+      "title": "Roti",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Roti",
+      "supports": "Dish description, ingredients and regional preparation; see the article’s footnotes for further reading.",
+      "accessed": "2026-10-22"
+    }
   ],
 };

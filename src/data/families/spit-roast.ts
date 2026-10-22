@@ -85,8 +85,7 @@ export const spitRoast: DishFamily = {
       coords: [29.06, 40.19],
       from: "origin",
       arrival: "Mid-to-late 1800s, in Ottoman Bursa (by local claim) [6, 8]",
-      summary:
-        "Bursa's plated döner: thin slices over pide, covered in tomato sauce and foaming butter, with yoghurt alongside.",
+      summary: "Bursa's plated döner: thin slices over pide, covered in tomato sauce and foaming butter, with yoghurt alongside. [6]",
       story: [
         "In Turkey döner is everywhere, served on a plate, over rice, in bread or rolled in lavash [1]. Bursa's contribution is the sit-down version. The İskenderoğlu family, who trace their claim to the mid-1800s, serve thin döner slices over pieces of pide, spoon tomato sauce over the top and pour on hot butter, often at the table [1, 6, 8].",
         "The dish is now cooked across Turkey as İskender or Bursa kebabı, and the family has trademarked the name Kebapçı İskender [6]. Its essentials are thin-cut lamb, butter (traditionally from sheep's milk) that is properly hot, and yoghurt to cut through the richness [6]. A visit to Bursa often ends with the city's candied chestnuts.",
@@ -108,6 +107,7 @@ export const spitRoast: DishFamily = {
       },
       servedWith: ["Thick strained yoghurt", "Grilled green peppers and tomatoes", "Ayran", "Candied chestnuts (kestane şekeri) afterwards"],
       whenEaten: "Lunch at kebab houses; a treat for visitors to Bursa",
+      sourceRefs: [6],
       recipe: {
         serves: 4,
         prepMinutes: 40,
@@ -175,8 +175,7 @@ export const spitRoast: DishFamily = {
       coords: [35.5, 33.89],
       from: "doner-iskender",
       arrival: "Late 1800s to early 1900s, across the Ottoman Levant [2]",
-      summary:
-        "The Levant's turning roast, rolled tight in thin bread with garlic sauce or tahini and sharp pickles.",
+      summary: "The Levant's turning roast, rolled tight in thin bread with garlic sauce or tahini and sharp pickles. [2]",
       story: [
         "The vertical spit reached the Levant while it was still Ottoman, and the Turkish word for turning became shawarma [2]. Levantine cooks seasoned it from their own pantry: lemon, garlic and warm spices such as cumin, cinnamon and cardamom, with tarator, a tahini sauce, for beef or lamb and toum, a whipped garlic emulsion, for chicken [2].",
         "A shawarma sandwich is built for speed and balance. The bread is thin enough to roll tightly and is often pressed on a grill after rolling, and the meat is matched by sharp things: pickled cucumber, pink pickled turnip, parsley, tomato and onion. From the Levant it travelled with emigrants to West Africa, Europe and the Americas; Lebanese communities helped make it a staple in Nigeria and in Ottawa, Canada [2].",
@@ -197,6 +196,7 @@ export const spitRoast: DishFamily = {
       },
       servedWith: ["Toum or tahini sauce (tarator)", "Pickled turnips and cucumbers", "Chips, sometimes inside the roll", "Ayran or mint lemonade"],
       whenEaten: "Lunch or late at night from counter shops",
+      sourceRefs: [2],
       recipe: {
         serves: 4,
         prepMinutes: 35,
@@ -270,8 +270,7 @@ export const spitRoast: DishFamily = {
       coords: [23.73, 37.98],
       from: "doner-iskender",
       arrival: "1920s, with refugees from Asia Minor; a popular Athens fast food by 1970 [3]",
-      summary:
-        "Greece's pork or chicken spit roast, wrapped in thick grilled pita with tzatziki, tomato, onion and chips.",
+      summary: "Greece's pork or chicken spit roast, wrapped in thick grilled pita with tzatziki, tomato, onion and chips. [3]",
       story: [
         "Greeks from Asia Minor, resettled after the population exchange of 1922-23, are generally credited with bringing the turning spit to Greece, and after the Second World War lamb gyros was sold in Athens [3]. At first it went by its Turkish name, ντονέρ (donér); the Greek gyros, 'turn', was proposed to replace it and became standard [1, 3]. By 1970 gyros wraps were a popular fast food in Athens, and pork became the usual Greek meat, with chicken the alternative [3].",
         "A pita gyros is a wrap rather than a pocket: a soft flatbread brushed with oil and warmed on the grill, rolled around meat, tomato, onion, fried potatoes and often tzatziki [3]. It shares the counter with souvlaki, and in Athens especially 'souvlaki' is used loosely for the gyros wrap too [3].",
@@ -292,6 +291,7 @@ export const spitRoast: DishFamily = {
       },
       servedWith: ["Tzatziki", "Chips", "Village salad (horiatiki)", "A cold beer"],
       whenEaten: "A quick lunch, or late in the evening after a night out",
+      sourceRefs: [3],
       recipe: {
         serves: 4,
         prepMinutes: 40,
@@ -364,8 +364,7 @@ export const spitRoast: DishFamily = {
       coords: [13.4, 52.52],
       from: "doner-iskender",
       arrival: "Early 1970s, with Turkish workers in West Berlin [1, 9]",
-      summary:
-        "The döner sandwich as Berlin builds it: toasted Turkish bread stuffed with meat, salad and a choice of three sauces.",
+      summary: "The döner sandwich as Berlin builds it: toasted Turkish bread stuffed with meat, salad and a choice of three sauces. [1]",
       story: [
         "Turkish guest workers who came to West Germany in the 1960s brought döner with them, and in the early 1970s cooks in West Berlin began selling it stuffed into bread for people on the move [1, 9]. Who did it first is disputed. Kadir Nurman, who set up a stall by Zoo station in 1972, is the name most often cited, but Mehmet Aygün in Berlin and Nevzat Salim in Reutlingen have made rival claims, and Nurman himself allowed that others may have had the idea [9, 10].",
         "Nurman's first sandwiches held little more than meat, onion and some lettuce, but the Berlin version grew generous [9]. A wedge of Turkish bread is toasted and split, then filled with shaved veal, beef or chicken, lettuce, red cabbage, tomato, onion, often feta, and herb, garlic or chilli sauce, or all three [1]. Germany had more than 16,000 döner outlets by 2011, and the sandwich is a fixture of lunch breaks and late nights [1].",
@@ -386,6 +385,7 @@ export const spitRoast: DishFamily = {
       },
       servedWith: ["Ayran", "Extra chilli flakes", "A cola or beer"],
       whenEaten: "Lunch breaks and the small hours after clubs",
+      sourceRefs: [1],
       recipe: {
         serves: 4,
         prepMinutes: 45,
@@ -464,8 +464,7 @@ export const spitRoast: DishFamily = {
       coords: [-0.13, 51.51],
       from: "doner-iskender",
       arrival: "From 1966, in north London; widespread by the late 1970s [1, 10]",
-      summary:
-        "The late-night British doner: thin slices off a minced-lamb cone, stuffed into pitta with salad, chilli sauce and garlic mayo.",
+      summary: "The late-night British doner: thin slices off a minced-lamb cone, stuffed into pitta with salad, chilli sauce and garlic mayo. [1]",
       story: [
         "Britain's first Turkish restaurant is thought to have been opened in Soho by a Turkish Cypriot in 1940, and the first place selling vertical-spit doner in Newington Green, north London, in 1966 [10]. Kebab shops were a familiar sight in provincial cities by the late 1970s, and a later boom in the 1990s was driven partly by Kurdish former textile workers opening takeaways in Hackney and Stoke Newington [1, 10]. Turkish, Kurdish and Cypriot cooks built the trade [14], and the doner became a classic end to a night out [1, 13].",
         "The British cone is usually processed, seasoned lamb, pressed into the shape nicknamed the elephant leg [13]. It is sliced into thin sheets and packed into a pitta pocket with lettuce, onion, tomato and cabbage, then doused in chilli sauce and garlic mayonnaise [13]. Many shops also sell it with chips or in naan [1].",
@@ -487,6 +486,7 @@ export const spitRoast: DishFamily = {
       },
       servedWith: ["Chips", "Pickled green chillies", "A can of fizzy drink"],
       whenEaten: "After the pub closes, or as a Friday-night takeaway",
+      sourceRefs: [1],
       recipe: {
         serves: 4,
         prepMinutes: 25,
@@ -560,8 +560,7 @@ export const spitRoast: DishFamily = {
       coords: [-98.21, 19.04],
       from: "shawarma",
       arrival: "By the 1930s, with Lebanese immigrant families in Puebla [4, 11]",
-      summary:
-        "Puebla's pork shawarma, sliced from a spit and wrapped in soft pan árabe with smoky chipotle salsa.",
+      summary: "Puebla's pork shawarma, sliced from a spit and wrapped in soft pan árabe with smoky chipotle salsa. [15]",
       story: [
         "Immigrants from Lebanon and the wider Ottoman Levant, most of them Arabic-speaking Christians, settled in Mexico from the late 1800s, and Puebla became one of their centres [4, 11]. Families there adapted the shawarma spit, and by the 1930s places such as Puebla's Taquería Bagdad were institutions; several families claim to have invented tacos árabes [4, 11]. Pork, which the Christian immigrants had no religious reason to avoid, came to replace the original lamb [4, 11].",
         "The spicing stays close to its Levantine roots, with onion, garlic, cumin, oregano and lime, and no chilli in the meat itself [11]. Heat comes from a dark chipotle salsa at the table. The meat is wrapped in pan árabe, a thin, soft wheat flatbread close to pita, and Puebla eats it as a dish in its own right; there, al pastor and árabe compete side by side [4, 11].",
@@ -582,6 +581,7 @@ export const spitRoast: DishFamily = {
       },
       servedWith: ["Chipotle salsa", "Lime wedges", "Cold beer or agua fresca"],
       whenEaten: "Evening meals at Puebla taquerías",
+      sourceRefs: [15],
       recipe: {
         serves: 4,
         prepMinutes: 50,
@@ -658,8 +658,7 @@ export const spitRoast: DishFamily = {
       coords: [-99.13, 19.43],
       from: "tacos-arabes",
       arrival: "By the 1960s, in Mexico City taquerías [4, 11]",
-      summary:
-        "Mexico City's red, chilli-marinated pork cone, shaved onto small corn tortillas with pineapple, onion and coriander.",
+      summary: "Mexico City's red, chilli-marinated pork cone, shaved onto small corn tortillas with pineapple, onion and coriander. [4]",
       story: [
         "The step from tacos árabes to al pastor most likely happened in Mexico City, where many Lebanese lived around La Merced and non-Lebanese taquerías took up the spit; the dish as we know it had taken form by the 1960s [4, 11]. Several families and taquerías claim to have been first, and none can prove it [11]. The marinade became a red adobo of dried chillies, achiote and vinegar, and the bread became a small corn tortilla [4, 11].",
         "The trompo, or spinning top, is often crowned with a pineapple, and a skilled taquero flicks a sliver onto each taco as he shaves the meat [4, 11]. Al pastor has become Mexico's most popular taco, eaten standing at the stand in orders of several small tacos, with salsa, lime, chopped onion and coriander [4, 11].",
@@ -680,6 +679,7 @@ export const spitRoast: DishFamily = {
       },
       servedWith: ["Salsa verde", "Lime wedges", "Grilled spring onions (cebollitas)", "Horchata or a cold beer"],
       whenEaten: "Evenings and late nights at street stands",
+      sourceRefs: [4],
       recipe: {
         serves: 4,
         prepMinutes: 45,
@@ -746,8 +746,7 @@ export const spitRoast: DishFamily = {
       coords: [-63.57, 44.65],
       from: "gyros",
       arrival: "Early 1970s, adapted by a Greek immigrant restaurateur [5, 12]",
-      summary:
-        "Halifax's spiced-beef cousin of gyros, wrapped in thin pita with raw onion, tomato and a sweet garlic sauce.",
+      summary: "Halifax's spiced-beef cousin of gyros, wrapped in thin pita with raw onion, tomato and a sweet garlic sauce. [5]",
       story: [
         "The donair is usually credited to Peter Gamoulakos, a Greek immigrant who ran Velos Pizza in Bedford, on the edge of Halifax, in the early 1970s [5, 12]. His gyros did not catch on, and the ingredients he knew from Greece were hard to find, so he switched to a cone of spiced ground beef, a thin Lebanese-style pita and a sweet, garlicky sauce, and called it by the Turkish name [1, 12]. The result spread through the area's pizza and takeaway shops [12].",
         "Today the donair is Halifax's signature late-night food, and in 2015 a divided city council, with the mayor casting the deciding vote, named it the official food of Halifax [5, 12]. The sauce, made from evaporated or condensed milk, sugar, vinegar and garlic, is a point of pride: sweet, tangy and unlike anything else in the family [5, 12]. It also turns up on donair pizza and donair poutine [12].",
@@ -768,6 +767,7 @@ export const spitRoast: DishFamily = {
       },
       servedWith: ["Extra donair sauce", "Chips", "A cold beer"],
       whenEaten: "Late nights after the bars, and casual weeknight takeaway",
+      sourceRefs: [5],
       recipe: {
         serves: 4,
         prepMinutes: 20,
@@ -840,5 +840,6 @@ export const spitRoast: DishFamily = {
     { title: "Halifax Donair", publisher: "The Canadian Encyclopedia", author: "Ysh Cabana", year: "2025", url: "https://www.thecanadianencyclopedia.ca/en/article/halifax-donair", supports: "Gamoulakos at Velos Pizza in Bedford; ground beef, Lebanese pita and sweet sauce; evaporated-milk sauce; 2015 official food with mayor's deciding vote" },
     { title: "Meat, reviewed: will a lifelong veggie go wild for a doner kebab?", publisher: "Time Out London", author: "Huw Oliver", year: "2020", url: "https://www.timeout.com/london/news/meat-reviewed-will-a-lifelong-veggie-go-wild-for-a-doner-kebab-070820", supports: "British post-night-out lamb doner: 'elephant leg' cone, pitta, salad, chilli sauce" },
     { title: "Doner kebab and integration: A story worth telling", publisher: "Al Jazeera", author: "Ibrahim Dogus", year: "2017", url: "https://www.aljazeera.com/opinions/2017/3/7/doner-kebab-and-integration-a-story-worth-telling", supports: "Turkish, Kurdish and Cypriot communities behind Britain's kebab shops" },
+    {"title": "Tacos árabes", "publisher": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Tacos_%C3%A1rabes", "supports": "Dish description, ingredients and regional preparation; see the article’s footnotes for further reading.", "accessed": "2026-10-22"},
   ],
 };

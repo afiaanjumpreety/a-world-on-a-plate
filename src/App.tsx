@@ -10,6 +10,7 @@ import { CookbookPage } from './pages/CookbookPage';
 import { AboutPage } from './pages/AboutPage';
 import { NotFound } from './pages/NotFound';
 import { CreditsPage } from './pages/CreditsPage';
+import { SourcesPage } from './pages/SourcesPage';
 
 // Hash routing keeps the built site working on any static host without rewrites.
 export function App() {
@@ -26,6 +27,7 @@ export function App() {
           <Route path="cookbook" element={<CookbookPage />} />
           <Route path="about" element={<AboutPage />} />
           <Route path="credits" element={<CreditsPage />} />
+          <Route path="sources" element={<SourcesPage />} />
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>

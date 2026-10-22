@@ -15,27 +15,34 @@ export const flan: DishFamily = {
     era: 'Roman egg custards; caramel tops in the early modern era',
     confidence: 'contested',
     confidenceNote:
-      'The line from Roman egg-and-milk dishes to medieval flans is well documented, but whether Spain or France first topped a turned-out custard with caramel is unresolved, and the two may have arrived at it in parallel.',
+      "Modern caramel custard has many regional versions. Its relationship to older custards does not establish who first combined caramel with a turned-out egg-and-milk pudding. [1]",
   },
   intro:
     'Few desserts are as simple or as widely loved: eggs and milk, sweetened and baked gently until just set, then turned out under a pool of caramel. From Madrid to Manila and Caracas to Tokyo, every kitchen has its own version, firmer or softer, richer or lighter, made with fresh milk, tinned milk or cream cheese. Here is how one custard travelled.',
   history: [
-    'Roman cooks already knew that eggs could set milk into something soft and spoonable. The recipe collection known as Apicius, compiled by around the 400s CE, includes dishes of milk, eggs and honey cooked gently in a shallow pan, some sweet and some savoury. These are not flan as we know it, but they show the basic technique was established.',
-    'In medieval France and England, a "flaon" or "flawn" was usually an open pastry case filled with eggs, cream or cheese, and could be sweet or savoury. The word survives in French, Spanish and English. In Iberia, convents became famous for sweets rich in egg yolks; a common explanation is that whites were used to clarify wine or starch linen, leaving yolks to spare, though this is hard to prove.',
-    'The caramel came later. As cane sugar from Atlantic plantations grew cheaper between the 1500s and 1700s, cooks could afford to line a mould with burnt sugar, bake a custard in it and turn it out. France knows the result as crème caramel or crème renversée; Spain simply calls it flan. Which came first is not settled, and surviving recipes are too scattered to decide it. Wherever it began, it relied on the same water bath and gentle heat cooks had long used for custards.',
-    'Spanish and Portuguese colonists carried the dessert to the Americas and the Philippines, where it was absorbed into local kitchens. In the 20th century, tinned condensed and evaporated milk, which kept well in hot climates, reshaped many of these versions. Meanwhile Japan adopted custard pudding with Western cooking in the Meiji era and made it its own. Each place adjusted the recipe to the milk, eggs and sugar it had.',
+    "Custard has a long history, but that is not the same as establishing when caramel-topped flan was invented. The references here describe the modern dessert and its regional versions without resolving a single origin for all of them. The atlas therefore treats its early lineage as uncertain. [1]",
+    "The core method puts caramel into a mould before an egg-and-milk custard, cooks it gently in a water bath and turns it out so the caramel becomes a sauce. The names crème caramel and flan overlap, though “flan” can mean a different kind of tart in some places. [1]",
+    "Local versions vary in richness and texture. Brazilian pudim and Venezuelan quesillo commonly use condensed milk, Filipino leche flan is especially rich in yolks, and Japanese purin belongs to a local custard-pudding tradition. The photograph illustrates a version of the dessert, rather than a test of the recipe below. [1]"
   ],
   etymology:
     'Flan comes from French, from Old French "flaon", which goes back to a late Latin or Frankish word for a flat cake. Portuguese "pudim" and Japanese "purin" both come from the English "pudding", while Venezuelan "quesillo" means "little cheese", after its holey texture.',
   timeline: [
-    { when: 'By c. 400 CE', event: 'The Roman collection Apicius records dishes of milk, eggs and honey set by gentle cooking.' },
-    { when: 'Middle Ages', event: '"Flaons" and "flawns", custards or cheese in pastry cases, appear in French and English cooking.' },
-    { when: '1500s–1700s', event: 'Cheaper cane sugar makes caramel practical in European kitchens.' },
-    { when: '1500s–1800s', event: 'Spanish and Portuguese rule carries flan to the Americas and the Philippines.' },
-    { when: 'By the 1800s', event: 'Crème caramel is an established dish of French cookery.' },
-    { when: 'Meiji era (1868–1912)', event: 'Custard pudding reaches Japan with Western cooking and becomes purin.' },
-    { when: '1900s', event: 'Tinned condensed and evaporated milk transform flan across Latin America and the Philippines.' },
-    { when: 'Late 1900s', event: 'Mexican chocoflan and Japanese cup purin become modern favourites.' },
+    {
+      "when": "Older custard traditions",
+      "event": "Egg-and-milk custards precede the modern caramel-topped dessert; this does not establish a single inventor. [1]"
+    },
+    {
+      "when": "European cookery",
+      "event": "Crème caramel uses caramel in the mould and gentle water-bath cooking before being turned out. [1]"
+    },
+    {
+      "when": "Regional adaptations",
+      "event": "Brazilian pudim, Venezuelan quesillo and Filipino leche flan use different proportions of eggs and milk. [1]"
+    },
+    {
+      "when": "Modern Japan",
+      "event": "Purin becomes a local custard-pudding tradition. [1]"
+    }
   ],
   commonThreads: [
     'Eggs set dairy into a custard by slow, gentle heat',
@@ -79,7 +86,7 @@ export const flan: DishFamily = {
       coords: [-3.7, 40.42],
       from: 'origin',
       arrival: 'Early modern era, as cheaper sugar made caramel practical; the exact timing is uncertain',
-      summary: 'A light egg-and-milk custard scented with lemon and cinnamon, set over a thin amber caramel.',
+      summary: "A light egg-and-milk custard scented with lemon and cinnamon, set over a thin amber caramel. [1]",
       story: [
         'Flan is one of Spain\'s most familiar desserts, offered on almost every set menu and made at home for Sunday lunch. The homemade version, flan de huevo or flan casero, is distinguished from the packet mixes many Spaniards grew up with, which set with starch or gelling agents instead of eggs.',
         'Spanish cooks usually infuse the milk with lemon peel and a cinnamon stick, a pairing that also appears in natillas and arroz con leche. Flan is often baked in small individual metal moulds called flaneras and served cold, sometimes with a spoonful of whipped cream.',
@@ -100,6 +107,7 @@ export const flan: DishFamily = {
       },
       servedWith: ['Whipped cream (nata)', 'Coffee', 'Sweet sherry'],
       whenEaten: 'Dessert after the midday meal, especially on the set menu',
+      sourceRefs: [1],
       recipe: {
         serves: 6,
         prepMinutes: 20,
@@ -151,7 +159,7 @@ export const flan: DishFamily = {
       coords: [2.35, 48.86],
       from: 'origin',
       arrival: 'Developed in French cookery; established by the 1800s',
-      summary: 'A vanilla custard enriched with extra yolks, baked in ramekins until barely set and turned out under caramel.',
+      summary: "A vanilla custard enriched with extra yolks, baked in ramekins until barely set and turned out under caramel. [1]",
       story: [
         'In France the dish is called crème caramel or crème renversée, "turned-over cream", and it sits within a family of baked custards that includes pots de crème and crème brûlée. It was an established part of French cookery by the 1800s, and spread with French culinary influence across Europe and the colonial world.',
         'French cooks tend to flavour it with a split vanilla pod and add extra yolks for a silkier set. Long a staple of the bistro dessert menu and the family table, it is valued for being made ahead and for costing very little.',
@@ -172,6 +180,7 @@ export const flan: DishFamily = {
       },
       servedWith: ['Coffee', 'Tuiles or sablé biscuits'],
       whenEaten: 'Dessert at bistros and family lunches',
+      sourceRefs: [1],
       recipe: {
         serves: 6,
         prepMinutes: 20,
@@ -222,7 +231,7 @@ export const flan: DishFamily = {
       coords: [-9.14, 38.72],
       from: 'origin',
       arrival: 'Early modern era, alongside Portugal\'s egg-rich convent sweets',
-      summary: 'A rich, egg-heavy custard cooked in a tall ring mould and coated in dark caramel.',
+      summary: "A rich, egg-heavy custard cooked in a tall ring mould and coated in dark caramel. [1]",
       story: [
         'Portugal is famous for doces conventuais, convent sweets built on egg yolks and sugar, and its custards share that richness. Pudim flan is the everyday version, made with plenty of eggs and milk and cooked in a tall, lidded ring mould, the forma de pudim, set in a water bath on the stove or in the oven.',
         'Regional versions show how far the idea can stretch. Pudim Abade de Priscos, from the Minho, is made with yolks, port and a little bacon fat. In homes and pastelarias across the country, pudim remains a standard for celebrations and Sunday lunch.',
@@ -243,6 +252,7 @@ export const flan: DishFamily = {
       },
       servedWith: ['Coffee (bica)', 'Port wine'],
       whenEaten: 'Sunday lunch, birthdays and family celebrations',
+      sourceRefs: [1],
       recipe: {
         serves: 8,
         prepMinutes: 20,
@@ -294,7 +304,7 @@ export const flan: DishFamily = {
       coords: [-46.63, -23.55],
       from: 'pudim',
       arrival: 'Portuguese pudim in colonial times; the condensed-milk version spread in the 20th century',
-      summary: 'Condensed milk, milk and eggs blended and baked in a ring mould, the standard Brazilian party dessert.',
+      summary: "Condensed milk, milk and eggs blended and baked in a ring mould, the standard Brazilian party dessert. [1]",
       story: [
         'Brazil inherited the Portuguese love of pudim, but in the 20th century tinned condensed milk, widely sold and heavily promoted in recipe booklets, changed the recipe. The modern pudim de leite is built around one tin of condensed milk, the same tin refilled with milk as a measure, and a few eggs.',
         'It is so common that it is often simply called pudim. It appears at birthdays, bakeries and Sunday lunches, and arguments continue over whether a perfect pudim should be completely smooth or may have a few small holes. Bakeries sell it whole or by the slice, and home cooks usually bake it a day ahead so it can chill overnight.',
@@ -315,6 +325,7 @@ export const flan: DishFamily = {
       },
       servedWith: ['Coffee (cafezinho)'],
       whenEaten: 'Birthday parties, Sunday lunch and bakery counters',
+      sourceRefs: [1],
       recipe: {
         serves: 8,
         prepMinutes: 15,
@@ -363,7 +374,7 @@ export const flan: DishFamily = {
       coords: [-99.13, 19.43],
       from: 'flan-espanol',
       arrival: 'Colonial era (1521–1821), with Spanish cooks and convent kitchens',
-      summary: 'A creamy flan made with condensed and evaporated milk and perfumed with Mexican vanilla.',
+      summary: "A creamy flan made with condensed and evaporated milk and perfumed with Mexican vanilla. [1]",
       story: [
         'Flan came to New Spain with Spanish cooking and was taken up in convents and wealthy households, alongside other egg-and-sugar sweets. Mexico had something to add: vanilla, from an orchid native to the country, which became the defining flavour of the Mexican version.',
         'In the 20th century, tinned milks made flan cheaper and richer, and today it is sold in markets, bakeries and restaurants nationwide. A modern child is chocoflan, often called pastel imposible, in which chocolate cake batter and flan mix swap places as they bake, leaving flan on top and cake below.',
@@ -384,6 +395,7 @@ export const flan: DishFamily = {
       },
       servedWith: ['Café de olla', 'Fresh fruit'],
       whenEaten: 'Dessert after comida, and at family gatherings',
+      sourceRefs: [1],
       recipe: {
         serves: 8,
         prepMinutes: 15,
@@ -433,7 +445,7 @@ export const flan: DishFamily = {
       coords: [120.98, 14.6],
       from: 'flan-espanol',
       arrival: 'Spanish colonial era (1565–1898), via Spain and the Manila galleon link with Mexico',
-      summary: 'A dense, glossy custard made only with egg yolks and tinned milk, steamed in oval llanera tins.',
+      summary: "A dense, glossy custard made only with egg yolks and tinned milk, steamed in oval llanera tins. [1]",
       story: [
         'Spanish rule brought flan to the Philippines, and Filipino cooks made it far richer. A popular story says Spanish friars used egg whites in the mortar of colonial churches, leaving yolks for desserts; historians treat this as a legend, but yolk-rich sweets are certainly a Filipino speciality.',
         'Leche flan is steamed in llaneras, small oval tin moulds, and it is a fixture of fiestas, Christmas noche buena and birthday tables. Tinned condensed and evaporated milk, widely used since the American period, give it its density. It also tops halo-halo and fills cakes.',
@@ -454,6 +466,7 @@ export const flan: DishFamily = {
       },
       servedWith: ['Halo-halo', 'Fiesta spreads', 'Salabat (ginger tea)'],
       whenEaten: 'Fiestas, Christmas, birthdays and family celebrations',
+      sourceRefs: [1],
       recipe: {
         serves: 8,
         prepMinutes: 20,
@@ -503,7 +516,7 @@ export const flan: DishFamily = {
       coords: [-66.9, 10.49],
       from: 'flan-espanol',
       arrival: 'Spanish colonial flan, transformed by condensed milk in the 20th century',
-      summary: 'A Venezuelan caramel custard deliberately full of small holes, named for its cheese-like look.',
+      summary: "A Venezuelan caramel custard deliberately full of small holes, named for its cheese-like look. [1]",
       story: [
         'Venezuela\'s version of flan is named quesillo, "little cheese", because a cut slice is full of small holes, like some fresh cheeses. Where most flan-makers avoid bubbles, Venezuelan cooks blend the mixture and cook it in a way that encourages them.',
         'It is made with condensed milk, milk and whole eggs, flavoured with vanilla and sometimes a splash of rum, and steamed in a lidded mould called a quesillera. It is a fixture of birthday parties and family Sunday lunches, often alongside a slice of cake.',
@@ -524,6 +537,7 @@ export const flan: DishFamily = {
       },
       servedWith: ['Birthday cake', 'Coffee (guayoyo)'],
       whenEaten: 'Birthday parties and Sunday lunch',
+      sourceRefs: [1],
       recipe: {
         serves: 8,
         prepMinutes: 15,
@@ -574,7 +588,7 @@ export const flan: DishFamily = {
       coords: [-66.11, 18.47],
       from: 'flan-espanol',
       arrival: '20th century, as American cream cheese met the island\'s Spanish-rooted flan',
-      summary: 'A thick, tangy flan made with cream cheese and tinned milks, somewhere between custard and cheesecake.',
+      summary: "A thick, tangy flan made with cream cheese and tinned milks, somewhere between custard and cheesecake. [1]",
       story: [
         'Puerto Rico inherited flan from Spanish rule, and after it became a United States territory in 1898, American groceries such as cream cheese and tinned milks became part of island cooking. Flan de queso brings them together, blending cream cheese into a custard for a denser, tangier result.',
         'It is one of several island flans, alongside versions made with coconut, pumpkin or breadfruit, and is a staple of Christmas and family gatherings. Bakeries and restaurants sell it by the slice, and home cooks value it because it is firmer than classic flan, cuts cleanly and travels well to a party.',
@@ -595,6 +609,7 @@ export const flan: DishFamily = {
       },
       servedWith: ['Coffee (café con leche)', 'Christmas spreads'],
       whenEaten: 'Christmas, holidays and family gatherings',
+      sourceRefs: [1],
       recipe: {
         serves: 8,
         prepMinutes: 15,
@@ -646,7 +661,7 @@ export const flan: DishFamily = {
       coords: [139.69, 35.69],
       from: 'creme-caramel',
       arrival: 'Meiji era (1868–1912), with Western-style cooking; named from the English "pudding"',
-      summary: 'A small custard pudding with bitter caramel sauce, sold everywhere from retro cafes to convenience stores.',
+      summary: "A small custard pudding with bitter caramel sauce, sold everywhere from retro cafes to convenience stores. [1]",
       story: [
         'Custard pudding arrived in Japan with Western cooking during the Meiji era, when European dishes were adapted for Japanese tastes in hotels and the new yōshoku restaurants. Its name, purin, is a Japanese rendering of "pudding". By the mid-1900s it was a fixture of coffee shops (kissaten) and department-store dining rooms.',
         'Factory-made purin in cups became widespread from the 1970s, and today it is a convenience-store staple. Styles divide between firm, old-fashioned "katame" purin and the soft, almost melting "nameraka" kind. The caramel is often cooked darker and served as a bitter sauce.',
@@ -667,6 +682,7 @@ export const flan: DishFamily = {
       },
       servedWith: ['Whipped cream', 'A glacé cherry', 'Coffee'],
       whenEaten: 'Afternoon treat, at kissaten or from the convenience store',
+      sourceRefs: [1],
       recipe: {
         serves: 4,
         prepMinutes: 15,
@@ -709,5 +725,14 @@ export const flan: DishFamily = {
         ],
       },
     },
+  ],
+  sources: [
+    {
+      "title": "Crème caramel",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Cr%C3%A8me_caramel",
+      "supports": "Family overview, preparation and regional context; historical accounts are secondary and should be read with their footnotes.",
+      "accessed": "2026-10-22"
+    }
   ],
 };

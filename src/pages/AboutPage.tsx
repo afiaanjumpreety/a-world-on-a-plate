@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { useDocumentTitle } from '../lib/useDocumentTitle';
 
 export function AboutPage() {
@@ -29,17 +30,19 @@ export function AboutPage() {
         </p>
         <h2>Sources</h2>
         <p>
-          Small numbers in the text, like this<sup className="cite"><a href="#/about">1</a></sup>, point to the
-          numbered sources at the bottom of each dish page. Every source is a page that was read while checking that
-          dish: encyclopaedias, UNESCO listings, university and museum pages, and food journalism. Claims that no
-          source supported were softened or removed. Online sources were preferred so you can check them yourself.
+          Small numbers in the text point to numbered references at the bottom of each dish page. The{' '}
+          <Link to="/sources">research & references</Link> page collects the reading in one place, with notes on what
+          each source supports. These include encyclopaedia articles, heritage records and food journalism.
+          Wikipedia entries provide an overview and footnotes for further reading. A heritage listing documents a
+          tradition; it does not establish who invented it. Historical routes are simplified interpretations.
         </p>
         <h2>Photographs</h2>
         <p>
-          The photos come from Wikimedia Commons under free licences (Creative Commons, public domain or GFDL), with
-          the photographer credited under each one. Every photo was checked by eye to make sure it shows the dish it
-          is labelled as. Where no good free photo exists, the dish keeps its line drawing. The{' '}
-          <a href="#/credits">photo credits</a> page lists them all.
+          The photos come from Wikimedia Commons and selected Flickr photographers under Creative Commons BY/BY-SA, CC0 or public-domain terms, with
+          the photographer credited beneath feature photos. The{' '}
+          <Link to="/credits">photo credits</Link> page also credits photos used on cards and decorative plates and
+          links to each original file and licence. Photos illustrate the dish; they do not show a test of our recipe.
+          Where a version has no photograph, its line drawing remains.
         </p>
         <h2>The recipes</h2>
         <p>

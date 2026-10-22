@@ -30,7 +30,7 @@ export function FamilyPage() {
               <span aria-hidden="true">/</span>
               <span aria-current="page">{family.name}</span>
             </nav>
-            <span className="eyebrow">{family.category} · born in {family.origin.region}</span>
+            <span className="eyebrow">{family.category} · roots in {family.origin.region}</span>
             <h1 className="display">{family.name}</h1>
             <p className="family-aka">{family.alsoKnownAs.join(' · ')}</p>
             <p className="lede">
@@ -70,8 +70,8 @@ export function FamilyPage() {
               The journey
             </h2>
             <p className="section-sub">
-              The hatched country is where it began. Each arc runs from the version it grew out of. Click a pin to open
-              that version.
+              The hatched country marks a representative origin. Arcs show interpreted connections, rather than
+              verified travel routes. Click a pin to explore a version.
             </p>
           </div>
         </div>
@@ -180,8 +180,8 @@ export function FamilyPage() {
                 Sources
               </h2>
               <p className="section-sub">
-                The numbers in the text point here. Each source was read for this page; where they disagree, the text
-                says so.
+                Follow the numbers in the text to the reading behind this story. Each entry explains what it
+                supports. <Link to="/sources">Browse all research & references →</Link>
               </p>
             </div>
           </div>

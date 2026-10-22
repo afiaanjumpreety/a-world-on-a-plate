@@ -91,6 +91,7 @@ export function Layout() {
               Cookbook{saved.length > 0 && <span className="nav-count">{saved.length}</span>}
             </NavLink>
             <NavLink to="/about">About</NavLink>
+            <NavLink to="/sources">References</NavLink>
           </nav>
           <div className="header-actions">
             <button type="button" className="search-btn" onClick={() => setPaletteOpen(true)}>
@@ -134,7 +135,8 @@ export function Layout() {
             <Link to="/dishes">All dishes</Link>
             <Link to="/countries">Countries</Link>
             <Link to="/cookbook">My cookbook</Link>
-            <Link to="/about">About & sources</Link>
+            <Link to="/about">About the atlas</Link>
+            <Link to="/sources">Research & references</Link>
             <Link to="/credits">Photo credits</Link>
           </nav>
         </div>

@@ -20,10 +20,9 @@ export const empanada: DishFamily = {
   intro:
     "Fold dough over a spoonful of filling, seal the edge and bake or fry it, and you have a meal that travels. Spanish and Portuguese ships carried that idea around the world, and wherever it landed cooks rebuilt it from local staples: corn masa in Colombia, rice flour in the Philippines, a soupy stew set with gelatin in Bolivia. The fold stayed; almost everything else changed.",
   history: [
-    "Wrapping a filling in dough is far older than Spain, and cooks around the Mediterranean had done it for centuries. The empanada as a named dish, though, is Iberian. Late medieval Catalan cookbooks describe meat and fish baked inside bread or pastry, and the Libre del Coch, printed in Barcelona in 1520, includes empanadas among its recipes. Galicia, on the Atlantic coast, made the large shared pie its own and still claims it with pride.",
-    "Some historians suggest that the filled pastries of medieval Arab and Persian cooking, such as sanbusak, influenced Iberian cooks during the centuries of al-Andalus. It is a reasonable hypothesis, given how much else in Spanish cooking traces to that period, but there is no clear documentary line from one to the other, and it is best read as a possibility rather than a fact.",
-    "From the 1500s, Spanish and Portuguese ships carried the empanada across the Atlantic and, later, the Pacific. In each colony it met new ingredients. Where wheat was scarce, cooks used corn; where frying was easier than baking, it went into hot fat; and fillings took up chillies, potatoes, annatto, olives and local meats. The Philippines, governed for centuries through New Spain, made it with rice flour.",
-    "The result is one of the most widely shared dishes of the Spanish- and Portuguese-speaking world. Every country has a version it considers obviously correct, and rivalries within countries, such as Salta against Tucumán in Argentina, can be fierce. The empanada has also kept moving, carried more recently by emigrants to the United States, Europe and Australia, where bakeries often sell several national styles side by side.",
+    "Empanada names a filled pastry associated with Iberia and now made across many regions. Medieval references precede the 1520 Catalan cookbook Llibre del Coch, which includes filled pastries. Those records document the name and technique without settling the origin of all enclosed pies. [1]",
+    "Local versions change the dough, filling and cooking method. Argentine regional empanadas, Chilean pino pastries and Colombian or Venezuelan corn-based versions illustrate how much can change while the fold remains recognisable. [1]",
+    "Bolivia’s salteña uses a juicy filling set with gelatin before baking, which makes it possible to enclose a stew in dough. Brazil’s pastel is usually a thin pastry fried at street markets. These are distinct local traditions, brought together here for comparison. [2, 3]"
   ],
   etymology:
     "Empanada is the past participle of the Spanish empanar, 'to wrap or coat in bread', from pan, bread. Brazil's pastel takes its name from the Portuguese word for a pastry, and Bolivia's salteña is named after the Argentine city of Salta.",
@@ -80,8 +79,7 @@ export const empanada: DishFamily = {
       coords: [-8.54, 42.88],
       from: "origin",
       arrival: "Late Middle Ages; a long-standing Galician speciality",
-      summary:
-        "Galicia's large, shared pie of bread dough around tuna, sardines, scallops or pork, cut into squares.",
+      summary: "Galicia's large, shared pie of bread dough around tuna, sardines, scallops or pork, cut into squares. [1]",
       story: [
         "In Galicia the empanada is not a hand pie but a tray-sized one, baked in a round or rectangular tin, cut into squares and carried to fiestas, beaches and family lunches. Bakeries sell it by the slice, and it is a staple of village festivals across the region.",
         "The dough can be a bread dough enriched with oil from the filling, or a richer, flakier pastry, and some country versions use corn flour. Fillings follow the coast and the season: bonito or tuna, sardines, cockles, scallops, octopus or salt cod, or pork loin marinated in paprika. Almost all start with a slow sofrito of onion and peppers coloured with pimentón.",
@@ -102,6 +100,7 @@ export const empanada: DishFamily = {
       },
       servedWith: ["A glass of Albariño or Ribeiro", "Pimientos de Padrón", "A green salad"],
       whenEaten: "Fiestas, picnics and beach days, or by the slice as a tapa",
+      sourceRefs: [1],
       recipe: {
         serves: 8,
         prepMinutes: 45,
@@ -166,8 +165,7 @@ export const empanada: DishFamily = {
       coords: [-65.41, -24.79],
       from: "origin",
       arrival: "From the late 1500s, with Spanish settlement of the northwest",
-      summary:
-        "Small, juicy beef empanadas from Argentina's northwest, closed with a hand-pleated repulgue and baked hot.",
+      summary: "Small, juicy beef empanadas from Argentina's northwest, closed with a hand-pleated repulgue and baked hot. [1]",
       story: [
         "Empanadas are eaten all over Argentina, but the northwestern provinces of Salta, Tucumán and Jujuy, settled by the Spanish from Peru in the late 1500s, treat them as a point of identity. They are small, made to be eaten in two or three bites while leaning forward to catch the juice, and baked in wood-fired clay ovens or fried in lard.",
         "Salta and Tucumán argue as only neighbours can. Salta's filling usually includes diced potato and spring onion in paprika-red fat; Tucumán's typically leaves out the potato and relies on knife-cut beef and plenty of onion. Both seal their empanadas with the repulgue, a rope-like pleat, and cooks often use different patterns to mark different fillings.",
@@ -188,6 +186,7 @@ export const empanada: DishFamily = {
       },
       servedWith: ["Locro (maize and bean stew) at national holidays", "A glass of Torrontés from Cafayate", "Salsa picante"],
       whenEaten: "Weekend lunches, national holidays and folk-music peñas",
+      sourceRefs: [1],
       recipe: {
         serves: 6,
         prepMinutes: 75,
@@ -253,8 +252,7 @@ export const empanada: DishFamily = {
       coords: [-70.67, -33.45],
       from: "origin",
       arrival: "From the 1500s, with Spanish settlement of central Chile",
-      summary:
-        "Chile's large baked beef-and-onion empanada, with egg, a black olive and raisins tucked inside.",
+      summary: "Chile's large baked beef-and-onion empanada, with egg, a black olive and raisins tucked inside. [1]",
       story: [
         "In Chile, empanada de pino is close to a national dish, eaten above all at Sunday lunch and during Fiestas Patrias around 18 September, when bakeries work through the night. Pino is the filling: a great deal of onion cooked down with chopped or minced beef, cumin and paprika, then left to set before it is wrapped.",
         "Each empanada is large, a meal for one, and folded into a rectangle rather than a half-moon, with the edges turned in like an envelope. Inside, alongside the pino, sit a piece of hard-boiled egg, a whole black olive, often with its stone, and a few raisins. That contrast of sweet and salty is the signature.",
@@ -275,6 +273,7 @@ export const empanada: DishFamily = {
       },
       servedWith: ["Pebre (coriander, onion and chilli salsa)", "A glass of Chilean red wine"],
       whenEaten: "Sunday lunch and Fiestas Patrias in September",
+      sourceRefs: [1],
       recipe: {
         serves: 8,
         prepMinutes: 60,
@@ -349,8 +348,7 @@ export const empanada: DishFamily = {
       coords: [-75.57, 6.25],
       from: "origin",
       arrival: "Colonial era, as Spanish empanadas met Indigenous corn cooking",
-      summary:
-        "Crisp fried half-moons of yellow corn masa filled with potato and beef, served with a sharp ají.",
+      summary: "Crisp fried half-moons of yellow corn masa filled with potato and beef, served with a sharp ají. [1]",
       story: [
         "Colombia's empanadas are made from corn rather than wheat, a sign of how firmly Indigenous maize cooking shaped colonial kitchens. The dough is yellow corn, traditionally boiled and ground at home, now more often made from precooked corn flour. Rolled thin and fried, it turns brittle and golden, quite unlike the soft wheat crusts of Spain or Argentina.",
         "They are small and sold almost everywhere: from street carts, bakeries, school gates and corner shops, kept warm in glass cases. Fillings vary by region, from potato with beef or pork in Antioquia to potato and peanut pipián in Popayán, but nearly all come with ají, a thin, sharp sauce of chilli, coriander, spring onion and vinegar, and a squeeze of lime.",
@@ -371,6 +369,7 @@ export const empanada: DishFamily = {
       },
       servedWith: ["Ají picante", "Lime wedges", "A tinto (small black coffee) or a cold soda"],
       whenEaten: "A street snack at any hour, often mid-afternoon",
+      sourceRefs: [1],
       recipe: {
         serves: 6,
         prepMinutes: 60,
@@ -443,8 +442,7 @@ export const empanada: DishFamily = {
       coords: [-66.9, 10.49],
       from: "origin",
       arrival: "Colonial era; reshaped by precooked corn flour after 1960",
-      summary:
-        "Large, thin-crusted fried empanadas of white corn dough, filled with shredded beef, cheese, black beans or dogfish.",
+      summary: "Large, thin-crusted fried empanadas of white corn dough, filled with shredded beef, cheese, black beans or dogfish. [1]",
       story: [
         "Venezuelan empanadas share their dough with the arepa: white corn, once soaked, cooked and ground at home, and since the 1960s mostly made from precooked corn flour, which cut hours of work to minutes. The dough is rolled thin, folded around a generous filling and fried until bubbled and crisp, giving a larger, lighter empanada than Colombia's.",
         "They are above all breakfast food, bought from roadside stalls and beach kiosks and eaten standing. Fillings follow the arepa menu: carne mechada (shredded beef), white cheese, chicken, or black beans with beef and plantain in the style of pabellón criollo, the national plate. On Margarita Island and the eastern coast, empanadas de cazón, filled with stewed dogfish, are the classic.",
@@ -465,6 +463,7 @@ export const empanada: DishFamily = {
       },
       servedWith: ["Guasacaca (avocado and herb sauce)", "Garlic sauce (salsa de ajo)", "Fresh fruit juice or malta"],
       whenEaten: "Breakfast, from roadside stalls and beach kiosks",
+      sourceRefs: [1],
       recipe: {
         serves: 6,
         prepMinutes: 45,
@@ -527,8 +526,7 @@ export const empanada: DishFamily = {
       coords: [-68.15, -16.5],
       from: "argentina-salta",
       arrival: "1800s, from Salta by popular account",
-      summary:
-        "Bolivia's upright, sweet-crusted baked empanada, filled with a soupy, gelatin-set stew and eaten mid-morning.",
+      summary: "Bolivia's upright, sweet-crusted baked empanada, filled with a soupy, gelatin-set stew and eaten mid-morning. [2]",
       story: [
         "The salteña is named after Salta, and a popular story credits Juana Manuela Gorriti, a writer whose family went into exile in Bolivia in the 1830s, with making them there; people asked for the empanadas of the salteña, the woman from Salta. The story is widely told and hard to verify, but the name makes the Argentine link plain.",
         "What Bolivian cooks made of it is distinctive. The filling, called jigote, is a juicy stew of beef or chicken with potato, peas, olives and egg, seasoned with chilli and a little sugar, and set with gelatin so it can be wrapped. In the oven it melts back into broth inside a sweet, orange-tinged crust. Salteñas are a morning food, held upright, and eating one without spilling is a point of pride.",
@@ -549,6 +547,7 @@ export const empanada: DishFamily = {
       },
       servedWith: ["Llajwa (tomato and locoto chilli salsa)", "A spoon for the juice", "Coffee or a soft drink"],
       whenEaten: "Mid-morning, roughly between ten and noon",
+      sourceRefs: [2],
       recipe: {
         serves: 6,
         prepMinutes: 90,
@@ -633,8 +632,7 @@ export const empanada: DishFamily = {
       coords: [-99.13, 19.43],
       from: "origin",
       arrival: "From the 1500s, with Spanish colonists in New Spain",
-      summary:
-        "Small baked half-moons of tender wheat dough filled with pumpkin cooked down with piloncillo and cinnamon.",
+      summary: "Small baked half-moons of tender wheat dough filled with pumpkin cooked down with piloncillo and cinnamon. [1]",
       story: [
         "Mexico has more empanadas than one entry can hold. In Oaxaca and the south they are made from corn masa and griddled or fried, often around mole amarillo; in bakeries across the country, wheat empanadas are sweet. All descend from the pastries Spanish colonists brought to New Spain, rebuilt with local corn, chillies, squash and cane sugar.",
         "The bakery empanada de calabaza is the one many Mexican families know from childhood. Pumpkin, a squash domesticated in Mexico thousands of years ago, is cooked with piloncillo, the cone of unrefined cane sugar, and cinnamon until thick, then wrapped in a short, lightly sweet dough and baked. They appear at Christmas, during Lent and with afternoon coffee all year.",
@@ -655,6 +653,7 @@ export const empanada: DishFamily = {
       },
       servedWith: ["Café de olla", "Hot chocolate", "A glass of cold milk"],
       whenEaten: "Afternoon coffee, Christmas and Lent",
+      sourceRefs: [1],
       recipe: {
         serves: 8,
         prepMinutes: 45,
@@ -718,8 +717,7 @@ export const empanada: DishFamily = {
       coords: [120.56, 18.06],
       from: "mexico",
       arrival: "Spanish colonial era, via the Manila galleon link with New Spain",
-      summary:
-        "A large, thin, bright orange rice-flour shell, fried to order around green papaya, mung bean sprouts, longganisa and a whole egg.",
+      summary: "A large, thin, bright orange rice-flour shell, fried to order around green papaya, mung bean sprouts, longganisa and a whole egg. [1]",
       story: [
         "The empanada reached the Philippines under Spanish rule, which for two and a half centuries was administered through New Spain and tied to Acapulco by the Manila galleons. In the Ilocos region of northern Luzon, cooks rebuilt it around local staples: a dough of rice flour, coloured orange with annatto, itself an American plant that crossed the Pacific.",
         "Batac and Vigan both claim the best version, and stalls in each town make them to order in the evening. The cook presses a thin sheet of dough onto a banana leaf, spreads it with grated green papaya and mung beans or their sprouts, cracks in an egg, adds crumbled Ilocos longganisa, folds it with the leaf and slides it into hot oil. It is eaten with sukang Iloko, the region's dark cane vinegar.",
@@ -740,6 +738,7 @@ export const empanada: DishFamily = {
       },
       servedWith: ["Sukang Iloko (cane vinegar) with onion and chilli", "A cold soft drink"],
       whenEaten: "An evening snack from stalls in Batac and Vigan",
+      sourceRefs: [1],
       recipe: {
         serves: 4,
         prepMinutes: 45,
@@ -808,8 +807,7 @@ export const empanada: DishFamily = {
       coords: [-46.63, -23.55],
       from: "origin",
       arrival: "Early to mid-1900s, at São Paulo's street markets",
-      summary:
-        "Brazil's street-market pastry: a thin wheat rectangle fried until blistered, filled with beef, cheese or heart of palm.",
+      summary: "Brazil's street-market pastry: a thin wheat rectangle fried until blistered, filled with beef, cheese or heart of palm. [3]",
       story: [
         "Portuguese cooking has long had fried and baked pastries called pastéis, and Brazil's version owes that heritage its name. How it took its modern form is debated. A widely repeated story says Chinese immigrants in São Paulo adapted spring-roll techniques to Brazilian fillings, and that Japanese immigrants took over many stalls around the Second World War; the story is plausible but poorly documented.",
         "Whoever shaped it, the pastel became the anchor of the feira livre, São Paulo's open-air street markets. The dough, often made with a splash of cachaça or vinegar, is rolled paper-thin, folded around a spoonful of filling and dropped into hot oil, where it puffs and blisters. It is eaten hot from a paper napkin, often with caldo de cana, fresh-pressed sugarcane juice.",
@@ -830,6 +828,7 @@ export const empanada: DishFamily = {
       },
       servedWith: ["Caldo de cana (sugarcane juice)", "Hot pepper sauce"],
       whenEaten: "Market mornings, especially at weekends",
+      sourceRefs: [3],
       recipe: {
         serves: 6,
         prepMinutes: 50,
@@ -882,5 +881,28 @@ export const empanada: DishFamily = {
         ],
       },
     },
+  ],
+  sources: [
+    {
+      "title": "Empanada",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Empanada",
+      "supports": "Family overview, preparation and regional context; historical accounts are secondary and should be read with their footnotes.",
+      "accessed": "2026-10-22"
+    },
+    {
+      "title": "Salteña",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Salte%C3%B1a",
+      "supports": "Bolivian baked empanadas with gelatin-set filling that becomes juicy when heated.",
+      "accessed": "2026-10-22"
+    },
+    {
+      "title": "Pastel (Brazilian food)",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Pastel_%28Brazilian_food%29",
+      "supports": "Brazilian fried pastries, street markets and common fillings.",
+      "accessed": "2026-10-22"
+    }
   ],
 };

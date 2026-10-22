@@ -20,10 +20,9 @@ export const milkTea: DishFamily = {
   intro:
     'Tea began as a leaf from the hills of southwest China, but almost everywhere it travelled, someone poured milk into it. On the Tibetan plateau it is churned with butter and salt; in London it gets a splash from the fridge; in Kuala Lumpur it is pulled between two jugs until it foams. This is the story of one plant and the many ways it met dairy.',
   history: [
-    'The tea plant, Camellia sinensis, grows wild in the forested hills where southwest China meets Myanmar and northeast India. People there chewed, pickled and brewed its leaves long before written records, and by the Han dynasty (206 BCE to 220 CE) texts suggest tea was being traded in Sichuan. By the Tang dynasty, tea had become a national habit, and the scholar Lu Yu wrote his Classic of Tea in the late 700s, describing how to pick, press and brew it.',
-    'Tea travelled out of China in compressed bricks, light enough to carry and hard enough to survive months on the road. Under the Song dynasty the state traded tea for horses with Tibetan and steppe peoples, along mountain paths later called the Tea Horse Road. On the cold plateau and the grasslands, where dairy was the staple, tea was boiled with butter, milk and salt, becoming something closer to soup than a refreshment.',
-    'By sea, Dutch merchants brought tea to Europe in the early 1600s, and the English followed. Tea was expensive at first, but by the 1700s it had become an everyday British drink, usually taken with milk and sugar. To break China\'s monopoly, the British began plantations in Assam in the 1830s, using a tea plant native to the region, and later in Sylhet, Darjeeling and Ceylon.',
-    'Surprisingly, South Asia was not a nation of tea drinkers until the 20th century, when the tea industry ran campaigns to sell its produce at home. Street vendors made it their own, boiling the leaf with milk, sugar and spices. From there, chai followed migrants to Malaya, while British habits shaped Hong Kong\'s milk tea, and Taiwan added tapioca pearls in the 1980s.',
+    "Tea comes from Camellia sinensis, with early cultivation and drinking traditions in China. Its botanical history is complex, and adding milk is a separate story: many cultures combine the two in different ways. The origin pin represents tea’s wider history, rather than the invention of every milk tea. [1, 2]",
+    "The milk-tea family includes salted preparations, spiced chai and sweet condensed-milk drinks. Hong Kong’s heritage office describes its local milk tea as an evolution of English milk tea, with a skilled sequence of blending, brewing and pouring. [2, 3]",
+    "Taiwanese bubble tea emerged in the 1980s and made chewy tapioca pearls a defining addition to many versions. Its later international popularity is a modern chapter in this history, distinct from the much older movement of tea leaves and tea-drinking customs. [4]"
   ],
   etymology:
     'Almost every word for tea traces back to one of two Chinese pronunciations: "cha", from Mandarin and Cantonese, which travelled overland and through Portuguese Macau to give chai, chay, shai and chá; and "te", from the Min Chinese of the Fujian coast, which Dutch sea traders carried to Europe as thé, Tee and tea, and which also gave Malay its "teh".',
@@ -81,7 +80,7 @@ export const milkTea: DishFamily = {
       coords: [91.11, 29.65],
       from: 'origin',
       arrival: 'By the medieval period, as brick tea came up the Tea Horse Road from Yunnan and Sichuan',
-      summary: 'Long-boiled brick tea churned with butter and salt, drunk by the bowlful on the high plateau.',
+      summary: "Long-boiled brick tea churned with butter and salt, drunk by the bowlful on the high plateau. [5]",
       story: [
         'Tibetan tradition links the arrival of tea to the 7th-century marriage of the Tang princess Wencheng to the king Songtsen Gampo, though historians treat this as tradition rather than record. What is certain is that compressed tea from Yunnan and Sichuan was carried up to the plateau by mule and porter for centuries, traded for horses and wool.',
         'At altitude, where the air is cold and dry, butter tea is fuel as much as drink. It supplies fat, salt and warmth, and households may drink many bowls a day. A host refills a guest\'s bowl after every sip, and roasted barley flour (tsampa) is often stirred into the last of it to make a dough eaten by hand.',
@@ -102,6 +101,7 @@ export const milkTea: DishFamily = {
       },
       servedWith: ['Tsampa (roasted barley flour)', 'Dried yak cheese', 'Momos', 'Khapse (fried biscuits) at Losar'],
       whenEaten: 'From early morning onwards, many bowls a day',
+      sourceRefs: [5],
       recipe: {
         serves: 4,
         prepMinutes: 5,
@@ -144,7 +144,7 @@ export const milkTea: DishFamily = {
       coords: [106.92, 47.92],
       from: 'origin',
       arrival: 'Brick tea carried north by caravan; an everyday staple by the Qing era (1600s–1900s)',
-      summary: 'Green brick tea boiled with milk and salt, ladled high to aerate, and offered to every guest.',
+      summary: "Green brick tea boiled with milk and salt, ladled high to aerate, and offered to every guest. [6]",
       story: [
         'For centuries, Chinese merchants sent compressed tea north across the Gobi by camel caravan, and on the steppe it became so valuable that bricks were sometimes used as currency. Herding families combined it with the milk of their cows, goats, mares or camels, boiling the two together in a wide pan over the stove.',
         'Süütei tsai is the first thing offered to anyone who enters a ger, served before food and before conversation. It is lightly salted rather than sweet, and is drunk with almost every meal. Families may enrich it with butter, toasted millet or rice, or dried curd, turning a bowl of tea into a filling meal on a cold morning.',
@@ -165,6 +165,7 @@ export const milkTea: DishFamily = {
       },
       servedWith: ['Buuz (steamed dumplings)', 'Boortsog (fried dough)', 'Aaruul (dried curd)', 'Toasted millet'],
       whenEaten: 'All day, and first for every guest',
+      sourceRefs: [6],
       recipe: {
         serves: 4,
         prepMinutes: 5,
@@ -206,7 +207,7 @@ export const milkTea: DishFamily = {
       coords: [74.8, 34.08],
       from: 'origin',
       arrival: 'Over Himalayan and Central Asian trade routes; the exact timing is uncertain',
-      summary: 'Green tea reduced with baking soda into a red concentrate, then turned pink with milk and salt.',
+      summary: "Green tea reduced with baking soda into a red concentrate, then turned pink with milk and salt. [7]",
       story: [
         'Kashmir sat on trade routes that linked it to Ladakh, Tibet and Central Asia, and its salted tea belongs to that high-altitude family rather than to the sweet chai of the plains. "Noon" means salt in Kashmiri, and the drink is also known as sheer chai or, outside the valley, as pink tea.',
         'Its colour comes from chemistry and patience. Green tea leaves are boiled for a long time with a pinch of baking soda, then repeatedly aerated and shocked with cold water until the liquid turns deep red. Milk then softens it to a dusky pink. In Srinagar it is drunk morning and afternoon with breads bought hot from the neighbourhood baker.',
@@ -227,6 +228,7 @@ export const milkTea: DishFamily = {
       },
       servedWith: ['Girda (Kashmiri flatbread)', 'Kulcha', 'Bakarkhani', 'Lavasa'],
       whenEaten: 'Breakfast and late afternoon, especially in winter',
+      sourceRefs: [7],
       recipe: {
         serves: 4,
         prepMinutes: 5,
@@ -280,7 +282,7 @@ export const milkTea: DishFamily = {
       coords: [-0.13, 51.51],
       from: 'origin',
       arrival: 'Mid-1600s by sea, through Dutch and English traders; milk usual by the 1700s',
-      summary: 'Black tea steeped in just-boiled water, finished with a splash of cold milk and sugar if you like.',
+      summary: "Black tea steeped in just-boiled water, finished with a splash of cold milk and sugar if you like. [8]",
       story: [
         'Tea reached England in the mid-1600s as a costly import and was taken up at court and in coffee houses. Over the 1700s, as imports grew and duties eventually fell, it moved from luxury to necessity, and the habit of adding milk and sugar became standard. Tea from China gave way in the late 1800s to stronger leaf from Britain\'s plantations in India and Ceylon.',
         'The British method is unusual in the tea world: the leaf is steeped rather than boiled, and the milk goes in cold at the end. Arguments over whether milk goes in before or after the tea have run for generations. Today most tea is brewed with a bag in a mug, but the pot remains for weekends and visitors.',
@@ -301,6 +303,7 @@ export const milkTea: DishFamily = {
       },
       servedWith: ['Biscuits', 'Toast', 'Scones with jam and cream', 'Cake'],
       whenEaten: 'Breakfast, mid-morning, afternoon, and any time there is news',
+      sourceRefs: [8],
       recipe: {
         serves: 2,
         prepMinutes: 2,
@@ -341,7 +344,7 @@ export const milkTea: DishFamily = {
       coords: [72.88, 19.08],
       from: 'british-milk-tea',
       arrival: 'Early-to-mid 1900s, as tea-industry campaigns met Indian street vendors',
-      summary: 'Strong black tea boiled with milk, sugar, ginger and warm spices, sold by the glass on every corner.',
+      summary: "Strong black tea boiled with milk, sugar, ginger and warm spices, sold by the glass on every corner. [9]",
       story: [
         'Although Britain grew tea in Assam from the 1830s, most of it was shipped abroad, and Indians drank comparatively little until the 20th century. The tea industry then ran campaigns to build a home market, setting up stalls at railway stations and demonstrating British-style tea with milk and sugar. Mass popularity came in the decades after that, especially after independence.',
         'Street vendors, the chaiwalas, adapted it to local taste and economy: boiling the leaf hard with plenty of milk and sugar, and adding ginger, cardamom and other spices long used in home remedies. Cheap, granular CTC tea, developed in the 20th century, suited the method. Today chai is the country\'s everyday drink, poured from a height into small glasses or clay cups.',
@@ -362,6 +365,7 @@ export const milkTea: DishFamily = {
       },
       servedWith: ['Parle-G or rusk biscuits', 'Samosas', 'Pakoras', 'Bun maska'],
       whenEaten: 'First thing in the morning and again at 4 pm, plus at every stop in between',
+      sourceRefs: [9],
       recipe: {
         serves: 4,
         prepMinutes: 5,
@@ -414,7 +418,7 @@ export const milkTea: DishFamily = {
       coords: [91.87, 24.89],
       from: 'british-milk-tea',
       arrival: '1900s, as tea from British-run Sylhet gardens found a home market',
-      summary: 'Strong stall-brewed tea poured over condensed milk, stirred with a ringing spoon at the roadside.',
+      summary: "Strong stall-brewed tea poured over condensed milk, stirred with a ringing spoon at the roadside. [2]",
       story: [
         'Tea gardens were planted in the hills around Sylhet from the 1850s; the Malnicherra estate, founded in 1854, is often cited as the oldest commercial garden in the subcontinent. As in India, most of the crop was shipped abroad until the 20th century, when tea-drinking spread through towns and villages. The Sylhet and Moulvibazar region still grows most of Bangladesh\'s tea.',
         'Doodh cha belongs to the tong, the small tea stall where people stop to talk. A kettle of strong liquor sits on the stove, and each cup gets a spoonful of condensed milk before the tea is poured over and stirred with a quick clink. Srimangal\'s colourful seven-layer tea is a recent shop novelty for visitors, not a traditional drink.',
@@ -435,6 +439,7 @@ export const milkTea: DishFamily = {
       },
       servedWith: ['Toast biscuits', 'Singara', 'Puri', 'Muri (puffed rice)'],
       whenEaten: 'Morning, evening adda, and any pause in the day',
+      sourceRefs: [2],
       recipe: {
         serves: 4,
         prepMinutes: 2,
@@ -483,7 +488,7 @@ export const milkTea: DishFamily = {
       coords: [74.36, 31.55],
       from: 'masala-chai',
       arrival: '20th century, from the shared chai culture of pre-Partition Punjab',
-      summary: 'Tea leaves simmered in milk alone, without water, until thick, creamy and deep caramel brown.',
+      summary: "Tea leaves simmered in milk alone, without water, until thick, creamy and deep caramel brown. [10]",
       story: [
         'Pakistan inherited the chai culture that spread across British India in the 20th century, and today it is one of the world\'s largest importers of tea. Doodh patti, literally "milk and leaf", is the richest of its everyday teas, made entirely with milk rather than a mix of milk and water.',
         'It is the tea of dhabas, roadside cafes and truck stops, where pans of it bubble for hours, and of home kitchens when guests arrive. A little cardamom is common, but the point is the dairy: slow simmering concentrates the milk and gives a thick, caramel-tinged cup.',
@@ -504,6 +509,7 @@ export const milkTea: DishFamily = {
       },
       servedWith: ['Rusk', 'Nan khatai', 'Samosas', 'Paratha at breakfast'],
       whenEaten: 'Morning and evening, and whenever guests arrive',
+      sourceRefs: [10],
       recipe: {
         serves: 3,
         prepMinutes: 2,
@@ -544,7 +550,7 @@ export const milkTea: DishFamily = {
       coords: [101.69, 3.14],
       from: 'masala-chai',
       arrival: 'Mid-1900s, at stalls run by Indian Muslim (mamak) migrants in Malaya',
-      summary: 'Strong black tea and condensed milk, pulled between two jugs from arm\'s length into a frothy cup.',
+      summary: "Strong black tea and condensed milk, pulled between two jugs from arm's length into a frothy cup. [11]",
       story: [
         'The name means "pulled tea", and the Malay word teh descends from the Min Chinese "te", a reminder of Hokkien traders in the region. The drink itself is usually credited to Indian Muslim migrants, known as mamak, whose stalls became fixtures of Malayan towns in the 20th century, though no single inventor is known.',
         'Pulling serves several purposes: it cools the tea, mixes in the condensed milk and builds a thick head of foam. Skilled tea-pullers stretch the stream to well over a metre. Teh tarik is now Malaysia\'s unofficial national drink, ordered alongside roti canai at mamak restaurants that stay open late into the night.',
@@ -565,6 +571,7 @@ export const milkTea: DishFamily = {
       },
       servedWith: ['Roti canai', 'Nasi lemak', 'Kaya toast', 'Mee goreng mamak'],
       whenEaten: 'Breakfast and late night at mamak stalls, any hour',
+      sourceRefs: [11],
       recipe: {
         serves: 2,
         prepMinutes: 5,
@@ -608,7 +615,7 @@ export const milkTea: DishFamily = {
       coords: [114.17, 22.32],
       from: 'british-milk-tea',
       arrival: 'Mid-1900s, as British tea with milk was adapted at street stalls and cha chaan teng',
-      summary: 'A blend of black teas strained repeatedly through a cloth bag and enriched with evaporated milk.',
+      summary: "A blend of black teas strained repeatedly through a cloth bag and enriched with evaporated milk. [12]",
       story: [
         'Under British rule, afternoon tea with milk was a colonial habit. In the decades after the Second World War, Hong Kong\'s street stalls (dai pai dong) and cha chaan teng cafes turned it into something cheaper and stronger, boiling blends of black tea and swapping fresh milk for tinned evaporated milk, which kept without refrigeration.',
         'The long cotton filter bag, stained brown by use, earned the drink its nickname "silk stocking milk tea". A popular story credits Lan Fong Yuen, a stall in Central, with the method, though the claim is better known than proven. Mixed with coffee, the same tea becomes yuenyeung.',
@@ -629,6 +636,7 @@ export const milkTea: DishFamily = {
       },
       servedWith: ['Pineapple bun with butter', 'Egg tarts', 'French toast', 'Macaroni soup'],
       whenEaten: 'Breakfast and afternoon tea at cha chaan teng',
+      sourceRefs: [12],
       recipe: {
         serves: 4,
         prepMinutes: 5,
@@ -669,7 +677,7 @@ export const milkTea: DishFamily = {
       coords: [120.68, 24.15],
       from: 'origin',
       arrival: '1980s, in Taiwanese tea shops, from tea culture brought by Fujianese settlers',
-      summary: 'Shaken iced milk tea with chewy tapioca pearls, drunk through a wide straw.',
+      summary: "Shaken iced milk tea with chewy tapioca pearls, drunk through a wide straw. [4]",
       story: [
         'Taiwan grew a strong tea culture of its own, rooted in Fujianese settlement, and by the 1980s its tea shops were serving shaken iced teas. Adding tapioca pearls to sweet iced milk tea followed in that decade. Two tea houses, Chun Shui Tang in Taichung and Hanlin in Tainan, each claim the invention, and the dispute has never been settled.',
         'From Taiwan, bubble tea spread through East and Southeast Asia in the 1990s and to Western cities soon after, becoming one of the most adaptable drinks in the world. The original remains black tea, milk or creamer, brown-sugar syrup and pearls, though shops now offer fruit teas, jellies and adjustable sweetness and ice.',
@@ -690,6 +698,7 @@ export const milkTea: DishFamily = {
       },
       servedWith: ['Fried chicken cutlet', 'Night-market snacks', 'Pineapple cake'],
       whenEaten: 'Afternoons and evenings, often on the move',
+      sourceRefs: [4],
       recipe: {
         serves: 2,
         prepMinutes: 10,
@@ -732,5 +741,91 @@ export const milkTea: DishFamily = {
         ],
       },
     },
+  ],
+  sources: [
+    {
+      "title": "Tea",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Tea",
+      "supports": "Family overview, preparation and regional context; historical accounts are secondary and should be read with their footnotes.",
+      "accessed": "2026-10-22"
+    },
+    {
+      "title": "Milk tea",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Milk_tea",
+      "supports": "Different cultures’ combinations of tea and milk; a family of preparations rather than a single recipe.",
+      "accessed": "2026-10-22"
+    },
+    {
+      "title": "Hong Kong-style Milk Tea Making Technique",
+      "publisher": "Intangible Cultural Heritage Office, Hong Kong",
+      "url": "https://www.icho.hk/en/web/icho/representative_list_milk_tea.html",
+      "supports": "Development from English milk tea and the blending, brewing and pouring technique.",
+      "accessed": "2026-10-22"
+    },
+    {
+      "title": "Bubble tea",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Bubble_tea",
+      "supports": "Taiwanese origins in the 1980s and tapioca-pearl tea variations.",
+      "accessed": "2026-10-22"
+    },
+    {
+      "title": "Butter tea",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Butter_tea",
+      "supports": "Dish description, ingredients and regional preparation; see the article’s footnotes for further reading.",
+      "accessed": "2026-10-22"
+    },
+    {
+      "title": "Suutei tsai",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Suutei_tsai",
+      "supports": "Dish description, ingredients and regional preparation; see the article’s footnotes for further reading.",
+      "accessed": "2026-10-22"
+    },
+    {
+      "title": "Noon chai",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Noon_chai",
+      "supports": "Dish description, ingredients and regional preparation; see the article’s footnotes for further reading.",
+      "accessed": "2026-10-22"
+    },
+    {
+      "title": "Tea in the United Kingdom",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Tea_in_the_United_Kingdom",
+      "supports": "Dish description, ingredients and regional preparation; see the article’s footnotes for further reading.",
+      "accessed": "2026-10-22"
+    },
+    {
+      "title": "Masala chai",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Masala_chai",
+      "supports": "Dish description, ingredients and regional preparation; see the article’s footnotes for further reading.",
+      "accessed": "2026-10-22"
+    },
+    {
+      "title": "Doodh pati chai",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Doodh_pati_chai",
+      "supports": "Dish description, ingredients and regional preparation; see the article’s footnotes for further reading.",
+      "accessed": "2026-10-22"
+    },
+    {
+      "title": "Teh tarik",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Teh_tarik",
+      "supports": "Dish description, ingredients and regional preparation; see the article’s footnotes for further reading.",
+      "accessed": "2026-10-22"
+    },
+    {
+      "title": "Hong Kong–style milk tea",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Hong_Kong%E2%80%93style_milk_tea",
+      "supports": "Dish description, ingredients and regional preparation; see the article’s footnotes for further reading.",
+      "accessed": "2026-10-22"
+    }
   ],
 };

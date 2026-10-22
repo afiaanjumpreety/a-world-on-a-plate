@@ -20,10 +20,9 @@ export const noodleSoup: DishFamily = {
   intro:
     'A bowl of noodles in hot broth is one of China\'s great exports. Carried by Muslim traders, port-city migrants and restaurant cooks, it took root from Tashkent to Singapore, picking up cumin on the steppe, soy and dashi in Japan, coconut and spice paste in the Straits and chilli in Korea.',
   history: [
-    'Noodles have a long history in China. Archaeologists at Lajia, a Bronze Age site in Qinghai, reported a bowl of millet noodles about 4,000 years old, though not everyone accepts the identification. Wheat noodles are clearer in the written record. By the Han dynasty, pieces of wheat dough called bing were boiled and eaten in broth, and in the third century the scholar Shu Xi wrote a rhapsody in praise of these doughs.',
-    'Over the following centuries Chinese cooks developed an enormous range: pulled, cut, pressed and shaved wheat noodles in the north, rice noodles in the south. By the Song dynasty (960–1279), noodle shops were a fixture of city life. In the northwest, Hui Muslim cooks became masters of hand-pulled noodles in beef broth, a tradition that Lanzhou now treats as its own.',
-    'Noodles travelled with people. Along the overland routes west, Uyghur and Dungan cooks took pulled noodles into Central Asia as laghman. By sea, migrants from Guangdong, Fujian and Shandong carried noodle soups to Southeast Asian ports, Korea and Japan in the 1800s and 1900s, where they met local ingredients: coconut and spice pastes in the Straits, soy and dashi in Japan, and later chilli in Korea.',
-    'Some links are clearer than others. Ramen and jjamppong have well-documented roots in Chinese restaurants abroad. Phở and khao soi are more tangled: phở may owe something to French appetites for beef as well as to Chinese rice noodles, and khao soi has Yunnanese, Burmese and Lao threads. Yet every bowl in this family shares a likeness: noodles cooked apart, then finished in hot broth.',
+    "Chinese records describe noodle soup by the Han period. Archaeological evidence for earlier noodles is a different kind of evidence: an ancient noodle find does not establish when noodle soup began. Today the broad category includes many noodles, broths and local traditions. [1]",
+    "Ramen developed through Chinese cooking in Japan and became a collection of regional Japanese dishes. Wheat noodles, soy-seasoned or other broths, and toppings such as pork, bamboo shoots and scallions distinguish it from its neighbours. [2]",
+    "Phở combines rice noodles, broth, herbs and usually beef or chicken; its early history has both Chinese and French connections that remain debated. Peranakan laksa took another direction, with versions built around coconut curry or sour broth. These bowls show how a shared format can develop into different local cuisines. [3, 4]"
   ],
   etymology:
     'Ramen is usually traced to Chinese lamian, "pulled noodles", and laghman to the same word through Uyghur; jjamppong comes via Japanese champon, and khao soi is Thai and Lao for "cut rice". Phở may come from Cantonese fan, meaning rice noodles, or from French feu, as in pot-au-feu; the argument has never been settled.',
@@ -104,7 +103,7 @@ export const noodleSoup: DishFamily = {
       coords: [103.83, 36.06],
       from: 'origin',
       arrival: 'Developed by Hui Muslim cooks in Lanzhou; the modern bowl by the early 1900s',
-      summary: 'Hand-pulled noodles in clear spiced beef broth with radish, coriander and chilli oil.',
+      summary: "Hand-pulled noodles in clear spiced beef broth with radish, coriander and chilli oil. [5]",
       story: [
         'Lanzhou, on the Yellow River in Gansu, was a Silk Road crossing, and its beef noodle soup is a dish of the Hui, China\'s Chinese-speaking Muslims. Local tradition credits a Hui cook named Ma Baozi with shaping the modern bowl in the early 1900s. Today Lanzhou-style shops, usually run by Hui families, are found in nearly every Chinese city.',
         'The noodles are the spectacle: a cook stretches and folds an alkaline dough, then pulls it into strands to order, thick or thin, round or flat. A good bowl is judged by a well-known rule: clear broth, white radish, red chilli oil, green coriander and garlic shoots, and yellow-tinged noodles. In Lanzhou it is breakfast.',
@@ -126,6 +125,7 @@ export const noodleSoup: DishFamily = {
       },
       servedWith: ['Chilli oil', 'Black vinegar', 'Cold dishes of beef or pickles'],
       whenEaten: 'Breakfast in Lanzhou, any meal elsewhere',
+      sourceRefs: [5],
       recipe: {
         serves: 4,
         prepMinutes: 60,
@@ -196,7 +196,7 @@ export const noodleSoup: DishFamily = {
       coords: [69.24, 41.3],
       from: 'lanzhou-lamian',
       arrival: 'With Uyghur and Dungan cooks; widespread in Central Asia by the 1900s',
-      summary: 'Thick hand-pulled noodles under a cumin-scented lamb, pepper and tomato broth.',
+      summary: "Thick hand-pulled noodles under a cumin-scented lamb, pepper and tomato broth. [6]",
       story: [
         'Laghman is the pulled noodle of the Uyghurs of Xinjiang and of the Dungans, Hui Muslims who settled in Russian Central Asia in the late 1800s. Its name is generally taken to come from Chinese lamian. From Kashgar to Bishkek and Tashkent, it is now a standard of Central Asian tables and teahouses.',
         'In Uyghur cooking laghman usually comes with a thick stir-fried sauce over the noodles. Uzbek cooks often make it as a soup, with lamb, peppers, tomato, radish and garlic cooked into a rich, cumin-scented broth and poured over thick hand-pulled noodles. Vinegar, garlic and chilli sit on the table so each person can adjust the bowl.',
@@ -218,6 +218,7 @@ export const noodleSoup: DishFamily = {
       },
       servedWith: ['Garlic vinegar', 'Chilli paste', 'Non bread', 'Green tea'],
       whenEaten: 'Lunch at teahouses and family meals',
+      sourceRefs: [6],
       recipe: {
         serves: 4,
         prepMinutes: 70,
@@ -289,7 +290,7 @@ export const noodleSoup: DishFamily = {
       coords: [114.17, 22.32],
       from: 'origin',
       arrival: 'From Guangzhou; a Hong Kong staple by the mid-1900s',
-      summary: 'Springy egg noodles and shrimp wontons in a small bowl of flounder-scented broth.',
+      summary: "Springy egg noodles and shrimp wontons in a small bowl of flounder-scented broth. [7]",
       story: [
         'Wonton noodles are a Cantonese dish from Guangzhou that became a Hong Kong institution, especially after cooks moved south around the middle of the 1900s. The noodles are thin and springy, made with egg and alkaline water, and a few shops still knead the dough by bouncing on a bamboo pole, a method called jook-sing.',
         'A traditional bowl is small, almost a snack. The wontons, filled mostly with shrimp, sit at the bottom; the noodles rest on top, sometimes propped on a spoon, so they stay out of the broth and keep their bite. The broth gets its depth from dried flounder, pork bones and dried shrimp, and a few yellow chives finish it.',
@@ -311,6 +312,7 @@ export const noodleSoup: DishFamily = {
       },
       servedWith: ['Chilli oil', 'Red vinegar', 'Gai lan with oyster sauce'],
       whenEaten: 'Lunch, afternoon snack or late supper',
+      sourceRefs: [7],
       recipe: {
         serves: 4,
         prepMinutes: 50,
@@ -378,7 +380,7 @@ export const noodleSoup: DishFamily = {
       coords: [139.69, 35.69],
       from: 'wonton-noodle-soup',
       arrival: 'Early 1900s, through Chinese restaurants in Yokohama and Tokyo',
-      summary: 'Springy alkaline noodles in a soy-seasoned chicken and dashi broth with chashu.',
+      summary: "Springy alkaline noodles in a soy-seasoned chicken and dashi broth with chashu. [2]",
       story: [
         'Ramen began as shina soba, "Chinese noodles", served in Chinese restaurants in the port cities of Yokohama, Kobe and Nagasaki, where many cooks came from Guangdong. Rairaiken, which opened in Asakusa, Tokyo, in 1910, is often cited as the first shop to make it popular with Japanese customers: alkaline wheat noodles in a soy-seasoned broth.',
         'After the Second World War, cheap imported wheat, soldiers back from China and instant ramen, invented in 1958, made it a national food. Regional styles multiplied, from Sapporo miso to Hakata tonkotsu. The Tokyo shoyu bowl, with its clear, soy-dark broth, chashu, bamboo shoots and nori, is the closest to the early shina soba.',
@@ -399,6 +401,7 @@ export const noodleSoup: DishFamily = {
       },
       servedWith: ['Gyoza', 'Fried rice', 'Ground white pepper at the counter'],
       whenEaten: 'Lunch, late-night suppers',
+      sourceRefs: [2],
       recipe: {
         serves: 4,
         prepMinutes: 45,
@@ -476,7 +479,7 @@ export const noodleSoup: DishFamily = {
       coords: [105.85, 21.03],
       from: 'origin',
       arrival: 'Late 1800s–early 1900s, around Nam Định and Hanoi; influences debated',
-      summary: 'Flat rice noodles and thin-sliced beef in a clear, spiced beef broth.',
+      summary: "Flat rice noodles and thin-sliced beef in a clear, spiced beef broth. [3]",
       story: [
         'Phở emerged in northern Vietnam, around Nam Định and Hanoi, in the late 1800s or early 1900s, under French colonial rule. Its origins are debated. One view stresses Chinese influence: Chinese migrants sold rice noodles with beef, and the name may come from Cantonese fan. Another points out that French demand made beef more available, and links phở to pot-au-feu, though that name link is unproven.',
         'Hanoi phở is spare: a very clear beef broth scented with charred onion and ginger, star anise and cinnamon, poured over flat rice noodles and slices of beef, with spring onion and coriander. After 1954 many northerners moved south, and Saigon\'s version gained bean sprouts, plates of herbs, hoisin and chilli sauce. Phở is above all a breakfast.',
@@ -498,6 +501,7 @@ export const noodleSoup: DishFamily = {
       },
       servedWith: ['Lime wedges', 'Sliced fresh chilli', 'Quẩy (fried dough sticks)'],
       whenEaten: 'Breakfast above all, also late at night',
+      sourceRefs: [3],
       recipe: {
         serves: 6,
         prepMinutes: 40,
@@ -563,7 +567,7 @@ export const noodleSoup: DishFamily = {
       coords: [102.25, 2.19],
       from: 'origin',
       arrival: 'Developed in Peranakan (Straits Chinese) kitchens; dates uncertain',
-      summary: 'Rice noodles in a rich coconut and spice-paste broth with prawns and tofu puffs.',
+      summary: "Rice noodles in a rich coconut and spice-paste broth with prawns and tofu puffs. [4]",
       story: [
         'Laksa belongs to the Peranakan, or Straits Chinese, descendants of Chinese traders who settled in Melaka, Penang and Singapore and married into local communities. Their kitchens combined Chinese noodles with Malay spice pastes, coconut and chilli. Where the word laksa comes from is uncertain; one theory links it to a Persian word for noodles.',
         'There are many laksas. Penang\'s asam laksa is sour, built on fish and tamarind. Laksa lemak, the rich coconut version, is the classic of Melaka and Singapore: a rempah of chillies, shallots, lemongrass, galangal, candlenuts and shrimp paste, fried until fragrant, then simmered with prawn stock and coconut milk and finished with laksa leaf and sambal.',
@@ -585,6 +589,7 @@ export const noodleSoup: DishFamily = {
       },
       servedWith: ['Sambal belacan', 'Calamansi or lime', 'Hard-boiled egg'],
       whenEaten: 'Breakfast and lunch at hawker stalls',
+      sourceRefs: [4],
       recipe: {
         serves: 4,
         prepMinutes: 50,
@@ -656,7 +661,7 @@ export const noodleSoup: DishFamily = {
       coords: [98.99, 18.79],
       from: 'origin',
       arrival: 'Probably late 1800s–early 1900s; Chin Haw (Yunnanese) and Burmese links proposed',
-      summary: 'Egg noodles in coconut curry with chicken, topped with crisp fried noodles.',
+      summary: "Egg noodles in coconut curry with chicken, topped with crisp fried noodles. [8]",
       story: [
         'Chiang Mai\'s khao soi is a curry noodle soup with coconut milk and egg noodles, and its origins are mixed. It is often linked to the Chin Haw, Yunnanese Muslim traders whose mule caravans travelled between Yunnan, Burma and northern Thailand, and some Chiang Mai shops keep a halal tradition. Others see a resemblance to Burmese ohn no khao swè. The name means "cut rice", recalling rice noodles.',
         'In Laos and parts of northern Thailand, khao soi still means a rice-noodle soup with a pork and tomato sauce. The Chiang Mai bowl is different: chicken or beef simmered in a turmeric-yellow curry with coconut milk, poured over boiled egg noodles and topped with a tangle of crisp fried ones. Pickled mustard greens, shallots and lime come alongside.',
@@ -677,6 +682,7 @@ export const noodleSoup: DishFamily = {
       },
       servedWith: ['Pickled mustard greens', 'Sliced shallots', 'Lime wedges', 'Roasted chilli paste'],
       whenEaten: 'Lunch at noodle shops',
+      sourceRefs: [8],
       recipe: {
         serves: 4,
         prepMinutes: 35,
@@ -747,7 +753,7 @@ export const noodleSoup: DishFamily = {
       coords: [126.7, 37.46],
       from: 'origin',
       arrival: 'With Shandong Chinese immigrants in Incheon, from the 1880s; the red version later',
-      summary: 'Thick wheat noodles in a fiery red broth of seafood, pork and wok-fried vegetables.',
+      summary: "Thick wheat noodles in a fiery red broth of seafood, pork and wok-fried vegetables. [9]",
       story: [
         'Chinese-Korean cooking grew up in Incheon, where immigrants, many from Shandong across the Yellow Sea, settled from the 1880s and opened restaurants. Jjamppong is one of its two great dishes, with black-bean jajangmyeon. The name comes through Japanese champon, a seafood noodle dish of Nagasaki\'s Chinese restaurants, and early Korean versions were not especially spicy.',
         'The fiery red jjamppong eaten today is a Korean development, usually dated to the later 1900s, when cooks added chilli to suit local taste. Pork, squid, mussels and vegetables are stir-fried over high heat with chilli and garlic, then simmered in stock and poured over thick, chewy wheat noodles. It is ordered for delivery as often as eaten in restaurants.',
@@ -769,6 +775,7 @@ export const noodleSoup: DishFamily = {
       },
       servedWith: ['Danmuji (yellow pickled radish)', 'Raw onion with black bean paste', 'Tangsuyuk (sweet and sour pork)'],
       whenEaten: 'Lunch, delivery dinners, rainy days',
+      sourceRefs: [9],
       recipe: {
         serves: 2,
         prepMinutes: 25,
@@ -821,5 +828,70 @@ export const noodleSoup: DishFamily = {
         ],
       },
     },
+  ],
+  sources: [
+    {
+      "title": "Noodle soup",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Noodle_soup",
+      "supports": "Family overview, preparation and regional context; historical accounts are secondary and should be read with their footnotes.",
+      "accessed": "2026-10-22"
+    },
+    {
+      "title": "Ramen",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Ramen",
+      "supports": "Chinese connections, Japanese broth styles and typical toppings.",
+      "accessed": "2026-10-22"
+    },
+    {
+      "title": "Pho",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Pho",
+      "supports": "Vietnamese beef-and-rice-noodle soup and debated historical influences.",
+      "accessed": "2026-10-22"
+    },
+    {
+      "title": "Laksa",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Laksa",
+      "supports": "Peranakan roots and coconut-rich or sour noodle-soup styles.",
+      "accessed": "2026-10-22"
+    },
+    {
+      "title": "Beef noodle soup",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Beef_noodle_soup",
+      "supports": "Dish description, ingredients and regional preparation; see the article’s footnotes for further reading.",
+      "accessed": "2026-10-22"
+    },
+    {
+      "title": "Laghman (food)",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Laghman_%28food%29",
+      "supports": "Dish description, ingredients and regional preparation; see the article’s footnotes for further reading.",
+      "accessed": "2026-10-22"
+    },
+    {
+      "title": "Wonton noodles",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Wonton_noodles",
+      "supports": "Dish description, ingredients and regional preparation; see the article’s footnotes for further reading.",
+      "accessed": "2026-10-22"
+    },
+    {
+      "title": "Khao soi",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Khao_soi",
+      "supports": "Dish description, ingredients and regional preparation; see the article’s footnotes for further reading.",
+      "accessed": "2026-10-22"
+    },
+    {
+      "title": "Jjamppong",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Jjamppong",
+      "supports": "Dish description, ingredients and regional preparation; see the article’s footnotes for further reading.",
+      "accessed": "2026-10-22"
+    }
   ],
 };

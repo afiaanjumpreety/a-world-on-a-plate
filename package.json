@@ -5,11 +5,12 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc --noEmit && vite build",
+    "build": "npm run photos:check && tsc --noEmit && vite build",
     "preview": "vite preview",
     "typecheck": "tsc --noEmit",
     "validate": "tsx scripts/validate-data.ts",
     "photos": "tsx scripts/fetch-photos.ts",
+    "photos:check": "node --import tsx scripts/check-photos.ts",
     "sources": "tsx scripts/check-sources.ts"
   },
   "dependencies": {

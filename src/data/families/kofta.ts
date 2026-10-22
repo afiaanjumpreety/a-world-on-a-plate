@@ -20,9 +20,9 @@ export const kofta: DishFamily = {
   intro:
     "Pound meat, season it, shape it by hand and cook it: a simple idea that a Persian word, kufta, carried around the world. It is the giant stuffed koofteh of Tabriz, the grilled köfte of Istanbul, keftedes on a Greek meze table, albóndigas in a Mexican broth and köttbullar with lingonberries in Stockholm. Each kitchen kept the shape and changed nearly everything else.",
   history: [
-    "People everywhere have chopped and shaped meat, and the Roman cookery collection attributed to Apicius already describes forcemeat patties. But the family on this map carries a Persian name. Kufta, from kuftan, 'to pound', describes meat beaten to a paste in a mortar, mixed with onion, herbs or grain, and shaped by hand. By the 1200s, Arabic cookbooks from Baghdad to al-Andalus were giving recipes for meatballs, fried or cooked in sauces.",
-    "The idea travelled with empires and their cooks. Arab rule carried meatballs to Spain, where Arabic al-bunduqa, 'the hazelnut', became albóndiga. Persian-speaking courts brought kofta to India, where it was simmered in rich gravies. The Ottomans spread köfte across Anatolia, the Balkans, Greece and the Levant, and Turkish words for it entered the languages of the region, alongside the closely related grilled kebabs.",
-    "From Spain, albóndigas crossed the Atlantic with colonists in the 1500s and became a soup in Mexico. In northern Europe, meatballs belong to a wider tradition of forcemeat cooking, and the link between Swedish köttbullar and Ottoman köfte is a story rather than a documented route. Almost every cuisine now has its meatball; this page follows the ones joined by name or by a traceable path.",
+    "Kofta names a broad group of shaped-meat dishes across West Asia, Central Asia, South Asia and the Balkans. The word has Persian roots, and early Arabic cookbooks include meatball preparations. This is evidence for a connected tradition, rather than proof that shaping minced meat began in one place. [1]",
+    "The family includes meat seasoned with herbs and spices, sometimes mixed with grains, and cooked by grilling, frying or simmering. Tabriz’s large meatballs combine meat with rice, split peas and herbs; other kofta are small patties or cylinders. [1, 3]",
+    "European and Latin American meatballs make useful comparisons, but a resemblance alone does not establish direct descent. The wider meatball tradition includes many local ingredients and cooking methods. This atlas places them together to compare those choices. [2]"
   ],
   etymology:
     "Kofta and its cousins köfte, kafta and keftés come from Persian kufta, from kuftan, 'to pound or beat'. Spanish albóndiga comes from Andalusi Arabic al-bunduqa, from bunduq, 'hazelnut', for the small round shape; ćevapi comes instead from Turkish kebap, a reminder that it is a kebab cousin.",
@@ -105,8 +105,7 @@ export const kofta: DishFamily = {
       coords: [46.29, 38.08],
       from: "origin",
       arrival: "Iran's own tradition; the giant Tabriz version is famous across the country",
-      summary:
-        "A giant meatball of minced meat, rice and split peas, stuffed with egg and dried fruit and simmered in broth.",
+      summary: "A giant meatball of minced meat, rice and split peas, stuffed with egg and dried fruit and simmered in broth. [3]",
       story: [
         "Iran has many koofteh, but the one from Tabriz, in the Azerbaijani-speaking northwest, is the showpiece. Each ball can be the size of a grapefruit, made from minced meat kneaded with cooked rice, yellow split peas and a generous mass of fresh herbs. Hidden inside are a hard-boiled egg, dried apricots or prunes, walnuts, barberries and fried onion.",
         "Because it is so large, it is poached gently in a tomato and turmeric broth rather than fried or grilled. Families often serve the broth first, with bread, and the koofteh afterwards, cut open to show the filling. The kneading is long and thorough, because a loosely mixed koofteh will split in the pot.",
@@ -128,6 +127,7 @@ export const kofta: DishFamily = {
       },
       servedWith: ["flatbread (sangak or lavash)", "fresh herbs (sabzi khordan)", "torshi pickles", "doogh (yogurt drink)"],
       whenEaten: "Family lunches and special occasions",
+      sourceRefs: [3],
       recipe: {
         serves: 4,
         prepMinutes: 45,
@@ -222,8 +222,7 @@ export const kofta: DishFamily = {
       coords: [28.98, 41.01],
       from: "origin",
       arrival: "With Turkic peoples moving west through Iran into Anatolia, established by the Ottoman era",
-      summary:
-        "Small grilled patties of seasoned minced beef and lamb, served with bread, onions and white bean salad.",
+      summary: "Small grilled patties of seasoned minced beef and lamb, served with bread, onions and white bean salad. [1]",
       story: [
         "Köfte is one of the broadest words in Turkish cooking. It covers grilled patties, meatballs in sauce, raw spiced bulgur (çiğ köfte) and bulgur shells stuffed with meat (içli köfte). Towns are proud of their own: İnegöl, Tekirdağ, Akçaabat and İzmir all lend their names to regional köfte.",
         "The grilled kind is the everyday classic, served at köfteci restaurants that specialise in little else. Minced beef, often with some lamb, is mixed with grated onion, a little bread and spices such as cumin and red pepper flakes, rested, then pressed into small oval patties and cooked fast over charcoal.",
@@ -250,6 +249,7 @@ export const kofta: DishFamily = {
         "ayran",
       ],
       whenEaten: "Lunch and dinner at köfteci restaurants and home grills",
+      sourceRefs: [1],
       recipe: {
         serves: 4,
         prepMinutes: 20,
@@ -315,7 +315,7 @@ export const kofta: DishFamily = {
       coords: [35.5, 33.89],
       from: "origin",
       arrival: "Through the medieval Arab world; reinforced under Ottoman rule from the 1500s",
-      summary: "Minced lamb or beef with plenty of parsley and onion, moulded onto skewers and grilled.",
+      summary: "Minced lamb or beef with plenty of parsley and onion, moulded onto skewers and grilled. [1]",
       story: [
         "In Lebanon, Syria and across the Levant, kafta is minced meat mixed with finely chopped parsley and onion and seasoned with a spice blend, often the local seven-spice mix. It has no bread or egg; the paste holds together because the meat is kneaded or ground until smooth and tacky.",
         "Kafta is endlessly adaptable. It is grilled on flat skewers as kafta meshwiyeh, wrapped in thin bread with tahini and pickles, baked in a tray with potatoes and tomato, or cooked in tahini sauce. At weekend family grills it shares the coals with chicken and lamb.",
@@ -342,6 +342,7 @@ export const kofta: DishFamily = {
         "hummus",
       ],
       whenEaten: "Weekend grills, family lunches and wrapped as street food",
+      sourceRefs: [1],
       recipe: {
         serves: 4,
         prepMinutes: 25,
@@ -418,7 +419,7 @@ export const kofta: DishFamily = {
       coords: [23.73, 37.98],
       from: "turkish-kofte",
       arrival: "Through centuries of shared Ottoman-era cooking, from the 1400s on",
-      summary: "Small fried meatballs flavoured with mint and oregano, served as meze with tzatziki and lemon.",
+      summary: "Small fried meatballs flavoured with mint and oregano, served as meze with tzatziki and lemon. [2]",
       story: [
         "The Greek name comes from Turkish köfte, and keftedes belong to the shared kitchen of the eastern Mediterranean that grew up over centuries of Ottoman rule. Greek cooks made them their own with the herbs of the hillsides, especially fresh mint and dried oregano, and with olive oil for frying.",
         "Keftedes are small, slightly flattened, dusted in flour and fried until crusted. They are a fixture of the meze table and the taverna, eaten warm or at room temperature with tzatziki and a squeeze of lemon. Soutzoukakia from Smyrna, larger, oval and simmered in tomato sauce, are a close relation.",
@@ -439,6 +440,7 @@ export const kofta: DishFamily = {
       },
       servedWith: ["tzatziki", "lemon wedges", "horiatiki (village salad)", "fried potatoes", "bread"],
       whenEaten: "As meze with ouzo, at family lunches and on picnics",
+      sourceRefs: [2],
       recipe: {
         serves: 4,
         prepMinutes: 25,
@@ -510,8 +512,7 @@ export const kofta: DishFamily = {
       coords: [-5.98, 37.39],
       from: "origin",
       arrival: "With Muslim rule in al-Andalus, from the 700s; the name comes from al-bunduqa",
-      summary:
-        "Pork and beef meatballs fried, then simmered in a sauce of pounded almonds, garlic, saffron and wine.",
+      summary: "Pork and beef meatballs fried, then simmered in a sauce of pounded almonds, garlic, saffron and wine. [2]",
       story: [
         "The Spanish word albóndiga carries its history in its sound. It comes from Andalusi Arabic al-bunduqa, 'the hazelnut', the name for a small ball, and meatballs appear in the Arabic cookery of medieval al-Andalus. After the Christian conquest, pork joined the mixture, and albóndigas became a dish of the whole country.",
         "They are now a standard of tapas bars, often in tomato sauce. In Andalusia a well-loved version is simmered in salsa de almendras, thickened with a majado of fried almonds, bread and garlic pounded with saffron. Food writers often link these almond and saffron sauces to the region's Moorish past, a reasonable connection, though hard to prove for any single dish.",
@@ -532,6 +533,7 @@ export const kofta: DishFamily = {
       },
       servedWith: ["crusty bread", "fried potatoes", "white rice", "a glass of fino"],
       whenEaten: "As a tapa, or a home lunch with bread",
+      sourceRefs: [2],
       recipe: {
         serves: 4,
         prepMinutes: 30,
@@ -617,7 +619,7 @@ export const kofta: DishFamily = {
       coords: [-99.13, 19.43],
       from: "spanish-albondigas",
       arrival: "From the 1500s, with Spanish colonists after the conquest",
-      summary: "Beef meatballs with rice and mint inside, simmered in a tomato and chipotle broth with vegetables.",
+      summary: "Beef meatballs with rice and mint inside, simmered in a tomato and chipotle broth with vegetables. [2]",
       story: [
         "Spanish colonists brought albóndigas to Mexico in the 1500s, along with the pigs and cattle to make them. Over time the dish moved from sauce into soup and picked up local flavours: tomato, chilli and herbs such as hierbabuena, the spearmint that gives many Mexican versions their fresh, cool note.",
         "Mexican cooks often mix a little raw rice into the meat. It swells as the meatballs cook, keeping them light and tender. The broth, blended from tomato, onion and garlic and often smoky with chipotle, is cooked with carrots, courgettes and potatoes, making a one-pot meal served with warm tortillas.",
@@ -638,6 +640,7 @@ export const kofta: DishFamily = {
       },
       servedWith: ["warm corn tortillas", "lime wedges", "Mexican red rice", "chopped onion and coriander"],
       whenEaten: "Weekday comida, the main midday meal",
+      sourceRefs: [2],
       recipe: {
         serves: 6,
         prepMinutes: 30,
@@ -725,7 +728,7 @@ export const kofta: DishFamily = {
       coords: [77.21, 28.61],
       from: "origin",
       arrival: "With Persian-speaking courts, from the Delhi Sultanate to the Mughals",
-      summary: "Whole boiled eggs wrapped in spiced lamb, fried, and served halved in a rich yogurt and onion gravy.",
+      summary: "Whole boiled eggs wrapped in spiced lamb, fried, and served halved in a rich yogurt and onion gravy. [1]",
       story: [
         "Kofta came to India with Persian-speaking rulers and their cooks, and at the Mughal court it met Indian spices, ghee and the art of the slow-cooked gravy. Indian kitchens produced many koftas, including vegetarian versions such as the paneer and potato malai kofta, but the most theatrical is nargisi kofta.",
         "Each one hides a whole boiled egg inside a coat of spiced minced lamb. Cut in half, the white and yellow centre is said to recall the narcissus flower, nargis in Persian and Urdu, which gives the dish its name. The koftas are fried, then warmed through in a gravy of browned onions, yogurt and ground nuts.",
@@ -746,6 +749,7 @@ export const kofta: DishFamily = {
       },
       servedWith: ["naan or sheermal", "jeera rice or pulao", "sliced onion and lemon"],
       whenEaten: "Dinner parties, Eid and festive spreads",
+      sourceRefs: [1],
       recipe: {
         serves: 6,
         prepMinutes: 40,
@@ -837,7 +841,7 @@ export const kofta: DishFamily = {
       coords: [74.34, 31.55],
       from: "nargisi-kofta",
       arrival: "Part of the Mughal-era cooking shared across north India and the Punjab",
-      summary: "Soft beef meatballs poached raw in a homestyle onion, tomato and yogurt curry.",
+      summary: "Soft beef meatballs poached raw in a homestyle onion, tomato and yogurt curry. [1]",
       story: [
         "Lahore was a major Mughal city, and the kofta curries of its kitchens share ancestry with those of Delhi. In Pakistani homes, though, koftay are less about display than comfort: a weekday salan, or curry, usually made with beef mince and served with fresh chapati.",
         "The home method differs from the restaurant one. Rather than frying the koftas, many cooks drop them raw into a gravy that has been cooked until the oil separates, a stage called bhuna. They firm up as they poach, and the pan is shaken rather than stirred so they keep their shape. Roasted gram flour in the mix helps bind them.",
@@ -858,6 +862,7 @@ export const kofta: DishFamily = {
       },
       servedWith: ["chapati or roti", "plain boiled rice", "raita", "sliced onion and green chilli"],
       whenEaten: "Weekday family dinners",
+      sourceRefs: [1],
       recipe: {
         serves: 4,
         prepMinutes: 25,
@@ -946,8 +951,7 @@ export const kofta: DishFamily = {
       coords: [18.07, 59.33],
       from: "turkish-kofte",
       arrival: "Recorded by the mid-1700s; the Ottoman link via Charles XII is popular but unproven",
-      summary:
-        "Small, tender beef and pork meatballs fried in butter, served with cream sauce, potatoes and lingonberries.",
+      summary: "Small, tender beef and pork meatballs fried in butter, served with cream sauce, potatoes and lingonberries. [2]",
       story: [
         "A popular story says that King Charles XII, who lived in the Ottoman Empire from 1709 to 1714 after his defeat by Russia, brought köfte home to Sweden. In 2018 Sweden's official account repeated it and set off a lively debate. Meatballs and forcemeats were already part of European cooking, and there is no firm evidence for the royal route, so the arc here shows a story, not a proven path.",
         "What is certain is that meatballs appear in Swedish cookbooks by the mid-1700s and later became everyday food. Today köttbullar are small and tender, made with breadcrumbs soaked in milk, seasoned with allspice and white pepper, fried in butter, and served with cream sauce, potatoes, lingonberry jam and pickled cucumber.",
@@ -974,6 +978,7 @@ export const kofta: DishFamily = {
         "pressed cucumber (pressgurka)",
       ],
       whenEaten: "Weeknight dinners and the Christmas julbord",
+      sourceRefs: [2],
       recipe: {
         serves: 4,
         prepMinutes: 30,
@@ -1057,7 +1062,7 @@ export const kofta: DishFamily = {
       coords: [18.41, 43.86],
       from: "turkish-kofte",
       arrival: "Under Ottoman rule, from the 1400s; the name comes from Turkish kebap",
-      summary: "Finger-shaped grilled rolls of minced beef, served by the handful in flatbread with raw onion.",
+      summary: "Finger-shaped grilled rolls of minced beef, served by the handful in flatbread with raw onion. [4]",
       story: [
         "Strictly, ćevapi belong to the kebab side of the family. The name comes from Turkish kebap, and they descend from the Ottoman tradition of grilling minced meat, like the Turkish şiş köfte. They are included here because they share the same idea: pounded, seasoned meat shaped by hand and cooked over fire.",
         "In Sarajevo, ćevapi are made from minced beef, sometimes with lamb, seasoned with little more than salt and pepper and rested so the mixture firms. Grilled over charcoal, they are served in portions of five or ten inside somun, a soft, airy flatbread, with chopped raw onion and often kajmak, a rich clotted dairy cream. They are among the city's best-known foods.",
@@ -1085,6 +1090,7 @@ export const kofta: DishFamily = {
         "yogurt to drink",
       ],
       whenEaten: "Lunch and late meals at ćevabdžinica grill houses",
+      sourceRefs: [4],
       recipe: {
         serves: 4,
         prepMinutes: 25,
@@ -1152,5 +1158,35 @@ export const kofta: DishFamily = {
         ],
       },
     },
+  ],
+  sources: [
+    {
+      "title": "Kofta",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Kofta",
+      "supports": "Family overview, preparation and regional context; historical accounts are secondary and should be read with their footnotes.",
+      "accessed": "2026-10-22"
+    },
+    {
+      "title": "Meatball",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Meatball",
+      "supports": "Meatball traditions beyond kofta, including European and Latin American preparations.",
+      "accessed": "2026-10-22"
+    },
+    {
+      "title": "Tabriz meatballs",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Tabriz_meatballs",
+      "supports": "The Tabriz combination of meat, rice, split peas and herbs.",
+      "accessed": "2026-10-22"
+    },
+    {
+      "title": "Ćevapi",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/%C4%86evapi",
+      "supports": "Dish description, ingredients and regional preparation; see the article’s footnotes for further reading.",
+      "accessed": "2026-10-22"
+    }
   ],
 };

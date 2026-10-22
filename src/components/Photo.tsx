@@ -3,12 +3,14 @@ import type { Photo as PhotoData } from '../data/types';
 
 const url = (src: string) => `${import.meta.env.BASE_URL}${src}`;
 
-/** Short attribution line, linked to the file page on Wikimedia Commons. */
+/** Short attribution line, linked to the original photograph and its licence. */
 export function Credit({ photo }: { photo: PhotoData }) {
   return (
-    <a className="photo-credit" href={photo.sourceUrl} target="_blank" rel="noopener noreferrer">
-      Photo: {photo.author} · {photo.license} · Wikimedia Commons
-    </a>
+    <span className="photo-credit">
+      <a href={photo.sourceUrl} target="_blank" rel="noopener noreferrer">Photo: {photo.attribution ?? photo.author}</a>
+      {' · '}<a href={photo.licenseUrl ?? photo.licenseRevision} target="_blank" rel="noopener noreferrer">{photo.license}</a>
+      {' · '}<a href={`${import.meta.env.BASE_URL}#/credits`}>Full credits</a>
+    </span>
   );
 }
 

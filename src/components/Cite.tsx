@@ -79,7 +79,7 @@ export function SourceList({ family, only }: { family: DishFamily; only?: number
   );
 }
 
-function SourceLine({ source: s }: { source: Source }) {
+export function SourceLine({ source: s }: { source: Source }) {
   return (
     <>
       <a href={s.url} target="_blank" rel="noopener noreferrer" className="source-title">
@@ -90,6 +90,7 @@ function SourceLine({ source: s }: { source: Source }) {
         <span className="source-host">{hostOf(s.url)}</span>
       </span>
       <span className="source-supports">{s.supports}</span>
+      {s.accessed && <span className="source-meta">Consulted {new Date(`${s.accessed}T00:00:00Z`).toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' })}</span>}
     </>
   );
 }

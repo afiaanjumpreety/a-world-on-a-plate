@@ -20,10 +20,10 @@ export const samosa: DishFamily = {
   intro:
     'A small parcel of dough wrapped around a savoury filling, sealed and cooked whole: the samosa began as sanbosag, a pastry of the medieval Persian and Arab world. It travelled to Central Asia and the Levant, reached India with the courts of the Delhi Sultanate, and from there crossed the Indian Ocean to Africa and, eventually, Portugal. Along the way it changed shape, swapped meat for potato and back again, and was baked, fried and folded in a dozen different ways.',
   history: [
-    'The samosa family begins with a word: sanbosag in Persian, sanbusaj in Arabic. A 10th-century Baghdad cookbook by Ibn Sayyar al-Warraq gives recipes for sanbusaj, small pastries of dough folded around minced meat and fried, and Persian writers of the following century mention them at court. These early versions were food for the wealthy, often filled with meat, nuts and spices. They travelled with merchants, soldiers and cooks across the Middle East and Central Asia, and each region adjusted the dough, the filling and the cooking to its own kitchen.',
-    "The samosa reached the Indian subcontinent with Central Asian and Persian cooks and the courts of the Delhi Sultanate, around the 1200s and 1300s. The Moroccan traveller Ibn Battuta, in India in the 1330s and 1340s, described sambusak served at the court of Muhammad bin Tughluq: thin pastry filled with minced meat cooked with almonds, pistachios, walnuts and spices. In the late 1500s the Ain-i-Akbari, a record of Emperor Akbar's court, includes a recipe for sanbusa. All of these were meat pastries. The potato, whose arrival in India is usually credited to the Portuguese, became the standard North Indian filling much later.",
-    'From North India the samosa spread east and south and then over the sea. In Bengal it became the small, pointed singara; in Hyderabad, the flat square lukhmi. Indian traders and settlers carried it along the Indian Ocean to East Africa and to Portuguese-ruled Mozambique, while trade across the Red Sea and Indian Ocean may have brought related pastries to the Horn of Africa much earlier. These coastal versions use thinner wrappers and their own spice blends. After Mozambique became independent in 1975, families moving to Portugal took the chamuça with them.',
-    'Meanwhile the older line carried on without India at all. In Central Asia the pastry became the somsa, baked against the hot walls of a tandoor and filled with raw lamb and onion that cook inside the crust. In the Levant it became sambousek, a crimped half-moon for the mezze table. These cousins are why the family looks so varied: some never saw a potato, some are baked rather than fried, and only some are triangles.',
+    'The samosa’s name has Middle Persian roots, and related savoury pastries appear across South Asia and neighbouring regions. A shared name is evidence of connections, but it does not establish one precise birthplace or a single route for every version. [1]',
+    'South Asian samosas are commonly fried and filled with spiced potatoes, peas, onions or meat. Shapes and fillings vary: a Bengali singara and a North Indian potato samosa belong to a broad family rather than one fixed recipe. Hyderabad’s lukhmi is a flat, square pastry traditionally filled with minced meat. [1, 3]',
+    'Central Asian samsa take a different approach. They are usually baked, often in a tandoor, with fillings such as lamb and onion. Their dough may be layered or bread-like. Comparing these pastries with fried samosas shows how cooking method can change the texture of a closely related dish. [2]',
+    'Related pastries and names also appear in the Levant, the Horn of Africa and Portuguese-speaking communities. These regional forms help explain why this family includes different wrappers, fillings and folds. The map offers a simplified interpretation of those relationships. [1]',
   ],
   etymology:
     'Samosa, somsa, sambusa, sambuus and sambousek all descend from the Persian sanbosag (later sanbusa), recorded in Arabic as sanbusaj; its deeper roots are uncertain. Bengali singara is popularly linked to singhara, the water chestnut, whose shape it resembles, and chamuça is the Portuguese spelling of the same family name.',
@@ -112,8 +112,7 @@ export const samosa: DishFamily = {
       coords: [35.5, 33.89],
       from: 'origin',
       arrival: 'Medieval era, through Arab cookery; recorded in Baghdad by the 900s',
-      summary:
-        'Crimped Levantine half-moons filled with spiced lamb and pine nuts, fried or baked for mezze.',
+      summary: "Crimped Levantine half-moons filled with spiced lamb and pine nuts, fried or baked for mezze. [1]",
       story: [
         "Sambousek is the Levant's descendant of the medieval sanbusaj, and it shows how early the family split. It is usually a half-moon rather than a triangle, its dough is soft and lightly enriched with oil or butter, and its edges are crimped by hand into a rope-like seam.",
         'Meat sambousek is filled with minced lamb or beef, onion, toasted pine nuts and a warm seven-spice blend; cheese versions use salty white cheeses such as akkawi with herbs. Lebanese families fry or bake large batches for mezze spreads and Ramadan evenings, and often freeze them to cook straight from the freezer when guests arrive.',
@@ -134,6 +133,7 @@ export const samosa: DishFamily = {
       },
       servedWith: ['Lemon wedges', 'Yoghurt', 'Other mezze such as hummus and tabbouleh'],
       whenEaten: 'Mezze, gatherings and Ramadan evenings',
+      sourceRefs: [1],
       recipe: {
         serves: 6,
         prepMinutes: 50,
@@ -219,8 +219,7 @@ export const samosa: DishFamily = {
       coords: [66.96, 39.65],
       from: 'origin',
       arrival: 'Medieval era, along Central Asian trade routes; date unrecorded',
-      summary:
-        'Flaky Uzbek pastries of raw lamb and onion, baked against the walls of a tandoor.',
+      summary: "Flaky Uzbek pastries of raw lamb and onion, baked against the walls of a tandoor. [2]",
       story: [
         'In Uzbekistan the somsa (samsa in Russian and several neighbouring languages) is baked rather than fried. The classic is tandir somsa, pressed onto the hot clay walls of a tandoor and baked until blistered and golden. Bazaars from Samarkand to Tashkent sell them hot from the oven.',
         'The filling goes in raw: hand-chopped lamb, a generous amount of fat, often from fat-tailed sheep, and plenty of onion, seasoned simply with cumin and black pepper. It cooks inside the pastry, so the juices stay sealed in. The dough is often layered with butter, which makes the crust flaky.',
@@ -241,6 +240,7 @@ export const samosa: DishFamily = {
       },
       servedWith: ['Green tea', 'Achichuk (tomato and onion salad)', 'Plain yoghurt'],
       whenEaten: 'Lunch and snacks from bazaar ovens',
+      sourceRefs: [2],
       recipe: {
         serves: 6,
         prepMinutes: 50,
@@ -327,8 +327,7 @@ export const samosa: DishFamily = {
       coords: [74.87, 31.63],
       from: 'origin',
       arrival: '1200s–1300s, with Central Asian cooks; potato filling much later',
-      summary:
-        'A tall cone of short, ajwain-flecked pastry around spiced potato and peas, fried slowly.',
+      summary: "A tall cone of short, ajwain-flecked pastry around spiced potato and peas, fried slowly. [1]",
       story: [
         'The samosa reached North India with Central Asian and Persian cooks by the 1200s or 1300s, but the version sold on Indian street corners today is a later creation. Early Indian samosas were meat pastries for the court. Potatoes, brought by European traders, became the standard filling over the following centuries, and by the 20th century the potato samosa was a national snack.',
         'The Punjabi style is large and tall, with a short, flaky crust made by rubbing ghee into the flour and seasoning it with ajwain. It is fried slowly in oil that is not too hot, so the pastry turns crisp without blistering. It is eaten with tamarind and mint chutneys, or broken over chole for samosa chaat.',
@@ -349,6 +348,7 @@ export const samosa: DishFamily = {
       },
       servedWith: ['Tamarind chutney', 'Mint and coriander chutney', 'Chole', 'Masala chai'],
       whenEaten: 'Afternoon tea, street snacks and gatherings',
+      sourceRefs: [1],
       recipe: {
         serves: 6,
         prepMinutes: 50,
@@ -436,8 +436,7 @@ export const samosa: DishFamily = {
       coords: [90.41, 23.81],
       from: 'punjabi-samosa',
       arrival: 'Spread east along the Gangetic plain; date unrecorded',
-      summary:
-        "Bangladesh's small, pointed teatime samosa, filled with spiced diced potato.",
+      summary: "Bangladesh's small, pointed teatime samosa, filled with spiced diced potato. [1]",
       story: [
         'In Bangladesh and West Bengal the samosa is the singara, smaller and more pointed than its northern cousin, and sold at tea stalls in the afternoon with a cup of milky tea. The name is popularly said to come from singhara, the water chestnut, whose horned shape it resembles.',
         'Bangladeshi singara is usually filled with diced or lightly mashed potato cooked with onion, green chilli and cumin, and the crust is often flecked with nigella seeds. Dhaka also has kolija singara, filled with spiced liver. Singara is a fixture of iftar tables during Ramadan, alongside piyaju, beguni and spiced chickpeas.',
@@ -458,6 +457,7 @@ export const samosa: DishFamily = {
       },
       servedWith: ['Milky tea', 'Tamarind sauce', 'Sliced onion and green chilli'],
       whenEaten: 'Afternoon tea and iftar',
+      sourceRefs: [1],
       recipe: {
         serves: 6,
         prepMinutes: 45,
@@ -543,8 +543,7 @@ export const samosa: DishFamily = {
       coords: [78.47, 17.39],
       from: 'punjabi-samosa',
       arrival: 'Through Deccani and Nizam-era court cooking; date unrecorded',
-      summary:
-        "Hyderabad's flat, square pastry of minced mutton, served at weddings and in Irani cafés.",
+      summary: "Hyderabad's flat, square pastry of minced mutton, served at weddings and in Irani cafés. [3]",
       story: [
         "Hyderabad's lukhmi is a flat, square meat pastry from the city's Deccani and Nizam-era cooking. The name is usually traced to the Urdu luqma, a morsel or mouthful. It is generally counted as a member of the samosa family, though whether it descends from the North Indian samosa or developed alongside it is not recorded.",
         'The pastry is a short, ghee-rich dough rolled thin, and the filling is a dry keema of minced mutton with ginger, garlic, green chilli and garam masala, finished with mint and lemon. Lukhmi is served as a starter at Hyderabadi weddings and during Ramadan, and is often sold in the Irani cafés of the old city.',
@@ -565,6 +564,7 @@ export const samosa: DishFamily = {
       },
       servedWith: ['Lemon wedges', 'Onion rings', 'Mint chutney', 'Irani chai'],
       whenEaten: 'Wedding starters, Ramadan evenings and café teatime',
+      sourceRefs: [3],
       recipe: {
         serves: 6,
         prepMinutes: 50,
@@ -654,8 +654,7 @@ export const samosa: DishFamily = {
       coords: [45.34, 2.05],
       from: 'origin',
       arrival: 'Over centuries of Red Sea and Indian Ocean trade; route undocumented',
-      summary:
-        'Small, crisp Somali triangles of thin homemade wrappers and spiced minced meat.',
+      summary: "Small, crisp Somali triangles of thin homemade wrappers and spiced minced meat. [1]",
       story: [
         'Across the Horn of Africa the samosa is sambuus in Somali and sambusa in Ethiopia and Eritrea. It probably arrived through centuries of trade with Arabia and India across the Red Sea and Indian Ocean, though no record shows exactly when. Somali cooks often make the wrappers themselves, cooking very thin rounds of dough briefly before folding.',
         'The Somali sambuus is small, flat and very crisp, filled with minced beef or lamb, onion, green chilli and spices such as those in xawaash, the Somali spice blend. It is an essential snack at Ramadan iftar, made in large batches, and also appears at weddings and Eid. Ethiopian sambusa is often filled with spiced lentils instead.',
@@ -676,6 +675,7 @@ export const samosa: DishFamily = {
       },
       servedWith: ['Lemon wedges', 'Green chilli sauce (basbaas)', 'Spiced tea (shaah)'],
       whenEaten: 'Ramadan iftar, weddings and Eid',
+      sourceRefs: [1],
       recipe: {
         serves: 6,
         prepMinutes: 60,
@@ -763,8 +763,7 @@ export const samosa: DishFamily = {
       coords: [32.57, -25.97],
       from: 'punjabi-samosa',
       arrival: '1800s–1900s, with Gujarati and Goan traders under Portuguese rule',
-      summary:
-        'Small, flat triangles of thin pastry filled with minced beef and hot piri-piri.',
+      summary: "Small, flat triangles of thin pastry filled with minced beef and hot piri-piri. [1]",
       story: [
         "Mozambique's chamuça comes from the Indian communities, largely Gujarati and Goan, who traded and settled on the coast under Portuguese rule. The Portuguese spelling stuck, and so did the snack: chamuças are sold on Maputo street corners and appear at birthday parties, weddings and Eid celebrations.",
         'Mozambican chamuças are small, flat triangles made from strips of thin pastry, closer to the East African style than to the Punjabi cone. The classic filling is minced beef with onion, garlic, ginger and garam masala, made hotter with piri-piri, the small chilli that runs through so much Mozambican cooking.',
@@ -785,6 +784,7 @@ export const samosa: DishFamily = {
       },
       servedWith: ['Lemon wedges', 'Piri-piri sauce', 'Cold drinks'],
       whenEaten: 'Snacks, parties and celebrations',
+      sourceRefs: [1],
       recipe: {
         serves: 6,
         prepMinutes: 45,
@@ -865,8 +865,7 @@ export const samosa: DishFamily = {
       coords: [-9.14, 38.72],
       from: 'chamuca-mozambique',
       arrival: 'Mostly from the mid-1970s, with families leaving Mozambique',
-      summary:
-        'A small, mildly spiced chicken or beef triangle sold by the piece in Lisbon cafés.',
+      summary: "A small, mildly spiced chicken or beef triangle sold by the piece in Lisbon cafés. [1]",
       story: [
         'Chamuças were known in Portugal through its empire, but they became an everyday snack from the mid-1970s, when many Indo-Mozambican and Portuguese families left Mozambique after independence and settled in and around Lisbon. Goan families, some of whom had moved after Goa became part of India in 1961, added their own cooking.',
         'Today chamuças sit in the glass cases of pastelarias and cafés next to rissóis and croquetes, sold by the piece with a coffee or a beer. Chicken and beef are the usual fillings, seasoned more gently than in Mozambique, and the triangles are small enough to eat in two bites.',
@@ -887,6 +886,7 @@ export const samosa: DishFamily = {
       },
       servedWith: ['Coffee', 'Cold beer', 'Other salgados such as rissóis'],
       whenEaten: 'Café snacks and party platters',
+      sourceRefs: [1],
       recipe: {
         serves: 6,
         prepMinutes: 40,
@@ -956,5 +956,28 @@ export const samosa: DishFamily = {
         ],
       },
     },
+  ],
+  sources: [
+    {
+      "title": "Samosa",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Samosa",
+      "supports": "Family overview, preparation and regional context; historical accounts are secondary and should be read with their footnotes.",
+      "accessed": "2026-10-22"
+    },
+    {
+      "title": "Samsa (food)",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Samsa_%28food%29",
+      "supports": "Central Asian baked meat-and-onion pastries and tandoor cooking.",
+      "accessed": "2026-10-22"
+    },
+    {
+      "title": "Lukhmi",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Lukhmi",
+      "supports": "Hyderabadi square pastry with minced-meat filling.",
+      "accessed": "2026-10-22"
+    }
   ],
 };

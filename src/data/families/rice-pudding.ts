@@ -30,10 +30,9 @@ export const ricePudding: DishFamily = {
   intro:
     "Wherever rice and milk have met, someone has cooked them together slowly and added something sweet. The results range from a temple offering in Kerala reduced for hours until it turns pale pink, to a Danish Christmas dessert hiding a single whole almond. Follow the pot across the map and the changes are small but telling: which rice, how much milk, what sweetens it, whether it is baked, chilled or burnt on top, and what scent goes in at the end.",
   history: [
-    "Rice cooked in milk is one of the oldest sweet dishes in South Asia. Early Indian literature mentions payasa, a dish of rice boiled in milk, as an offering and a food of celebration, and its descendants (kheer in the north, payasam in the south, payesh in Bengal) are still cooked for temples, weddings, birthdays and festivals. Because the dish needs nothing more than rice, milk and a sweetener, historians are cautious about calling any one place its only birthplace.",
-    "Persia and the Arab world had their own rice-and-milk dishes by the medieval period. Persian shir berenj (literally milk rice) and firni, made with ground rice, were court and household sweets, and medieval Arabic cookbooks from Abbasid Baghdad include rice cooked in milk. When Persian-speaking cooks served the Mughal court in the 1500s and 1600s, firni travelled east into the subcontinent, meeting the kheer that was already there.",
-    "Westward, Arab rule in al-Andalus brought rice cultivation to the Iberian peninsula, and rice cooked in milk became part of Spanish and Portuguese cooking. Elsewhere in medieval Europe rice was an imported luxury, and recipe collections from England and France describe it simmered in almond milk for the wealthy. The Ottoman kitchen, drawing on Persian and Arab cooking, made sütlaç a fixture of Istanbul's pudding shops.",
-    "From Iberia the dish crossed the Atlantic with Spanish colonists in the 1500s, and Mexican arroz con leche took on Ceylon cinnamon and, later, tinned condensed milk. In northern Europe, as rice grew cheaper, rice porridge became a Christmas dish, and by the early 1900s Danish cooks were folding whipped cream and almonds into the leftovers to make risalamande. The pot is the same everywhere; what each place adds to it tells you where it has been.",
+    "Rice pudding is a widespread combination of rice and milk, often sweetened and flavoured with spices. Its simplicity makes a single birthplace difficult to establish. Similar ingredients do not, by themselves, show that every version followed the same historical route. [1]",
+    "In South Asia, kheer, payasam and payesh belong to a family of milk puddings sweetened with sugar or jaggery and often scented with cardamom or saffron. Ground-rice phirni makes a smoother pudding, traditionally cooled in small clay bowls. [2, 3]",
+    "Other traditions take the same basic ingredients in different directions. Danish risalamande folds whipped cream and almonds into rice pudding and serves it with cherry sauce at Christmas. Such customs matter as much as the ingredients when understanding why a dish belongs to a place. [4]"
   ],
   etymology:
     "Kheer comes from Sanskrit ksheera, milk, and payasam and payesh from Sanskrit payasa, from payas, milk; Persian shir berenj means milk rice, Turkish sütlaç grew from sütlü aş (milky food), and Danish risalamande borrows French riz à l'amande, rice with almonds.",
@@ -122,8 +121,7 @@ export const ricePudding: DishFamily = {
       coords: [77.21, 28.61],
       from: "origin",
       arrival: "Ancient; descended from the payasa of early Indian texts",
-      summary:
-        "North India's festive rice pudding, made by simmering a little rice in a lot of milk until it thickens.",
+      summary: "North India's festive rice pudding, made by simmering a little rice in a lot of milk until it thickens. [2]",
       story: [
         "Kheer is the everyday name for rice pudding across North India and much of Pakistan, and it is cooked for almost every kind of occasion: Diwali and Eid, weddings, temple and gurdwara offerings, or simply a Sunday lunch. The method is unhurried. A small handful of rice goes into a large pan of full-fat milk, which is stirred and reduced until the grains break down and the milk turns creamy and faintly golden.",
         "Families argue over the details. Some prefer fragrant basmati, others short broken grains that cook down further; some add saffron, others only cardamom. Almonds, pistachios and raisins are usual. Kheer is eaten warm in winter and chilled in summer, and it thickens noticeably as it cools, so cooks stop reducing a little before it looks finished.",
@@ -145,6 +143,7 @@ export const ricePudding: DishFamily = {
       },
       servedWith: ["Puri at festival meals", "On its own after a thali"],
       whenEaten: "Festivals, weddings, offerings and Sunday lunches",
+      sourceRefs: [2],
       recipe: {
         serves: 6,
         prepMinutes: 10,
@@ -218,8 +217,7 @@ export const ricePudding: DishFamily = {
       coords: [76.36, 9.38],
       from: "origin",
       arrival: "Ancient; part of South India's temple and feast cooking",
-      summary:
-        "Kerala's milk payasam, reduced for hours with just rice and sugar until it turns a soft pinkish beige.",
+      summary: "Kerala's milk payasam, reduced for hours with just rice and sugar until it turns a soft pinkish beige. [2]",
       story: [
         "Kerala has many payasams, most of them made with jaggery and coconut milk. Paal payasam is the plain milk one, and it is famous in particular at the Sri Krishna temple at Ambalappuzha, where it is prepared as an offering. A popular legend tells of a king who lost a chess game to Krishna in disguise and owed him rice doubled on every square of the board, a debt repaid by serving payasam to pilgrims for ever.",
         "What sets it apart is the length of cooking. Milk and a little water are boiled with rice and sugar for a long time, and the sugar slowly caramelises with the milk, giving the payasam its pale pinkish colour and toffee-like depth with no spice needed. It is a fixture of the Onam sadya, served on the banana leaf towards the end of the meal.",
@@ -241,6 +239,7 @@ export const ricePudding: DishFamily = {
       },
       servedWith: ["The Onam sadya", "Banana chips and pappadam on the same leaf"],
       whenEaten: "Onam, Vishu, weddings and temple offerings",
+      sourceRefs: [2],
       recipe: {
         serves: 6,
         prepMinutes: 10,
@@ -302,8 +301,7 @@ export const ricePudding: DishFamily = {
       coords: [90.41, 23.81],
       from: "origin",
       arrival: "Ancient; Bengal's own form of payasa",
-      summary:
-        "Bengal's rice pudding, made with small fragrant grains and, in winter, sweetened with new date-palm jaggery.",
+      summary: "Bengal's rice pudding, made with small fragrant grains and, in winter, sweetened with new date-palm jaggery. [2]",
       story: [
         "In Bangladesh and West Bengal, payesh is the dish that marks a moment: a child's first rice, a birthday, the arrival of a guest. It is made with short, fragrant rice such as kalijira or chinigura in Bangladesh, or gobindobhog across the border, whose grains are tiny and break down into a creamy body while still holding their perfume.",
         "In winter it changes character. When the date palms are tapped and boiled down into nolen gur, the new season's jaggery, cooks use it in place of sugar, giving payesh a light brown colour and a smoky caramel flavour. The gur must be stirred in off the heat, because it can curdle hot milk. Bay leaf and cardamom are the usual aromatics.",
@@ -325,6 +323,7 @@ export const ricePudding: DishFamily = {
       },
       servedWith: ["Luchi at celebration meals", "Pitha in the winter season"],
       whenEaten: "Birthdays, first-rice ceremonies and winter",
+      sourceRefs: [2],
       recipe: {
         serves: 6,
         prepMinutes: 10,
@@ -394,8 +393,7 @@ export const ricePudding: DishFamily = {
       coords: [51.39, 35.69],
       from: "origin",
       arrival: "By the medieval period, as rice cooking spread through Persia",
-      summary:
-        "Persia's milk rice, gently sweet and scented with rosewater, often sweetened further at the table.",
+      summary: "Persia's milk rice, gently sweet and scented with rosewater, often sweetened further at the table. [1]",
       story: [
         "Shir berenj simply means milk rice, and it is the plainer of Iran's rice puddings. Rice is cooked in water until soft, then simmered in milk with rosewater and a little cardamom. Many cooks keep it only lightly sweet so that each person can add sugar, honey, grape syrup or a spoonful of jam at the table.",
         "It sits beside sholeh zard, Iran's better-known saffron rice pudding, which is a different dish: sholeh zard is cooked in water with sugar, saffron and rosewater and contains no milk at all. Both are made as nazri, food cooked and given away in fulfilment of a vow, especially during Muharram.",
@@ -417,6 +415,7 @@ export const ricePudding: DishFamily = {
       },
       servedWith: ["Rose-petal or sour-cherry jam", "Honey or grape syrup (shireh)"],
       whenEaten: "Family meals and vow offerings (nazri)",
+      sourceRefs: [1],
       recipe: {
         serves: 6,
         prepMinutes: 10,
@@ -486,8 +485,7 @@ export const ricePudding: DishFamily = {
       coords: [74.34, 31.55],
       from: "shir-berenj",
       arrival: "1500s–1600s, with Persian cooking at the Mughal court",
-      summary:
-        "A smooth, set pudding of ground rice and milk, chilled in unglazed clay bowls and scented with kewra or rose.",
+      summary: "A smooth, set pudding of ground rice and milk, chilled in unglazed clay bowls and scented with kewra or rose. [3]",
       story: [
         "Firni takes its name from Persian fereni, and it came into the subcontinent's grand kitchens with the Persian-influenced cooking of the Mughal court. Instead of whole grains, soaked rice is ground to a coarse paste and cooked in milk, so the pudding sets into something closer to a soft custard, cut through with a fine, slightly grainy texture.",
         "In Lahore, Karachi and across North India, firni is sold and served in shikoras, small unglazed earthenware bowls. Soaked before filling, the clay draws a little moisture from the surface as the firni chills and lends a faint earthy smell. It is a favourite for Eid and for iftar during Ramadan, decorated with pistachios and sometimes edible silver leaf.",
@@ -509,6 +507,7 @@ export const ricePudding: DishFamily = {
       },
       servedWith: ["Eid lunches", "Iftar spreads"],
       whenEaten: "Eid, Ramadan evenings, weddings",
+      sourceRefs: [3],
       recipe: {
         serves: 6,
         prepMinutes: 15,
@@ -582,8 +581,7 @@ export const ricePudding: DishFamily = {
       coords: [28.98, 41.01],
       from: "shir-berenj",
       arrival: "Medieval to Ottoman era, from Persian and Arab kitchens",
-      summary:
-        "Turkey's rice pudding, thickened lightly with rice flour and baked in a fierce oven until its top is spotted brown.",
+      summary: "Turkey's rice pudding, thickened lightly with rice flour and baked in a fierce oven until its top is spotted brown. [5]",
       story: [
         "Sütlaç is one of the standards of the muhallebici, the Turkish milk-pudding shop, alongside muhallebi and kazandibi. Its name grew from sütlü aş, milky food, and its roots run back through the Ottoman kitchen to the Persian and Arab rice dishes that came before it.",
         "The best-known form is fırın sütlaç, oven sütlaç. The rice is cooked in water and then milk, thickened with a spoonful of rice flour or starch, poured into small clay or ovenproof dishes and put under intense top heat until the surface blisters and browns. Served cold, it contrasts a slightly smoky, skin-like top with a cool, soft pudding beneath.",
@@ -605,6 +603,7 @@ export const ricePudding: DishFamily = {
       },
       servedWith: ["Turkish tea", "A dusting of cinnamon or hazelnuts"],
       whenEaten: "Afternoons at pudding shops; family dessert",
+      sourceRefs: [5],
       recipe: {
         serves: 6,
         prepMinutes: 10,
@@ -674,8 +673,7 @@ export const ricePudding: DishFamily = {
       coords: [-5.84, 43.36],
       from: "shir-berenj",
       arrival: "Medieval; rice came to Iberia with Arab rule in al-Andalus",
-      summary:
-        "Northern Spain's slow, very creamy rice pudding with lemon and cinnamon, finished with a crust of burnt sugar.",
+      summary: "Northern Spain's slow, very creamy rice pudding with lemon and cinnamon, finished with a crust of burnt sugar. [1]",
       story: [
         "Rice cooked with milk is made all over Spain, but green, dairy-rich Asturias treats it as a regional emblem. The Asturian version uses short-grain rice and a generous quantity of milk, cooked slowly for an hour or more with lemon peel and a cinnamon stick until the grains melt into a loose, creamy pudding.",
         "Its signature is the requemado. Sugar is scattered over the cold pudding and caramelised with a hot iron disc (a quemador) held just above the surface, leaving a brittle, slightly bitter crust much like that of crema catalana. Many families add a knob of butter at the end, and some still cook it in a big pot for Sunday lunch or village festivals.",
@@ -697,6 +695,7 @@ export const ricePudding: DishFamily = {
       },
       servedWith: ["Sunday lunch", "Local cider at festival meals"],
       whenEaten: "Sunday lunches and local festivals",
+      sourceRefs: [1],
       recipe: {
         serves: 8,
         prepMinutes: 10,
@@ -762,8 +761,7 @@ export const ricePudding: DishFamily = {
       coords: [-8.43, 41.55],
       from: "arroz-con-leche-asturias",
       arrival: "Medieval; part of the shared Iberian inheritance from al-Andalus",
-      summary:
-        "Portugal's rice pudding, enriched with egg yolks and decorated with cinnamon in lattices, initials or patterns.",
+      summary: "Portugal's rice pudding, enriched with egg yolks and decorated with cinnamon in lattices, initials or patterns. [1]",
       story: [
         "Arroz doce, sweet rice, is the dessert of Portuguese celebrations: Christmas, weddings, baptisms and village festivals, especially in the north. It shares its Iberian roots with Spanish arroz con leche, but Portugal's long love of egg-yolk sweets shows in the finish, where yolks are stirred in off the heat for a richer, golden pudding.",
         "It is usually cooked with Portugal's own carolino rice, simmered first in water with lemon peel and a little salt, then in milk. The pudding is poured onto a wide platter, and once it has set a little the top is decorated with ground cinnamon, sifted in criss-cross lines or used to spell out a name or a date for the occasion.",
@@ -785,6 +783,7 @@ export const ricePudding: DishFamily = {
       },
       servedWith: ["Christmas sweets such as filhoses", "Festival lunches"],
       whenEaten: "Christmas, weddings, baptisms and festivals",
+      sourceRefs: [1],
       recipe: {
         serves: 8,
         prepMinutes: 10,
@@ -851,8 +850,7 @@ export const ricePudding: DishFamily = {
       coords: [-99.13, 19.43],
       from: "arroz-con-leche-asturias",
       arrival: "1500s onward, with Spanish colonists, rice and dairy cattle",
-      summary:
-        "Mexico's home-style rice pudding, cooked with canela and finished with condensed and evaporated milk and raisins.",
+      summary: "Mexico's home-style rice pudding, cooked with canela and finished with condensed and evaporated milk and raisins. [1]",
       story: [
         "Rice, cattle and sugar all reached Mexico with Spanish colonisation in the 1500s, and arroz con leche followed. Over the centuries it became one of the country's most familiar home desserts, sold by the cup in markets and made in family kitchens for no particular reason.",
         "Mexican cooks use canela, the soft, flaky Ceylon cinnamon that is far more common in Mexico than the harder cassia, simmering whole sticks with the rice. Many modern home recipes cook the rice in water first and then finish it with fresh, evaporated and sweetened condensed milk, which gives a rich, caramel-sweet result. Raisins are common, and it is eaten warm or cold.",
@@ -874,6 +872,7 @@ export const ricePudding: DishFamily = {
       },
       servedWith: ["A cup of coffee or atole", "On its own as an afternoon sweet"],
       whenEaten: "Any day; markets, home kitchens, celebrations",
+      sourceRefs: [1],
       recipe: {
         serves: 6,
         prepMinutes: 10,
@@ -943,8 +942,7 @@ export const ricePudding: DishFamily = {
       from: "arroz-con-leche-asturias",
       arrival:
         "Rice reached northern Europe through medieval Mediterranean trade; this dessert dates from around 1900",
-      summary:
-        "Denmark's Christmas Eve dessert: cold rice porridge folded with whipped cream, vanilla and almonds, under hot cherry sauce.",
+      summary: "Denmark's Christmas Eve dessert: cold rice porridge folded with whipped cream, vanilla and almonds, under hot cherry sauce. [4]",
       story: [
         "Rice was long an expensive import in Scandinavia, and risengrød, rice porridge cooked in milk, became a treat associated with Christmas. Risalamande, its richer descendant, took shape around the late 1800s and early 1900s, borrowing a French-sounding name (riz à l'amande) though it is thoroughly Danish. Leftover porridge is chilled and folded with whipped cream, vanilla, sugar and chopped almonds.",
         "It is served on Christmas Eve with a warm cherry sauce. Before it goes to the table, one whole blanched almond is hidden in the bowl, and whoever finds it wins a small prize, the mandelgave. Finders often keep the almond hidden in their cheek until everyone has finished, so the others keep eating.",
@@ -966,6 +964,7 @@ export const ricePudding: DishFamily = {
       },
       servedWith: ["Warm cherry sauce (kirsebærsauce)", "Christmas Eve dinner"],
       whenEaten: "Christmas Eve, after the main meal",
+      sourceRefs: [4],
       recipe: {
         serves: 8,
         prepMinutes: 25,
@@ -1038,5 +1037,42 @@ export const ricePudding: DishFamily = {
         ],
       },
     },
+  ],
+  sources: [
+    {
+      "title": "Rice pudding",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Rice_pudding",
+      "supports": "Family overview, preparation and regional context; historical accounts are secondary and should be read with their footnotes.",
+      "accessed": "2026-10-22"
+    },
+    {
+      "title": "Kheer",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Kheer",
+      "supports": "South Asian rice-and-milk puddings, regional names, sweeteners and aromatics.",
+      "accessed": "2026-10-22"
+    },
+    {
+      "title": "Phirni",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Phirni",
+      "supports": "Ground-rice milk pudding, chilled serving and Mughal-era associations.",
+      "accessed": "2026-10-22"
+    },
+    {
+      "title": "Risalamande",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Risalamande",
+      "supports": "Danish Christmas pudding with whipped cream, almonds and cherry sauce.",
+      "accessed": "2026-10-22"
+    },
+    {
+      "title": "Sütlaç",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/S%C3%BCtla%C3%A7",
+      "supports": "Dish description, ingredients and regional preparation; see the article’s footnotes for further reading.",
+      "accessed": "2026-10-22"
+    }
   ],
 };

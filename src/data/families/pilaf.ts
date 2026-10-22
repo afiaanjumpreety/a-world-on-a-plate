@@ -21,16 +21,16 @@ export const pilaf: DishFamily = {
     "Rice cooked in seasoned stock, or layered with meat and sealed to steam, is one of the great shared ideas of Asia, East Africa and the Mediterranean. In Tehran it is polow with a golden crust; in Tashkent, plov built over carrots in an iron kazan; in Hyderabad, biryani cooked under a seal of dough. Follow the grain and you trace caravan roads, royal kitchens and the monsoon trade.",
   history: [
     "Who first cooked rice in stock with meat is unresolved. The food historian Charles Perry calls pilaf a post-10th-century eastern Arabic innovation, and an early 13th-century cookbook from Aleppo gives a recipe of rice, meat, chickpeas and garlic that resembles it. [1] The historian K. T. Achaya pointed to rice cooked with meat in ancient Indian texts, though other scholars argue those dishes were something else. [1, 2] Central Asians tell of Alexander the Great bringing plov home from Samarkand, a story historians treat as apocryphal. [1] What is clear is that rice cooked in stock became a prestige dish across the Persianate world.",
-    "In Persian the dish is first attested in a 14th-century satirical poem, and the earliest named pilaf recipe appears in a cookbook written in 1521 for the court of the Safavid shah Ismail I. [1] A second Safavid cookbook, by a chef to Shah Abbas I, gives four of its six chapters to rice dishes, and by the end of the 1500s rice had grown from a court speciality into a major branch of Iranian cookery. [3] The method of parboiling rice, draining it and steaming it gently became the Persian signature. [1] In the Ottoman Empire, pilaf was central to palace cooking, where new cooks were reportedly tested on how they cooked rice, and it spread into the Balkans and the Levant. [8, 1]",
+    "In Persian the dish is first attested in a 14th-century satirical poem, and the earliest named pilaf recipe appears in a cookbook written in 1521 for the court of the Safavid shah Ismail I. [1] A second Safavid cookbook, by a chef to Shah Abbas I, gives four of its six chapters to rice dishes, and by the end of the 1500s rice had grown from a court speciality into a major branch of Iranian cookery. [3] The method of parboiling rice, draining it and steaming it gently became the Persian signature. [1] In the Ottoman Empire, pilaf was central to palace cooking, where new cooks were reportedly tested on how they cooked rice, and it spread into the Balkans and the Levant. [1]",
     "In South Asia, Persianate courts brought pilau into kitchens already rich in spice. There it met Indian techniques and became pulao and biryani, the latter layered and often sealed to cook in its own steam. [2] Both dishes are listed in the Ain-i-Akbari, a record of Akbar's court written in the 1590s, and the historian Lizzie Collingham places the birth of modern biryani in the Mughal kitchens; others think it reached the Deccan earlier. [2] A popular story credits Timur with bringing biryani to India, but there is no record of it in his Central Asian homeland at the time. [2] Each court and city, from Lucknow to Hyderabad to Dhaka, settled on its own style.",
-    "The idea also moved by sea and by conquest. Omani, Yemeni and Persian settlers and the Indian Ocean trade brought rice and spices to the Swahili coast, where pilau is now a festive staple. [17, 18] Further west, Arabs in al-Andalus began cultivating rice around the 10th century, and it took root in the wetlands around Valencia. [19] Paella, a nineteenth-century Valencian dish, is a distant cousin rather than a direct descendant, but it inherits that rice and a similar instinct: grains cooked in a rich, seasoned broth until every drop is absorbed. [19, 1]",
+    "The idea also moved by sea and by conquest. Omani, Yemeni and Persian settlers and the Indian Ocean trade brought rice and spices to the Swahili coast, where pilau is now a festive staple. [1] Further west, Arabs in al-Andalus began cultivating rice around the 10th century, and it took root in the wetlands around Valencia. [6] Paella, a nineteenth-century Valencian dish, is a distant cousin rather than a direct descendant, but it inherits that rice and a similar instinct: grains cooked in a rich, seasoned broth until every drop is absorbed. [6, 1]",
   ],
   etymology:
-    "English pilau was borrowed from Persian by way of Turkish; the Oxford English Dictionary traces Persian pulaw further back to Sanskrit pulāka, a ball of rice, though the food historian Charles Perry argues the Sanskrit word meant something quite different. [1] Biryani comes from Persian beryān, 'fried' or 'roasted' [2], and paella is the Valencian word for the wide pan, from Latin patella. [19]",
+    "English pilau was borrowed from Persian by way of Turkish; the Oxford English Dictionary traces Persian pulaw further back to Sanskrit pulāka, a ball of rice, though the food historian Charles Perry argues the Sanskrit word meant something quite different. [1] Biryani comes from Persian beryān, 'fried' or 'roasted' [2], and paella is the Valencian word for the wide pan, from Latin patella. [6]",
   timeline: [
     {
       when: "c. 900s",
-      event: "Arabs in al-Andalus begin cultivating rice; pilaf-like rice cooking spreads across the Abbasid world. [19, 1]",
+      event: "Arabs in al-Andalus begin cultivating rice; pilaf-like rice cooking spreads across the Abbasid world. [6, 1]",
     },
     {
       when: "Early 1200s",
@@ -50,11 +50,11 @@ export const pilaf: DishFamily = {
     },
     {
       when: "1700s–1800s",
-      event: "The Nawabs of Awadh and the Nizams of Hyderabad shape the courtly biryanis of Lucknow and Hyderabad. [9, 10, 11]",
+      event: "The Nawabs of Awadh and the Nizams of Hyderabad shape the courtly biryanis of Lucknow and Hyderabad. [2]",
     },
     {
       when: "1800s",
-      event: "Paella takes shape as a named dish in rural Valencia; Zanzibar thrives as an Omani-ruled clove port. [19, 17]",
+      event: "Paella takes shape as a named dish in rural Valencia; Zanzibar thrives as an Omani-ruled clove port. [6, 1]",
     },
     {
       when: "2016",
@@ -108,8 +108,7 @@ export const pilaf: DishFamily = {
       coords: [51.39, 35.69],
       from: "origin",
       arrival: "The Persian heartland of the family; refined at Safavid courts in the 1500s–1600s",
-      summary:
-        "Persian rice with broad beans and dill, parboiled, steamed and crowned with a golden crust of tahdig.",
+      summary: "Persian rice with broad beans and dill, parboiled, steamed and crowned with a golden crust of tahdig. [7]",
       story: [
         "Iranian cooks distinguish chelow, plain steamed rice, from polow, rice steamed together with other ingredients. Both rest on the same careful method: rice is soaked, boiled briefly in plenty of salted water, drained and then steamed slowly in a covered pot until each long grain stands apart. The lid is wrapped in a cloth to catch condensation, so the rice turns fluffy rather than wet.",
         "The prize is tahdig, 'bottom of the pot', the crisp golden layer that forms on the base. It may be rice bound with yogurt and saffron, or slices of potato or flatbread. Baghali polow, scented with dill and studded with broad beans, is a spring favourite, and is often served with braised lamb shank.",
@@ -135,6 +134,7 @@ export const pilaf: DishFamily = {
         "torshi pickles",
       ],
       whenEaten: "Family lunches, Nowruz gatherings and dinner parties",
+      sourceRefs: [7],
       recipe: {
         serves: 6,
         prepMinutes: 30,
@@ -225,7 +225,7 @@ export const pilaf: DishFamily = {
       coords: [69.28, 41.31],
       from: "origin",
       arrival: "An old tradition of Central Asia's oasis cities, shaped over centuries along the Silk Roads",
-      summary: "Rice steamed over a rich base of lamb, onions and yellow carrots in a heavy iron kazan.",
+      summary: "Rice steamed over a rich base of lamb, onions and yellow carrots in a heavy iron kazan. [8]",
       story: [
         "In Uzbekistan, plov is how weddings, holidays and gatherings of friends are fed. Ceremonial plov is traditionally the work of men, the oshpaz, who cook it in huge kazans over open fires, sometimes at dawn for an early wedding feast. Every region claims its own style, from Tashkent to Samarkand, Bukhara and the Fergana Valley.",
         "The method is distinctive. Meat, onions and carrots cut into thick matchsticks are fried in a generous amount of oil, then simmered into a rich base called zirvak. Rice goes on top, unstirred, absorbs the liquid and then steams. In 2016 UNESCO recognised Uzbek palov culture as intangible cultural heritage.",
@@ -246,6 +246,7 @@ export const pilaf: DishFamily = {
       },
       servedWith: ["achichuk (tomato and onion salad)", "non flatbread", "green tea", "pickled vegetables"],
       whenEaten: "Weddings, family gatherings and early-morning wedding feasts",
+      sourceRefs: [8],
       recipe: {
         serves: 8,
         prepMinutes: 40,
@@ -333,7 +334,7 @@ export const pilaf: DishFamily = {
       coords: [69.17, 34.53],
       from: "origin",
       arrival: "From the shared Persian and Central Asian rice tradition; now widely called Afghanistan's national dish",
-      summary: "Lamb and rice cooked in dark, spiced stock, topped with sweet carrots, raisins and nuts.",
+      summary: "Lamb and rice cooked in dark, spiced stock, topped with sweet carrots, raisins and nuts. [9]",
       story: [
         "Afghanistan sits between the rice traditions of Iran, Central Asia and India, and its palaw borrows from all three: the cook-in-stock method of plov, the gentle steaming of Persian polow, and warm spices familiar from the subcontinent. Kabuli palaw is the festive version, served at weddings, at Eid and for honoured guests.",
         "Its deep brown colour comes from onions fried until very dark, sometimes helped by a little caramelised sugar, and from the lamb stock the rice cooks in. The meat is often buried inside the mound of rice, and the top is scattered with carrot strips and raisins fried until glossy and sweet, with almonds or pistachios.",
@@ -354,6 +355,7 @@ export const pilaf: DishFamily = {
       },
       servedWith: ["Afghan naan", "plain yogurt", "tomato and onion salad", "pickled chillies"],
       whenEaten: "Weddings, Eid and when honoured guests visit",
+      sourceRefs: [9],
       recipe: {
         serves: 6,
         prepMinutes: 30,
@@ -446,7 +448,7 @@ export const pilaf: DishFamily = {
       coords: [28.98, 41.01],
       from: "origin",
       arrival: "1300s–1500s, with Turkic dynasties moving west; a staple of Ottoman kitchens",
-      summary: "Buttery rice and toasted vermicelli cooked in stock until every grain is separate.",
+      summary: "Buttery rice and toasted vermicelli cooked in stock until every grain is separate. [1]",
       story: [
         "In Turkey, pilav is the everyday companion to stews and grills, made with rice or with cracked wheat as bulgur pilavı. Ottoman cooks ranked it highly, and palace kitchens produced elaborate versions with meat, nuts and dried fruit. The plain version is a test of skill: separate, glossy grains, never mushy.",
         "The method relies on absorption. Rice is soaked, rinsed and fried in butter, often with a handful of toasted şehriye, fine vermicelli, before hot stock goes in. After cooking, the pot rests under a cloth, a stage called demlenmek, so the grains firm up and finish steaming.",
@@ -467,6 +469,7 @@ export const pilaf: DishFamily = {
       },
       servedWith: ["kuru fasulye (white bean stew)", "grilled köfte", "cacık (yogurt with cucumber)", "turşu pickles"],
       whenEaten: "Daily, beside stews at home and in lokanta canteens",
+      sourceRefs: [1],
       recipe: {
         serves: 4,
         prepMinutes: 10,
@@ -531,8 +534,7 @@ export const pilaf: DishFamily = {
       coords: [80.95, 26.85],
       from: "origin",
       arrival: "1700s–1800s, at the Persian-descended Nawabs' court, drawing on Mughal Delhi",
-      summary:
-        "A subtle, fragrant biryani: meat and rice cooked separately in rich stock, then layered and sealed to steam.",
+      summary: "A subtle, fragrant biryani: meat and rice cooked separately in rich stock, then layered and sealed to steam. [10]",
       story: [
         "The Nawabs of Awadh, whose dynasty traced its roots to Nishapur in Iran, ruled from Faizabad and then Lucknow through the 1700s and 1800s, and made their court a centre of refined cooking. Their kitchens favoured delicacy over heat, prizing the aromas of saffron, kewra and rose, and slow cooking in sealed pots, known as dum.",
         "Lucknowi biryani is made in the pakki, or 'cooked', style. Meat is first simmered in a spiced stock, yakhni, and the rice is part-cooked in that same stock, so both arrive in the pot already seasoned. They are layered, sealed and steamed briefly. The result is lighter and more perfumed than many southern biryanis.",
@@ -553,6 +555,7 @@ export const pilaf: DishFamily = {
       },
       servedWith: ["mint or cucumber raita", "shami kebab", "sliced onion and lemon", "shahi tukda for dessert"],
       whenEaten: "Weddings, Eid and special family meals",
+      sourceRefs: [10],
       recipe: {
         serves: 6,
         prepMinutes: 40,
@@ -654,7 +657,7 @@ export const pilaf: DishFamily = {
       coords: [78.47, 17.36],
       from: "origin",
       arrival: "1500s–1700s, through the Persianate Qutb Shahi sultans, the Mughals and the Nizams",
-      summary: "Raw marinated goat layered under part-cooked rice and cooked together beneath a dough seal.",
+      summary: "Raw marinated goat layered under part-cooked rice and cooked together beneath a dough seal. [11]",
       story: [
         "Hyderabad was founded in the late 1500s by the Qutb Shahi sultans, a dynasty steeped in Persian culture, and later became the seat of the Asaf Jahi Nizams. Persian, Mughal and Deccani cooking met in its kitchens, and biryani became the city's emblem. Popular stories link the dish to a Mughal general or to the Nizams' cooks, but no single founder can be named.",
         "Its hallmark is the kacchi, or 'raw', method. Meat marinated in yogurt, chilli, mint and fried onions goes into the pot raw, beneath rice that is only partly boiled. Sealed and set over heat, the meat cooks in its own juices while the rice above steams through. Getting both done at the same moment is the cook's real skill.",
@@ -680,6 +683,7 @@ export const pilaf: DishFamily = {
         "double ka meetha for dessert",
       ],
       whenEaten: "Weddings, Eid, Ramadan iftar and weekend family meals",
+      sourceRefs: [11],
       recipe: {
         serves: 6,
         prepMinutes: 45,
@@ -781,7 +785,7 @@ export const pilaf: DishFamily = {
       coords: [90.41, 23.71],
       from: "awadhi-biryani",
       arrival: "From the 1600s, through Mughal Bengal and later with cooks and tastes from northern India",
-      summary: "Goat and potatoes layered raw under fragrant rice, scented with nutmeg, mace and kewra.",
+      summary: "Goat and potatoes layered raw under fragrant rice, scented with nutmeg, mace and kewra. [2]",
       story: [
         "Dhaka became the Mughal capital of Bengal in the early 1600s, and Persian-influenced court cooking took root in the old city along the Buriganga river. Over the following centuries the city absorbed cooks and tastes from northern India, and its biryani makers developed a style of their own that is now central to Bangladeshi celebrations.",
         "Kacchi biryani in Dhaka is built on khasi, goat meat, marinated and laid raw beneath the rice with halved potatoes that soak up the juices. The seasoning leans aromatic rather than hot: nutmeg, mace, cardamom, kewra and rose water, with dried plums for a gentle tang. To many Bangladeshis, a wedding without kacchi and a glass of borhani, a peppery yogurt drink, feels incomplete.",
@@ -803,6 +807,7 @@ export const pilaf: DishFamily = {
       },
       servedWith: ["borhani (spiced yogurt drink)", "cucumber, onion and green chilli salad", "firni or zarda for dessert"],
       whenEaten: "Weddings, Eid and large family celebrations",
+      sourceRefs: [2],
       recipe: {
         serves: 6,
         prepMinutes: 45,
@@ -914,7 +919,7 @@ export const pilaf: DishFamily = {
       coords: [67.01, 24.86],
       from: "origin",
       arrival: "From the Mughal era, as Persianate rice cooking reached the lower Indus; a Karachi staple today",
-      summary: "A hot, tangy layered biryani with tomatoes, potatoes, green chillies and dried plums.",
+      summary: "A hot, tangy layered biryani with tomatoes, potatoes, green chillies and dried plums. [12]",
       story: [
         "Sindh, on the lower Indus, sat within the Persian-speaking and Mughal world, and its cooks adopted biryani in their own manner. In Karachi, the province's great port city, Sindhi biryani is an everyday favourite, sold from street stalls and restaurants and cooked at home for family meals and weddings alike.",
         "Where Lucknow aims for perfume, Sindhi biryani goes for punch. The meat is cooked into a spicy, sour masala of tomatoes and yogurt, then layered with rice, potatoes, slices of fresh tomato, whole green chillies, mint and dried plums. The plums, aloo bukhara, give bursts of sweet-sour fruit through the pot.",
@@ -935,6 +940,7 @@ export const pilaf: DishFamily = {
       },
       servedWith: ["raita", "kachumber (tomato, onion and cucumber salad)", "lemon wedges"],
       whenEaten: "Any day: home lunches, street stalls and weddings",
+      sourceRefs: [12],
       recipe: {
         serves: 6,
         prepMinutes: 30,
@@ -1033,7 +1039,7 @@ export const pilaf: DishFamily = {
       coords: [39.19, -6.16],
       from: "origin",
       arrival: "Over centuries of monsoon trade with Arabian, Persian and Indian merchants",
-      summary: "Beef and rice cooked in stock with a dark-toasted mix of cumin, cardamom, cloves and cinnamon.",
+      summary: "Beef and rice cooked in stock with a dark-toasted mix of cumin, cardamom, cloves and cinnamon. [1]",
       story: [
         "For centuries the monsoon winds carried ships between the Persian Gulf, Arabia, India and the East African coast. Swahili towns such as Zanzibar, Lamu and Mombasa traded in spices, cloth and grain, and absorbed rice dishes from their partners. Zanzibar, ruled by Omani sultans in the 1800s and home to many Indian merchant families, became famous for its clove plantations, and its spices go straight into the pot.",
         "Pilau begins with onions fried until deep brown, then the pilau masala, a mix built on cumin with cardamom, cloves, cinnamon and black pepper. Meat, rice and stock go in to cook by absorption. It is the dish for Eid, weddings and family celebrations across Tanzania and Kenya, served with fresh kachumbari salad on the side.",
@@ -1054,6 +1060,7 @@ export const pilaf: DishFamily = {
       },
       servedWith: ["kachumbari (tomato, onion and chilli salad)", "pili pili chilli sauce", "a simple bean or beef curry"],
       whenEaten: "Eid, weddings and family celebrations",
+      sourceRefs: [1],
       recipe: {
         serves: 6,
         prepMinutes: 25,
@@ -1138,8 +1145,7 @@ export const pilaf: DishFamily = {
       coords: [-0.38, 39.47],
       from: "origin",
       arrival: "Rice came with al-Andalus in the Middle Ages; paella itself is 1800s Valencian",
-      summary:
-        "A distant cousin: rice cooked in a wide pan in saffron broth with chicken, rabbit and beans until a crust forms.",
+      summary: "A distant cousin: rice cooked in a wide pan in saffron broth with chicken, rabbit and beans until a crust forms. [6]",
       story: [
         "Paella is not a direct descendant of Persian pilaf, and it appears here with that caveat. Rice farming was established in Spain under Muslim rule in al-Andalus, and the lagoon and marshes of the Albufera near Valencia became rice country. Saffron was grown in Moorish Spain too. Over centuries, Valencian farm workers developed rice dishes cooked over wood fires in the fields.",
         "The dish known as paella, named after its wide, shallow pan, took shape in the 1800s. The Valencian version uses chicken, rabbit, flat green beans and large white garrofó beans, with saffron and sometimes rosemary or snails. The rice is spread thin and never stirred, so it absorbs the broth evenly and forms socarrat, a toasted crust on the base.",
@@ -1161,6 +1167,7 @@ export const pilaf: DishFamily = {
       },
       servedWith: ["green salad", "crusty bread", "local wine"],
       whenEaten: "Sunday lunch, often outdoors, eaten straight from the pan",
+      sourceRefs: [6],
       recipe: {
         serves: 6,
         prepMinutes: 25,
@@ -1228,5 +1235,91 @@ export const pilaf: DishFamily = {
         ],
       },
     },
+  ],
+  sources: [
+    {
+      "title": "Pilaf",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Pilaf",
+      "supports": "Family overview, preparation and regional context; historical accounts are secondary and should be read with their footnotes.",
+      "accessed": "2026-10-22"
+    },
+    {
+      "title": "Biryani",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Biryani",
+      "supports": "Debated origins, Mughal court records, Persian name and regional biryani styles.",
+      "accessed": "2026-10-22"
+    },
+    {
+      "title": "BERENJ “rice” iii. In Cooking",
+      "publisher": "Encyclopaedia Iranica",
+      "url": "https://www.iranicaonline.org/articles/berenj-rice/berenj-rice-iii-in-cooking/",
+      "supports": "Safavid rice cookbooks and Iranian polow and chelow techniques.",
+      "accessed": "2026-10-22"
+    },
+    {
+      "title": "Palov culture and tradition",
+      "publisher": "UNESCO",
+      "url": "https://ich.unesco.org/en/RL/palov-culture-and-tradition-01166",
+      "supports": "Uzbek palov as a social tradition; inscription on the Representative List in 2016.",
+      "accessed": "2026-10-22"
+    },
+    {
+      "title": "Oshi Palav, a traditional meal and its social and cultural contexts in Tajikistan",
+      "publisher": "UNESCO",
+      "url": "https://ich.unesco.org/en/RL/oshi-palav-a-traditional-meal-and-its-social-and-cultural-contexts-in-tajikistan-01191",
+      "supports": "Tajik oshi palav and its communal context; inscription in 2016.",
+      "accessed": "2026-10-22"
+    },
+    {
+      "title": "Paella",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Paella",
+      "supports": "Valencian rice cooking, the pan’s name and the distinction from Asian pilaf.",
+      "accessed": "2026-10-22"
+    },
+    {
+      "title": "Baghali polo",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Baghali_polo",
+      "supports": "Dish description, ingredients and regional preparation; see the article’s footnotes for further reading.",
+      "accessed": "2026-10-22"
+    },
+    {
+      "title": "Uzbek plov",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Uzbek_plov",
+      "supports": "Dish description, ingredients and regional preparation; see the article’s footnotes for further reading.",
+      "accessed": "2026-10-22"
+    },
+    {
+      "title": "Kabuli pulao",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Kabuli_pulao",
+      "supports": "Dish description, ingredients and regional preparation; see the article’s footnotes for further reading.",
+      "accessed": "2026-10-22"
+    },
+    {
+      "title": "Awadhi cuisine",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Awadhi_cuisine",
+      "supports": "Dish description, ingredients and regional preparation; see the article’s footnotes for further reading.",
+      "accessed": "2026-10-22"
+    },
+    {
+      "title": "Hyderabadi biryani",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Hyderabadi_biryani",
+      "supports": "Dish description, ingredients and regional preparation; see the article’s footnotes for further reading.",
+      "accessed": "2026-10-22"
+    },
+    {
+      "title": "Sindhi biryani",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Sindhi_biryani",
+      "supports": "Dish description, ingredients and regional preparation; see the article’s footnotes for further reading.",
+      "accessed": "2026-10-22"
+    }
   ],
 };

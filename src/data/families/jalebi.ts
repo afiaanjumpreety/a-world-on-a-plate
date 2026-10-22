@@ -20,10 +20,9 @@ export const jalebi: DishFamily = {
   intro:
     "A loose, slightly sour batter is squeezed in loops into hot fat, fried until crisp and dropped straight into warm syrup, which it drinks up through every hollow. That is the whole idea, and it has hardly changed in a thousand years. What has changed is the flour, the ferment, the shape, the scent of the syrup and what it is eaten with: thick rabri in Delhi, hot milk in Lahore, fried fish in Kabul, and the first sip of water after a Ramadan fast from Dhaka to Béja.",
   history: [
-    "The family begins with zalabiya, a fried batter sweet soaked in syrup or honey. The earliest known recipes appear in the Kitab al-Tabikh compiled by Ibn Sayyar al-Warraq in 10th-century Baghdad, the oldest surviving Arabic cookbook. Medieval recipes describe a thin batter dribbled into hot fat, sometimes in lattice shapes, then dipped in syrup. Later Arabic cookbooks of the 13th century kept it, and the name spread with Arab and Persian cooking across the Islamic world.",
-    "In Persia it became zoolbia, still made in lattice-like loops and scented with saffron and rosewater, and still most closely tied to Ramadan. Persian-speaking traders, soldiers and courts carried the sweet into the Indian subcontinent, where the name became jalebi. Indian texts from roughly the 1400s onward name it, and it settled so firmly into Indian sweet-making that it became a temple and festival sweet as well as a breakfast and street food.",
-    "From North India the jalebi spread through Bengal, where it became jilapi, into Nepal as jeri, and across the Khyber into Afghanistan. Indian confectioners also developed offshoots, most famously imarti, or jangiri in the south, made from ground urad dal rather than wheat. Westward, the medieval name survives in North Africa as zlabia, a Ramadan sweet with a close family likeness.",
-    "Not every modern zalabiya is a spiral. In Lebanon, Syria and Egypt, the word now usually means other fried dough sweets: puffy balls, rings or fingers of yeasted dough. These are honest cousins rather than direct descendants of the jalebi shape, a reminder that one medieval name can split into very different sweets over the centuries. Medieval zalabiya itself seems to have covered more than one shape, so the modern Levantine fritters may preserve one branch of it as faithfully as the spiral does another.",
+    "The early written record leads to zalabiya recipes in medieval Arabic cookbooks, including the tenth-century collection associated with Ibn Sayyar al-Warraq. An early surviving recipe is evidence of a dish being made, rather than proof that its author invented it. [1, 3]",
+    "The South Asian jalebi is made by frying loops of batter and soaking them in syrup. Related names and preparations occur across West Asia, North Africa and South Asia. Indian texts mention jalebi by the fifteenth century, while regional versions vary in shape, flavouring and accompaniments. [1]",
+    "Imarti, also called jangiri, uses black gram rather than the wheat-flour batter typical of jalebi and is piped into a flower-like pattern. Other zalabiyeh are fritters rather than spirals. This family therefore includes close relatives whose modern shapes and ingredients are quite different. [2, 3]"
   ],
   etymology:
     "Jalebi, jilapi, jeri, zoolbia and zlabia all come from medieval Arabic zalabiya, which some scholars trace further back to Persian; imarti is of uncertain origin, and a popular story links jangiri to the Mughal emperor Jahangir.",
@@ -106,8 +105,7 @@ export const jalebi: DishFamily = {
       coords: [51.39, 35.69],
       from: "origin",
       arrival: "Medieval; shared between Persian and Abbasid kitchens",
-      summary:
-        "Iran's Ramadan sweet: lattice-like loops of yogurt and starch batter soaked in saffron and rosewater syrup.",
+      summary: "Iran's Ramadan sweet: lattice-like loops of yogurt and starch batter soaked in saffron and rosewater syrup. [1]",
       story: [
         "In Iran, zoolbia appears in confectioners' windows as Ramadan approaches, usually stacked beside bamieh, its ridged, finger-shaped companion. Families buy both to break the fast, and to share with neighbours. The batter is unusual within the family, relying heavily on starch and yogurt, which makes the loops glassy and crisp rather than bready.",
         "Zoolbia is piped freehand in a looping, open pattern, often a ring of overlapping curls joined into a lacy disc, rather than a tight spiral. It is soaked in a syrup perfumed with saffron and rosewater, which gives it a golden colour and a flavour that is distinctly Persian.",
@@ -129,6 +127,7 @@ export const jalebi: DishFamily = {
       },
       servedWith: ["Bamieh", "Black tea", "Dates at iftar"],
       whenEaten: "Ramadan evenings, to break the fast",
+      sourceRefs: [1],
       recipe: {
         serves: 6,
         prepMinutes: 20,
@@ -208,8 +207,7 @@ export const jalebi: DishFamily = {
       coords: [77.23, 28.65],
       from: "zoolbia",
       arrival: "By the 1400s, through Persian-speaking traders and courts",
-      summary:
-        "North India's bright, crisp spiral of fermented batter, fried in ghee, soaked in cardamom syrup and eaten hot.",
+      summary: "North India's bright, crisp spiral of fermented batter, fried in ghee, soaked in cardamom syrup and eaten hot. [1]",
       story: [
         "In North India, jalebi is fried in front of customers in wide pans of ghee or oil, piped from a cloth with a small hole into tight, overlapping spirals and moved straight into a pan of warm syrup. It is eaten hot, when the outside crackles and the hollow centre runs with syrup, and is often paired with cold, thick rabri.",
         "It is breakfast as much as dessert. In Indore it is famously eaten with poha, flattened rice, and across the north it accompanies samosas or kachoris in the morning. It is also a festival sweet, bought by the kilo for Diwali, Dussehra and Independence Day. The traditional batter ferments for a day, giving a faint sourness that cuts the syrup.",
@@ -232,6 +230,7 @@ export const jalebi: DishFamily = {
       },
       servedWith: ["Rabri", "Poha (in Indore)", "Samosa or kachori"],
       whenEaten: "Morning street breakfasts, Diwali and Dussehra",
+      sourceRefs: [1],
       recipe: {
         serves: 6,
         prepMinutes: 20,
@@ -317,8 +316,7 @@ export const jalebi: DishFamily = {
       coords: [80.27, 13.08],
       from: "jalebi-north-india",
       arrival: "Date unclear; an Indian offshoot of jalebi, made across north and south",
-      summary:
-        "A jalebi relative made from ground urad dal, piped as a flower-like ring of small loops and soaked in syrup.",
+      summary: "A jalebi relative made from ground urad dal, piped as a flower-like ring of small loops and soaked in syrup. [2]",
       story: [
         "Imarti in the north and jangiri in the south are the same idea: jalebi made with lentils instead of wheat. Soaked urad dal is ground to a fluffy, airy batter, often tinted orange, and piped into a circle of tiny loops around a ring, giving a shape like a flower or a piece of lace. The result is softer and denser than jalebi, and holds more syrup.",
         "In Tamil Nadu, jangiri is a wedding and festival sweet, part of the trays of sweets families exchange. A popular story says the name comes from the Mughal emperor Jahangir, but there is no firm evidence for it. Imarti is a well-loved sweet in Uttar Pradesh and Rajasthan, often eaten warm.",
@@ -340,6 +338,7 @@ export const jalebi: DishFamily = {
       },
       servedWith: ["Wedding sweet trays", "Diwali sweet boxes"],
       whenEaten: "Weddings, Diwali and family celebrations",
+      sourceRefs: [2],
       recipe: {
         serves: 6,
         prepMinutes: 25,
@@ -418,8 +417,7 @@ export const jalebi: DishFamily = {
       coords: [90.41, 23.71],
       from: "jalebi-north-india",
       arrival: "Likely by the Mughal period, from North India",
-      summary:
-        "Bangladesh's jilapi, often thicker and chunkier than the Indian kind, and an essential part of the Ramadan iftar table.",
+      summary: "Bangladesh's jilapi, often thicker and chunkier than the Indian kind, and an essential part of the Ramadan iftar table. [1]",
       story: [
         "In Bangladesh, jilapi is above all a Ramadan food. In the late afternoons of the fasting month, stalls in Old Dhaka's Chawkbazar and across the country fry it in huge quantities, and few iftar tables are complete without it, alongside piyaju, beguni, chola and dates.",
         "Bangladeshi jilapi tends to be thicker than the North Indian kind, with fatter coils and a chewier middle; some shops make extra-large rings known as shahi jilapi. Many cooks add a little rice flour to the batter for crunch, and the syrup is usually plain or lightly scented with cardamom.",
@@ -441,6 +439,7 @@ export const jalebi: DishFamily = {
       },
       servedWith: ["Piyaju", "Beguni", "Chola (spiced chickpeas)", "Dates"],
       whenEaten: "Ramadan iftar, and as an afternoon snack",
+      sourceRefs: [1],
       recipe: {
         serves: 6,
         prepMinutes: 20,
@@ -521,8 +520,7 @@ export const jalebi: DishFamily = {
       coords: [74.34, 31.55],
       from: "jalebi-north-india",
       arrival: "Shared Punjabi tradition, predating the 1947 partition",
-      summary:
-        "Pakistan's crisp jalebi, eaten from street stalls and, on winter mornings in Lahore, softened in hot sweet milk.",
+      summary: "Pakistan's crisp jalebi, eaten from street stalls and, on winter mornings in Lahore, softened in hot sweet milk. [1]",
       story: [
         "Jalebi was part of Punjabi sweet-making long before the border was drawn in 1947, and in Pakistan it remains a staple of halwai shops and street stalls. Lahori jalebi is thin, crisp and bright orange, eaten for breakfast, bought for weddings and shared at Eid and on celebration days.",
         "In winter it takes a second form, doodh jalebi. Freshly fried jalebis are broken into a glass or bowl of hot, sweetened milk, sometimes thickened or scented with cardamom, and eaten as a warming breakfast or late-night snack. The syrup seeps into the milk and the jalebi softens at the edges while staying crisp at the centre.",
@@ -544,6 +542,7 @@ export const jalebi: DishFamily = {
       },
       servedWith: ["Hot sweetened milk", "Samosas", "Pakoras"],
       whenEaten: "Winter mornings and evenings; weddings and Eid",
+      sourceRefs: [1],
       recipe: {
         serves: 4,
         prepMinutes: 20,
@@ -625,8 +624,7 @@ export const jalebi: DishFamily = {
       coords: [69.21, 34.56],
       from: "jalebi-pakistan",
       arrival: "Over the Khyber routes from Punjab; date unclear",
-      summary:
-        "In Kabul, jalebi is a winter food, sold beside fried fish so that customers can eat the two together.",
+      summary: "In Kabul, jalebi is a winter food, sold beside fried fish so that customers can eat the two together. [1]",
       story: [
         "In Afghanistan the sweet goes by its South Asian name, jalebi, which suggests it arrived from the Punjab rather than directly from Persian zoolbia. What makes it distinctive is when and how it is eaten. In the cold months, Kabul's fish sellers fry fish in spiced batter, and jalebi is sold alongside it; the pairing, mahi wa jalebi, is a winter tradition.",
         "The jalebi itself is crisp and syrupy, often a little thicker than the Indian kind. Families buy both by weight on winter evenings and eat them together, the hot, salty fish and the sweet jalebi taken in alternate bites. For many Kabulis, the first plate of the season is a sign that winter has properly arrived.",
@@ -648,6 +646,7 @@ export const jalebi: DishFamily = {
       },
       servedWith: ["Fried fish", "Green tea"],
       whenEaten: "Winter, especially cold evenings",
+      sourceRefs: [1],
       recipe: {
         serves: 6,
         prepMinutes: 20,
@@ -724,8 +723,7 @@ export const jalebi: DishFamily = {
       coords: [85.32, 27.71],
       from: "jalebi-north-india",
       arrival: "From the Indian plains; date unclear",
-      summary:
-        "Nepal's jalebi, usually larger and softer, eaten in Kathmandu with swari, a thin fried flatbread.",
+      summary: "Nepal's jalebi, usually larger and softer, eaten in Kathmandu with swari, a thin fried flatbread. [1]",
       story: [
         "In Nepal, jalebi is called jeri, and in Kathmandu it is best known as half of a pairing: jeri-swari. Swari is a thin, soft fried flatbread, and the two are eaten together in the morning, the plain bread balancing the syrupy jeri. Sweet shops in the old city sell them fresh through the day.",
         "Nepali jeri is often larger than Indian jalebi, with fatter coils and a softer, more syrup-soaked texture. It is also bought for festivals such as Tihar and Dashain, and for family occasions, when sweet shops fry it in large batches.",
@@ -747,6 +745,7 @@ export const jalebi: DishFamily = {
       },
       servedWith: ["Swari", "Milky tea"],
       whenEaten: "Breakfast in Kathmandu; Tihar and Dashain",
+      sourceRefs: [1],
       recipe: {
         serves: 6,
         prepMinutes: 20,
@@ -820,8 +819,7 @@ export const jalebi: DishFamily = {
       coords: [9.18, 36.73],
       from: "origin",
       arrival: "Medieval, with Arab cooking across North Africa",
-      summary:
-        "The Maghreb's Ramadan zlabia, tangled discs of fermented batter fried and dipped in syrup or honey, famously from Béja.",
+      summary: "The Maghreb's Ramadan zlabia, tangled discs of fermented batter fried and dipped in syrup or honey, famously from Béja. [1]",
       story: [
         "Across Tunisia and Algeria, zlabia is a Ramadan sweet, and the Tunisian town of Béja is especially known for it. During the fasting month, shops there and in other towns fry tangled, lacy discs of batter and dip them in syrup, often selling them beside mkharek, another fried sweet soaked in honey.",
         "Zlabia keeps the medieval name almost unchanged, and its loose, looping shape is closer to Iranian zoolbia than to the tight Indian spiral. The batter is usually fermented with yeast and often tinted yellow or orange. The syrup may be scented with lemon or orange-blossom water, and some makers use honey.",
@@ -843,6 +841,7 @@ export const jalebi: DishFamily = {
       },
       servedWith: ["Mkharek", "Mint tea"],
       whenEaten: "Ramadan evenings after iftar",
+      sourceRefs: [1],
       recipe: {
         serves: 6,
         prepMinutes: 20,
@@ -919,8 +918,7 @@ export const jalebi: DishFamily = {
       coords: [35.5, 33.89],
       from: "origin",
       arrival: "Medieval name, later a different shape; dates unclear",
-      summary:
-        "In the Levant, zalabia means yeasted dough fritters, finger-shaped or round, dipped in syrup: a cousin that kept the name, not the spiral.",
+      summary: "In the Levant, zalabia means yeasted dough fritters, finger-shaped or round, dipped in syrup: a cousin that kept the name, not the spiral. [3]",
       story: [
         "This is the family's honest outlier. In Lebanon, Syria, Palestine and Egypt, zalabia (or zalabieh) still carries the medieval name, but it usually describes fried pieces of soft yeasted dough rather than spirals of piped batter. In Lebanon they are often long fingers or rings; in Egypt the name commonly refers to small round puffs similar to luqmat al-qadi.",
         "In Lebanon, zalabieh is closely linked to Eid al-Ghitas, the Christian feast of Epiphany, when families fry it with awamat, round syrup-soaked dough balls. It is dipped in a syrup (ater) scented with orange-blossom or rosewater, or simply dusted with sugar. It shares the medieval idea of fried dough in syrup, but not the spiral.",
@@ -942,6 +940,7 @@ export const jalebi: DishFamily = {
       },
       servedWith: ["Awamat", "Arabic coffee"],
       whenEaten: "Epiphany in January, and family gatherings",
+      sourceRefs: [3],
       recipe: {
         serves: 6,
         prepMinutes: 25,
@@ -1011,5 +1010,28 @@ export const jalebi: DishFamily = {
         ],
       },
     },
+  ],
+  sources: [
+    {
+      "title": "Jalebi",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Jalebi",
+      "supports": "Family overview, preparation and regional context; historical accounts are secondary and should be read with their footnotes.",
+      "accessed": "2026-10-22"
+    },
+    {
+      "title": "Imarti",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Imarti",
+      "supports": "Black-gram batter and flower-like shaping, in contrast with wheat-based jalebi.",
+      "accessed": "2026-10-22"
+    },
+    {
+      "title": "Zalabiyeh",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Zalabiyeh",
+      "supports": "Arabic fried-batter relatives and the early cookbook record.",
+      "accessed": "2026-10-22"
+    }
   ],
 };
