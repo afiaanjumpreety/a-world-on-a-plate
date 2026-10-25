@@ -1,27 +1,72 @@
-/* ============ Tokens ============ */
-:root {
-  --paper: #f4eee2;
-  --paper-2: #ece3d2;
-  --card: #fbf8f1;
-  --ink: #1f1a15;
-  --ink-2: #554b40;
-  --ink-3: #8a7e6e;
-  --line: rgba(31, 26, 21, 0.12);
-  --line-strong: rgba(31, 26, 21, 0.22);
-  --accent: #b5432e;
-  --accent-ink: #fff8ef;
-  --land: #e1d5bf;
-  --land-stroke: #f4eee2;
-  --ocean: #e9e0ce;
-  --graticule: rgba(31, 26, 21, 0.07);
-  --shadow-1: 0 1px 2px rgba(60, 40, 20, 0.06), 0 4px 14px rgba(60, 40, 20, 0.06);
-  --shadow-2: 0 2px 6px rgba(60, 40, 20, 0.08), 0 18px 40px rgba(60, 40, 20, 0.12);
-  --grain-opacity: 0.35;
+/* Self-hosted Montserrat keeps the reference typography available without a font service. */
+/* vietnamese */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400 900;
+  font-display: swap;
+  src: url(../assets/fonts/montserrat-vietnamese.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400 900;
+  font-display: swap;
+  src: url(../assets/fonts/montserrat-latin-ext.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400 900;
+  font-display: swap;
+  src: url(../assets/fonts/montserrat-latin.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
 
-  --font-display: 'Fraunces', 'Iowan Old Style', 'Palatino Linotype', Georgia, serif;
-  --font-ui: 'Inter', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
-  --radius: 14px;
-  --radius-lg: 22px;
+/* ============ Tokens ============ */
+/* Butter-packaging system: wax-paper creams, navy print, pale butter panels.
+   Navy carries all type, rules and actions; dish families add their own colour (--c).
+   Map colours (--land, --ocean, --graticule) are kept apart so the atlas reads the same. */
+:root {
+  --butter: #faeeb4;
+  --blue: #4a69b3;
+
+  --paper: #fbf7ea;
+  --paper-2: #f5eed5;
+  --card: #fffdf6;
+  --panel: var(--butter);
+  --hero: #fdf7df;
+  --ceramic: #fffdf6;
+  --heading: var(--blue);
+  --ink: #22345c;
+  --ink-2: #3e5079;
+  --ink-3: #5a6987;
+  --line: rgba(74, 105, 179, 0.2);
+  --line-strong: rgba(74, 105, 179, 0.45);
+  --accent: var(--blue);
+  --accent-ink: #fffdf6;
+  --accent-soft: #e6ecfa;
+  --land: #f6edc6;
+  --land-stroke: #fffcf2;
+  --ocean: #eaf0fb;
+  --graticule: rgba(74, 105, 179, 0.1);
+  --shadow-1: 0 1px 2px rgba(34, 52, 92, 0.05), 0 2px 6px rgba(34, 52, 92, 0.06);
+  --shadow-2: 0 18px 40px -14px rgba(34, 52, 92, 0.28), 0 3px 8px rgba(34, 52, 92, 0.06);
+  /* Flat, offset "printed" shadow for hover lifts. */
+  --pop: var(--blue);
+  --glass: rgba(255, 253, 246, 0.88);
+  --footer: var(--blue);
+
+  --font-display: 'Montserrat', ui-sans-serif, system-ui, sans-serif;
+  --font-ui: 'Montserrat', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --radius-sm: 6px;
+  --radius: 10px;
+  --radius-lg: 16px;
+  --radius-pill: 999px;
   --wrap: 1240px;
   --gutter: clamp(16px, 4vw, 40px);
   color-scheme: light;
@@ -29,44 +74,58 @@
 
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme='light']) {
-    --paper: #14110e;
-    --paper-2: #1b1713;
-    --card: #211c17;
-    --ink: #f1e9db;
-    --ink-2: #c4b8a5;
-    --ink-3: #8f8372;
-    --line: rgba(241, 233, 219, 0.1);
-    --line-strong: rgba(241, 233, 219, 0.2);
-    --accent: #e0694f;
-    --accent-ink: #1a0f0a;
-    --land: #2f2822;
-    --land-stroke: #14110e;
-    --ocean: #191511;
-    --graticule: rgba(241, 233, 219, 0.05);
-    --shadow-1: 0 1px 2px rgba(0, 0, 0, 0.3), 0 4px 14px rgba(0, 0, 0, 0.25);
-    --shadow-2: 0 2px 6px rgba(0, 0, 0, 0.35), 0 18px 40px rgba(0, 0, 0, 0.4);
-    --grain-opacity: 0.18;
+    --paper: #0f1830;
+    --paper-2: #16213d;
+    --card: #172344;
+    --panel: #1d2b52;
+    --hero: #172344;
+    --ceramic: #fffdf6;
+    --heading: #faeeb4;
+    --ink: #f2efe3;
+    --ink-2: #c9cfdf;
+    --ink-3: #9aa6c2;
+    --line: rgba(164, 187, 245, 0.16);
+    --line-strong: rgba(164, 187, 245, 0.34);
+    --accent: #a4bbf5;
+    --accent-ink: #0f1830;
+    --accent-soft: #24345c;
+    --land: #2a3860;
+    --land-stroke: #0f1830;
+    --ocean: #131d38;
+    --graticule: rgba(164, 187, 245, 0.08);
+    --shadow-1: 0 1px 2px rgba(0, 0, 0, 0.3);
+    --shadow-2: 0 18px 44px -14px rgba(0, 0, 0, 0.65);
+    --pop: rgba(250, 238, 180, 0.8);
+    --glass: rgba(23, 35, 68, 0.88);
+    --footer: #0a1124;
     color-scheme: dark;
   }
 }
 :root[data-theme='dark'] {
-  --paper: #14110e;
-  --paper-2: #1b1713;
-  --card: #211c17;
-  --ink: #f1e9db;
-  --ink-2: #c4b8a5;
-  --ink-3: #8f8372;
-  --line: rgba(241, 233, 219, 0.1);
-  --line-strong: rgba(241, 233, 219, 0.2);
-  --accent: #e0694f;
-  --accent-ink: #1a0f0a;
-  --land: #2f2822;
-  --land-stroke: #14110e;
-  --ocean: #191511;
-  --graticule: rgba(241, 233, 219, 0.05);
-  --shadow-1: 0 1px 2px rgba(0, 0, 0, 0.3), 0 4px 14px rgba(0, 0, 0, 0.25);
-  --shadow-2: 0 2px 6px rgba(0, 0, 0, 0.35), 0 18px 40px rgba(0, 0, 0, 0.4);
-  --grain-opacity: 0.18;
+  --paper: #0f1830;
+  --paper-2: #16213d;
+  --card: #172344;
+  --panel: #1d2b52;
+  --hero: #172344;
+  --ceramic: #fffdf6;
+  --heading: #faeeb4;
+  --ink: #f2efe3;
+  --ink-2: #c9cfdf;
+  --ink-3: #9aa6c2;
+  --line: rgba(164, 187, 245, 0.16);
+  --line-strong: rgba(164, 187, 245, 0.34);
+  --accent: #a4bbf5;
+  --accent-ink: #0f1830;
+  --accent-soft: #24345c;
+  --land: #2a3860;
+  --land-stroke: #0f1830;
+  --ocean: #131d38;
+  --graticule: rgba(164, 187, 245, 0.08);
+  --shadow-1: 0 1px 2px rgba(0, 0, 0, 0.3);
+  --shadow-2: 0 18px 44px -14px rgba(0, 0, 0, 0.65);
+  --pop: rgba(250, 238, 180, 0.8);
+  --glass: rgba(23, 35, 68, 0.88);
+  --footer: #0a1124;
   color-scheme: dark;
 }
 
@@ -86,29 +145,16 @@ body {
   color: var(--ink);
   font-family: var(--font-ui);
   font-size: 16px;
-  line-height: 1.55;
+  line-height: 1.7;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   overflow-x: hidden;
 }
-/* Paper grain */
-body::before {
-  content: '';
-  position: fixed;
-  inset: 0;
-  pointer-events: none;
-  z-index: 100;
-  opacity: var(--grain-opacity);
-  mix-blend-mode: multiply;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .45 0 0 0 0 .35 0 0 0 0 .25 0 0 0 .22 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
-}
-:root[data-theme='dark'] body::before {
-  mix-blend-mode: screen;
-}
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme='light']) body::before {
-    mix-blend-mode: screen;
-  }
+
+h1,
+h2,
+h3 {
+  overflow-wrap: anywhere;
 }
 
 img,
@@ -164,7 +210,7 @@ kbd {
 .skip-link {
   position: absolute;
   left: 12px;
-  top: -40px;
+  top: -80px;
   z-index: 200;
   background: var(--ink);
   color: var(--paper);
@@ -185,36 +231,38 @@ kbd {
 /* ============ Type ============ */
 .display {
   font-family: var(--font-display);
-  font-weight: 560;
-  font-variation-settings: 'opsz' 144, 'SOFT' 60, 'WONK' 1;
-  font-size: clamp(2.8rem, 7.4vw, 6.4rem);
-  line-height: 0.95;
-  letter-spacing: -0.025em;
-  margin: 0.15em 0 0.25em;
+  font-weight: 800;
+  font-size: clamp(2.2rem, 4.8vw, 4.1rem);
+  line-height: 1.08;
+  letter-spacing: 0.02em;
+  margin: 0.25em 0 0.4em;
   text-wrap: balance;
+  color: var(--heading);
+  overflow-wrap: anywhere;
+  text-transform: uppercase;
+  text-shadow: 3px 3px 0 color-mix(in oklab, var(--heading) 22%, transparent);
 }
 .display em {
-  font-style: italic;
-  font-weight: 400;
+  font-style: normal;
+  font-weight: inherit;
   color: var(--accent);
 }
 .display.small {
-  font-size: clamp(2.4rem, 5.4vw, 4.4rem);
+  font-size: clamp(2.05rem, 4.4vw, 3.5rem);
 }
 .eyebrow {
   display: inline-block;
   font-family: var(--font-ui);
-  font-size: 11.5px;
-  font-weight: 600;
-  letter-spacing: 0.14em;
+  font-size: 10.5px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--ink-3);
+  color: var(--heading);
 }
 .lede {
-  font-family: var(--font-display);
-  font-variation-settings: 'opsz' 24;
-  font-size: clamp(1.1rem, 1.6vw, 1.32rem);
-  line-height: 1.55;
+  font-family: var(--font-ui);
+  font-size: clamp(1rem, 1.3vw, 1.12rem);
+  line-height: 1.8;
   color: var(--ink-2);
   max-width: 62ch;
   margin: 0 0 1.2em;
@@ -230,18 +278,22 @@ kbd {
   gap: 24px;
   margin-bottom: 24px;
   flex-wrap: wrap;
+  padding-bottom: 14px;
+  border-bottom: 4px double var(--line-strong);
 }
 .section-title {
   font-family: var(--font-display);
-  font-weight: 520;
-  font-variation-settings: 'opsz' 96, 'SOFT' 40;
-  font-size: clamp(1.9rem, 3.4vw, 2.8rem);
-  line-height: 1.05;
-  letter-spacing: -0.015em;
+  font-weight: 800;
+  font-size: clamp(1.45rem, 2.5vw, 2rem);
+  line-height: 1.15;
+  letter-spacing: 0.03em;
   margin: 0 0 8px;
+  color: var(--heading);
+  overflow-wrap: anywhere;
+  text-transform: uppercase;
 }
 .section-title.small {
-  font-size: clamp(1.5rem, 2.4vw, 2rem);
+  font-size: clamp(1.3rem, 2.3vw, 1.7rem);
 }
 .section-sub {
   color: var(--ink-2);
@@ -250,19 +302,18 @@ kbd {
 }
 .side-title {
   font-family: var(--font-ui);
-  font-size: 12px;
-  font-weight: 650;
+  font-size: 11px;
+  font-weight: 800;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--ink-3);
+  color: var(--heading);
   margin: 0 0 14px;
 }
 
 .prose {
-  font-family: var(--font-display);
-  font-variation-settings: 'opsz' 18;
-  font-size: 1.12rem;
-  line-height: 1.72;
+  font-family: var(--font-ui);
+  font-size: 1rem;
+  line-height: 1.85;
   color: var(--ink);
   max-width: 68ch;
 }
@@ -272,18 +323,13 @@ kbd {
 }
 .prose h2 {
   font-family: var(--font-display);
-  font-size: 1.6rem;
-  font-weight: 520;
+  font-size: 1.2rem;
+  font-weight: 800;
   margin: 1.6em 0 0.4em;
-}
-.dropcap > p:first-child::first-letter {
-  float: left;
-  font-size: 4.3em;
-  line-height: 0.8;
-  padding: 0.08em 0.1em 0 0;
-  font-weight: 600;
-  font-variation-settings: 'opsz' 144, 'SOFT' 100, 'WONK' 1;
-  color: var(--c, var(--accent));
+  letter-spacing: 0.03em;
+  color: var(--heading);
+  line-height: 1.35;
+  text-transform: uppercase;
 }
 
 .page {

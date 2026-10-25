@@ -22,6 +22,10 @@ export function AboutPage() {
           version it became, so a line from Chennai to Penang to Singapore reads as one road, not three separate facts.
           Arcs show lineage, not exact trade routes.
         </p>
+        <p>
+          Some families, such as pancakes, compare a shared cooking method across distinct traditions. Their maps show
+          regional pins without an origin marker or migration arrows; grouping them together does not claim common descent.
+        </p>
         <h2>How sure are we?</h2>
         <p>
           Every origin carries a confidence label. <em>Well established</em> means historians broadly agree.{' '}

@@ -32,11 +32,12 @@ Every family is one file in `src/data/families/`, typed by `src/data/types.ts`. 
 - `from` is the variant a version descends from (or `"origin"`); it draws the journey arcs.
 - `traits` must fill every key in the family's `compareAxes`.
 - Display order lives in the `ORDER` list in `src/data/index.ts`.
+- Use `mapMode: 'comparison'` for a family grouped by cooking method without evidence of a common origin. Its maps show regional pins without origin hatching or migration arcs, and its pages describe traditions rather than descent.
 
 ## Stack
 
 Vite, React and TypeScript. The map is D3 (`d3-geo` Equal Earth projection, `d3-zoom`) over Natural Earth 1:50m
-boundaries from `world-atlas`. Fonts: Fraunces and Inter. Saved recipes and the theme choice stay in the browser's
+boundaries from `world-atlas`. Font: self-hosted Montserrat (SIL Open Font License), styled after a butter-stick wrapper: wax-paper creams, navy (#4A69B3) uppercase print, measuring-ruler rules and navy bars, with a printed offset shadow on hover. The map keeps its own palette, and each dish family carries its own colour. Saved recipes and the theme choice stay in the browser's
 local storage.
 
 ## References and photographs

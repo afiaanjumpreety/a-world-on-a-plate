@@ -7,7 +7,7 @@ export const jalebi: DishFamily = {
   tagline: "Fermented batter, piped in spirals, fried and drenched in syrup",
   category: "dessert",
   motif: "spiral",
-  color: "#D9661F",
+  color: "#BD8138",
   origin: {
     region: "Abbasid Baghdad and the medieval Arab and Persian world",
     country: "IRQ",

@@ -1,0 +1,71 @@
+{
+  "pizza": {
+    "title": "Neapolitan pizza at Trappica (48701940197).jpg",
+    "src": "images/pizza/_family.jpg",
+    "width": 960,
+    "height": 960,
+    "alt": "A Neapolitan pizza with tomato, mozzarella and basil",
+    "author": "Bex Walton from London, England",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Neapolitan_pizza_at_Trappica_(48701940197).jpg",
+    "licenseRevision": "https://commons.wikimedia.org/w/index.php?oldid=1042185133",
+    "licenseChecked": "2026-10-22",
+    "changes": "Resized; may be cropped in page layouts."
+  },
+  "pizza/neapolitan-margherita": {
+    "title": "Neapolitan pizza at Trappica (48701940197).jpg",
+    "src": "images/pizza/neapolitan-margherita.jpg",
+    "width": 960,
+    "height": 960,
+    "alt": "Margherita pizza with a browned raised rim",
+    "author": "Bex Walton from London, England",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Neapolitan_pizza_at_Trappica_(48701940197).jpg",
+    "licenseRevision": "https://commons.wikimedia.org/w/index.php?oldid=1042185133",
+    "licenseChecked": "2026-10-22",
+    "changes": "Resized; may be cropped in page layouts."
+  },
+  "pizza/roman-al-taglio": {
+    "title": "Pizza al taglio.jpg",
+    "src": "images/pizza/roman-al-taglio.jpg",
+    "width": 960,
+    "height": 721,
+    "alt": "Rectangular pizza al taglio portions at a Roman-style counter",
+    "author": "Shoebill2",
+    "license": "Public domain",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pizza_al_taglio.jpg",
+    "licenseRevision": "https://commons.wikimedia.org/w/index.php?oldid=1248469323",
+    "licenseChecked": "2026-10-22",
+    "changes": "Resized; may be cropped in page layouts."
+  },
+  "pizza/new-york-slice": {
+    "title": "NYPizzaPie.jpg",
+    "src": "images/pizza/new-york-slice.jpg",
+    "width": 960,
+    "height": 642,
+    "alt": "A close-up of a large New York-style cheese pizza",
+    "author": "Hungrydudes",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:NYPizzaPie.jpg",
+    "licenseRevision": "https://commons.wikimedia.org/w/index.php?oldid=1061907290",
+    "licenseChecked": "2026-10-22",
+    "changes": "Resized; may be cropped in page layouts."
+  },
+  "pizza/chicago-deep-dish": {
+    "title": "Pizzeria Uno Chicago-style deep-dish pizza.jpg",
+    "src": "images/pizza/chicago-deep-dish.jpg",
+    "width": 960,
+    "height": 722,
+    "alt": "Chicago deep-dish pizza at Pizzeria Uno",
+    "author": "Bobak Ha'Eri",
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pizzeria_Uno_Chicago-style_deep-dish_pizza.jpg",
+    "licenseRevision": "https://commons.wikimedia.org/w/index.php?oldid=1177797992",
+    "licenseChecked": "2026-10-22",
+    "changes": "Resized; may be cropped in page layouts."
+  }
+}

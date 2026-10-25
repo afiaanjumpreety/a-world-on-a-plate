@@ -7,7 +7,7 @@ export const noodleSoup: DishFamily = {
   tagline: 'Chinese noodles in hot broth, remade in every port',
   category: 'noodles',
   motif: 'noodles',
-  color: '#B03A2A',
+  color: '#A04A4D',
   origin: {
     region: 'Northern China, along the Yellow River',
     country: 'CHN',

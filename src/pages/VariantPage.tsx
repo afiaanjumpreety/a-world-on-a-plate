@@ -84,9 +84,9 @@ export function VariantPage() {
             {photo && <PhotoFigure photo={photo} className="variant-photo" eager />}
             <LineageMap family={family} variant={variant} parent={parent} />
             <p className="lineage-line">
-              <span className="eyebrow">Arrived</span>
+              <span className="eyebrow">{family.mapMode === 'comparison' ? 'Tradition' : 'Arrived'}</span>
               <Cited text={variant.arrival} family={family} />
-              {parent ? (
+              {family.mapMode === 'comparison' ? null : parent ? (
                 <>
                   {' '}
                   Grew out of <Link to={`/dish/${family.id}/${parent.id}`}>{parent.name}</Link>.
@@ -219,6 +219,11 @@ function LineageMap({ family, variant, parent }: { family: DishFamily; variant: 
     const from = parent?.coords ?? family.origin.coords;
     const fills: Record<string, string> = {};
     const here = country(variant.country).numeric;
+    if (family.mapMode === 'comparison') {
+      if (here) fills[here] = `color-mix(in oklab, ${family.color} 55%, var(--land))`;
+      const pins: MapPin[] = [{ id: 'here', coords: variant.coords, color: family.color, kind: 'variant', label: variant.place }];
+      return { fills, pins, arcs: [], frame: [variant.coords] };
+    }
     const there = country(parent?.country ?? family.origin.country).numeric;
     if (there) fills[there] = `color-mix(in oklab, ${family.color} 22%, var(--land))`;
     if (here) fills[here] = `color-mix(in oklab, ${family.color} 55%, var(--land))`;

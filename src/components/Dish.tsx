@@ -200,13 +200,14 @@ export const mapLabel = (name: string) => name.replace(/\s*\(.*\)\s*$/, '');
 export const originLabel = (f: DishFamily) => f.origin.region.split(/,|\(| and /)[0].trim();
 
 export function familyLayers(family: DishFamily, focusId?: string | null) {
+  const comparison = family.mapMode === 'comparison';
   const fills: Record<string, string> = {};
   for (const v of family.variants) {
     const n = country(v.country).numeric;
     if (n) fills[n] = `color-mix(in oklab, ${family.color} 42%, var(--land))`;
   }
   const originNum = country(family.origin.country).numeric;
-  const hatch: Record<string, string> = originNum ? { [originNum]: family.color } : {};
+  const hatch: Record<string, string> = originNum && !comparison ? { [originNum]: family.color } : {};
 
   const byId = new Map(family.variants.map((v) => [v.id, v]));
   const depth = (v: Variant, seen = new Set<string>()): number => {
@@ -217,7 +218,7 @@ export function familyLayers(family: DishFamily, focusId?: string | null) {
   };
 
   const pins: MapPin[] = [
-    { id: '__origin', coords: family.origin.coords, label: originLabel(family), color: family.color, kind: 'origin' },
+    ...(!comparison ? [{ id: '__origin', coords: family.origin.coords, label: originLabel(family), color: family.color, kind: 'origin' as const }] : []),
     ...family.variants.map((v) => ({
       id: v.id,
       coords: v.coords,
@@ -227,7 +228,7 @@ export function familyLayers(family: DishFamily, focusId?: string | null) {
       dim: !!focusId && focusId !== v.id,
     })),
   ];
-  const arcs: MapArc[] = family.variants.map((v) => {
+  const arcs: MapArc[] = comparison ? [] : family.variants.map((v) => {
     const parent = byId.get(v.from);
     return {
       id: `${family.id}/${v.id}`,
@@ -238,7 +239,7 @@ export function familyLayers(family: DishFamily, focusId?: string | null) {
       dim: !!focusId && focusId !== v.id,
     };
   });
-  const frame = [family.origin.coords, ...family.variants.map((v) => v.coords)];
+  const frame = [...(!comparison ? [family.origin.coords] : []), ...family.variants.map((v) => v.coords)];
   return { fills, hatch, pins, arcs, frame };
 }
 
@@ -274,7 +275,7 @@ export function FamilyMap({ family, focusId, height = 'tall', zoomable = true }:
   return (
     <WorldMap
       className={`map-${height}`}
-      ariaLabel={`Map of how ${family.name} travelled from ${family.origin.region}`}
+      ariaLabel={family.mapMode === 'comparison' ? `Map of regional ${family.name.toLowerCase()} traditions` : `Map of how ${family.name} travelled from ${family.origin.region}`}
       {...layers}
       zoomable={zoomable}
       labels="all"

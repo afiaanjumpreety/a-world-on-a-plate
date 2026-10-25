@@ -35,7 +35,10 @@ export type Motif =
   | 'pudding'
   | 'spiral'
   | 'teacup'
-  | 'flan';
+  | 'flan'
+  | 'sushi'
+  | 'pizza'
+  | 'pancakes';
 
 /** How settled the origin story is among food historians. */
 export type Confidence = 'established' | 'likely' | 'contested';
@@ -187,6 +190,8 @@ export interface DishFamily {
   motif: Motif;
   /** Accent colour (hex). Assigned by the site editor. */
   color: string;
+  /** Comparison families share a method without asserting a common geographic origin. */
+  mapMode?: 'journey' | 'comparison';
   origin: {
     /** "Punjab and the North Indian plains" */
     region: string;

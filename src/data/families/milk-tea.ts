@@ -7,7 +7,7 @@ export const milkTea: DishFamily = {
   tagline: 'One leaf from southwest China, poured into milk worldwide',
   category: 'drink',
   motif: 'teacup',
-  color: '#3F7A5E',
+  color: '#00736C',
   origin: {
     region: 'Yunnan and the tea borderlands of southwest China',
     country: 'CHN',

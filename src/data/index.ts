@@ -19,6 +19,9 @@ const ORDER = [
   'jalebi',
   'milk-tea',
   'flan',
+  'sushi',
+  'pizza',
+  'pancakes',
 ];
 
 function isFamily(value: unknown): value is DishFamily {

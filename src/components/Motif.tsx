@@ -21,6 +21,29 @@ function crimp(cx: number, cy: number, r: number, from: number, to: number, n: n
 }
 
 const ART: Record<MotifId, React.ReactNode> = {
+  sushi: (
+    <>
+      <ellipse cx="23" cy="24" rx="13" ry="9" />
+      <path d="M10 24v16c0 5 6 9 13 9s13-4 13-9V24" />
+      <ellipse cx="23" cy="24" rx="5" ry="3.5" />
+      <path d="M39 26c7-2 15 1 17 6v13c-2 6-11 9-19 6M40 30c5-1 10 1 12 3M42 38v7M16 38v5M29 38v5" />
+    </>
+  ),
+  pizza: (
+    <>
+      <path d="M10 17c13-8 31-8 44 0L32 55z" />
+      <path d="M13 23c12-7 26-7 38 0M10 17l3 6M54 17l-3 6" />
+      <circle cx="25" cy="29" r="3.5" /><circle cx="38" cy="29" r="3" /><circle cx="32" cy="41" r="3" />
+      <path d="M29 22l2 1M20 25l1 1M40 36l1-1" />
+    </>
+  ),
+  pancakes: (
+    <>
+      <ellipse cx="32" cy="26" rx="23" ry="9" />
+      <path d="M9 26v6c0 5 10 9 23 9s23-4 23-9v-6M9 34v6c0 5 10 9 23 9s23-4 23-9v-6M14 50c11 5 25 5 36 0" />
+      <path d="m25 21 9-3 7 4-9 4zM23 32v7c0 3 4 3 4 0v-5M39 34v11c0 3 4 3 4 0V33" />
+    </>
+  ),
   flatbread: (
     <>
       <path d="M32 7c9 0 17 4 21 11 4 6 4 14 1 20-3 8-11 13-21 13-10 1-19-4-23-12-3-7-3-15 1-21 4-7 12-11 21-11z" />

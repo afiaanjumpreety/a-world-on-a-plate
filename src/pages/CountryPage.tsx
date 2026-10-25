@@ -20,7 +20,7 @@ export function CountryPage() {
     const pins: MapPin[] = [];
     const arcs: MapArc[] = [];
     const fills: Record<string, string> = {};
-    if (c?.numeric) fills[c.numeric] = 'color-mix(in oklab, var(--accent) 55%, var(--land))';
+    if (c?.numeric) fills[c.numeric] = 'color-mix(in oklab, var(--accent) 55%, var(--card))';
     refs.forEach(({ family, variant }, i) => {
       const parent = parentOf(family, variant);
       const from = parent?.coords ?? family.origin.coords;

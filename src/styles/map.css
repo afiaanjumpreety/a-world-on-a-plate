@@ -173,10 +173,10 @@
   animation: label-in 0.5s ease 0.6s both;
 }
 .map-label.is-origin {
-  font-family: var(--font-display);
-  font-style: italic;
+  font-family: var(--font-ui);
+  font-style: normal;
   font-size: 13.5px;
-  font-weight: 600;
+  font-weight: 800;
 }
 .map-label.is-active {
   font-weight: 700;
@@ -194,7 +194,7 @@
   bottom: 14px;
   display: flex;
   flex-direction: column;
-  border-radius: 12px;
+  border-radius: var(--radius);
   overflow: hidden;
   background: var(--card);
   box-shadow: var(--shadow-1);
@@ -228,7 +228,7 @@
   max-width: 280px;
   background: var(--card);
   border: 1px solid var(--line);
-  border-radius: 12px;
+  border-radius: var(--radius);
   padding: 10px 12px;
   box-shadow: var(--shadow-2);
   font-size: 13px;
@@ -282,7 +282,7 @@
   background: color-mix(in oklab, var(--card) 88%, transparent);
   backdrop-filter: blur(6px);
   border: 1px solid var(--line);
-  border-radius: 12px;
+  border-radius: var(--radius);
   padding: 8px 12px 10px;
   font-size: 11px;
   color: var(--ink-2);
@@ -319,7 +319,7 @@
   color: var(--ink-3);
   background: color-mix(in oklab, var(--card) 80%, transparent);
   padding: 4px 9px;
-  border-radius: 99px;
+  border-radius: var(--radius-pill);
   pointer-events: none;
 }
 .map-skeleton {
@@ -328,7 +328,7 @@
   place-items: center;
   color: var(--ink-3);
   font-family: var(--font-display);
-  font-style: italic;
+  font-style: normal;
   background: linear-gradient(100deg, var(--ocean) 30%, color-mix(in oklab, var(--land) 60%, var(--ocean)) 50%, var(--ocean) 70%);
   background-size: 300% 100%;
   animation: shimmer 1.6s linear infinite;

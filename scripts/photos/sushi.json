@@ -1,0 +1,21 @@
+[
+  { "key": "sushi", "file": "File:Sushi platter.jpg", "alt": "A platter of sushi showing several toppings and shapes" },
+  { "key": "sushi/edomae-nigiri", "file": "File:HSY- Sushi, Ebi.jpg", "alt": "Cooked prawn nigiri with hand-shaped sushi rice" },
+  { "key": "sushi/osaka-battera", "file": "File:Bateira - バッテラ - Flickr - Kanko.jpg", "alt": "Battera pressed mackerel sushi cut into rectangular slices" },
+  { "key": "sushi/california-roll", "file": "File:California Sushi (26571101885).jpg", "alt": "California sushi rolls with rice on the outside" },
+  { "key": "sushi/bc-roll", "file": "File:BC Roll.jpg", "alt": "Sliced BC rolls, a Vancouver salmon-skin sushi style" },
+  { "key": "sushi/kimbap", "file": "File:Gimbap (pixabay).jpg", "alt": "Korean kimbap slices with rice, egg and colourful vegetable fillings" },
+  { "key": "sushi/chungmu-gimbap", "file": "File:Korea-Tongyeong food-Chungmu gimbap-01.jpg", "alt": "Small Chungmu gimbap rice rolls with separate seasoned side dishes" },
+  { "key": "sushi/hosomaki", "file": "File:8hosomak8.jpg", "alt": "Slender hosomaki sushi rolls with seaweed on the outside" },
+  { "key": "sushi/futomaki", "file": "File:Futomaki zushi in 201902.jpg", "alt": "A thick futomaki roll with several fillings visible at the cut end" },
+  { "key": "sushi/temaki", "file": "File:Temaki thon durant le confinement 2020 - vue de dessus.jpg", "alt": "A cone-shaped temaki sushi hand roll" },
+  { "key": "sushi/gunkan-maki", "file": "File:Firefly squid gunkan sushi.jpg", "alt": "Gunkan sushi with a seaweed collar holding a firefly-squid topping" },
+  { "key": "sushi/inarizushi", "file": "File:Kantofu Inarizushi.jpg", "alt": "Inarizushi rice-filled seasoned tofu pockets" },
+  { "key": "sushi/kakinohazushi", "file": "File:Kakinohazusi.jpg", "alt": "Kansai persimmon-leaf sushi parcels, with leaves opened to show the fish and rice" },
+  { "key": "sushi/temarizushi", "flickr": "https://www.flickr.com/photos/edsel_/35474874735", "alt": "Temarizushi served as small round sushi portions with varied toppings" },
+  { "key": "sushi/okayama-barazushi", "file": "File:Momo-tarou no matsuri-zushi 1.jpg", "alt": "Okayama festival-style scattered sushi in a peach-shaped railway lunch box" },
+  { "key": "sushi/kyoto-mushizushi", "flickr": "https://www.flickr.com/photos/cityfoodsters/19318502562", "alt": "Steamed chirashi-style sushi topped with fine egg ribbons, served in Kyoto" },
+  { "key": "sushi/fantuan", "file": "File:CiFanTuan2.jpg", "alt": "A cut-open sticky-rice breakfast roll showing its crisp fried-dough filling" },
+  { "key": "sushi/spam-musubi", "file": "File:Homemade Spam Musubi.jpg", "alt": "Musubi with browned luncheon meat on rice wrapped in a seaweed band" },
+  { "key": "sushi/shiga-funazushi", "file": "File:Funazushi 鮒寿司 Maibara City Shiga Japan 2022-10-06.jpg", "alt": "A portion of fermented funazushi from Shiga, Japan" }
+]

@@ -8,10 +8,10 @@ import { Motif, Plate } from '../components/Motif';
 import { PhotoImg } from '../components/Photo';
 import { plural } from '../lib/format';
 
-const STEPS = [22, 38, 54, 70, 86];
+const STEPS = [24, 40, 56, 72, 88];
 function shade(n: number) {
   const i = n >= 8 ? 4 : n >= 6 ? 3 : n >= 4 ? 2 : n >= 2 ? 1 : 0;
-  return `color-mix(in oklab, var(--accent) ${STEPS[i]}%, var(--land))`;
+  return `color-mix(in oklab, var(--accent) ${STEPS[i]}%, var(--card))`;
 }
 
 export function HomePage() {
@@ -48,49 +48,88 @@ export function HomePage() {
   return (
     <>
       <section className="hero">
-        <div className="wrap hero-inner">
-          <div className="hero-copy">
-            <span className="eyebrow">An atlas of dishes that travelled</span>
-            <h1 className="display">
-              One dish, <em>many</em> homes.
-            </h1>
-            <p className="lede">
-              The paratha you tear in Dhaka, the roti canai flipped in Penang and the buss-up-shut of Port of Spain are
-              one idea, carried by traders, workers and families. Trace where each dish began, see how every country
-              made it its own, then cook every version.
-            </p>
-            <p className="hero-reading-links"><Link to="/sources">Explore the research ↗</Link><span aria-hidden="true"> · </span><Link to="/credits">Meet the photographers ↗</Link></p>
-            <div className="hero-stats">
-              <div>
-                <strong>{stats.families}</strong>
-                <span>dish families</span>
-              </div>
-              <div>
-                <strong>{stats.variants}</strong>
-                <span>regional versions</span>
-              </div>
-              <div>
-                <strong>{stats.countries}</strong>
-                <span>countries</span>
-              </div>
+        <div className="wrap">
+          {/* Styled like a butter-stick wrapper: fine print, printed headline, a measuring ruler and a navy bar. */}
+          <div className="hero-pack">
+            <div className="hero-fine">
+              <span>An atlas of dishes that travelled</span>
+              <span>Where historians disagree, we say so</span>
             </div>
-          </div>
-          <div className="hero-plates" aria-hidden="true">
-            {families.slice(0, 5).map((f, i) => (
-              <Plate key={f.id} motif={f.motif} color={f.color} pattern={i} size={[220, 140, 124, 112, 100][i]} className={`hero-plate hp-${i}`} photo={photoFor(f.id)} />
-            ))}
+            <div className="hero-inner">
+              <div className="hero-copy">
+                <h1 className="display hero-title">
+                  One dish, <em>many</em> homes.
+                </h1>
+                <p className="lede">
+                  The paratha you tear in Dhaka, the roti canai flipped in Penang and the buss-up-shut of Port of Spain
+                  are one idea, carried by traders, workers and families. Trace where each dish began, see how every
+                  country made it its own, then cook every version.
+                </p>
+                <div className="hero-actions">
+                  <button
+                    type="button"
+                    className="btn btn-primary btn-lg"
+                    onClick={() => document.getElementById('atlas')?.scrollIntoView({ behavior: 'smooth' })}
+                  >
+                    Explore the atlas <span aria-hidden="true">↓</span>
+                  </button>
+                  <Link to="/dishes" className="btn btn-ghost btn-lg">
+                    Browse all dishes
+                  </Link>
+                </div>
+              </div>
+              <ul className="hero-mosaic" aria-label="Featured dishes">
+                {families.slice(0, 5).map((f, i) => {
+                  const photo = photoFor(f.id, f.id === 'paratha' ? 'lachha-paratha' : undefined) ?? photoFor(f.id);
+                  return (
+                    <li key={f.id} className={`hero-tile ht-${i}`} style={{ ['--c' as string]: f.color }}>
+                      <Link to={`/dish/${f.id}`}>
+                        {photo ? <PhotoImg photo={photo} eager={i < 2} /> : <Plate motif={f.motif} color={f.color} size={120} pattern={i} />}
+                        <span className="hero-tile-label">
+                          <i aria-hidden="true" />
+                          <strong>{f.name}</strong>
+                          {i === 0 && <span>{plural(f.variants.length, 'version')}</span>}
+                        </span>
+                      </Link>
+                    </li>
+                  );
+                })}
+              </ul>
+            </div>
+            <ol className="hero-ruler" aria-label="Dish families">
+              {families.slice(0, 8).map((f, i) => (
+                <li key={f.id}>
+                  <Link to={`/dish/${f.id}`}>
+                    <span aria-hidden="true">{i + 1}</span>
+                    {f.name}
+                  </Link>
+                </li>
+              ))}
+            </ol>
+            <div className="hero-bar">
+              <p>
+                <strong>{stats.families}</strong> dish families = <strong>{stats.variants}</strong> regional versions ={' '}
+                <strong>{stats.countries}</strong> countries
+              </p>
+              <p className="hero-bar-links">
+                <Link to="/sources">Explore the research ↗</Link>
+                <Link to="/credits">Meet the photographers ↗</Link>
+              </p>
+            </div>
           </div>
         </div>
       </section>
 
-      <section className="atlas wrap" aria-labelledby="atlas-title">
+      <section id="atlas" className="atlas wrap" aria-labelledby="atlas-title">
         <div className="atlas-head">
           <h2 id="atlas-title" className="section-title">
             The atlas
           </h2>
           <p className="section-sub">
             {family
-              ? `Follow ${family.name} from ${family.origin.region}. Arcs trace how each version arrived.`
+              ? family.mapMode === 'comparison'
+                ? `Explore regional ${family.name.toLowerCase()} traditions. Pins compare places without claiming a shared origin.`
+                : `Follow ${family.name} from ${family.origin.region}. Arcs trace how each version arrived.`
               : 'Darker countries hold more dishes. Pick a dish to see its journey, or click a country.'}
           </p>
         </div>
@@ -141,7 +180,7 @@ export function HomePage() {
                 <div className="legend-scale">
                   {['1', '2–3', '4–5', '6–7', '8+'].map((l, i) => (
                     <span key={l}>
-                      <i style={{ background: `color-mix(in oklab, var(--accent) ${STEPS[i]}%, var(--land))` }} />
+                      <i style={{ background: `color-mix(in oklab, var(--accent) ${STEPS[i]}%, var(--card))` }} />
                       {l}
                     </span>
                   ))}
@@ -165,7 +204,7 @@ export function HomePage() {
                 <h3>{family.name}</h3>
                 <p className="panel-aka">{family.alsoKnownAs.join(' · ')}</p>
                 <p>{family.tagline}</p>
-                <ConfidenceBadge level={family.origin.confidence} note={family.origin.confidenceNote} />
+                {family.mapMode === 'comparison' ? <span className="meta-pill">Regional comparison</span> : <ConfidenceBadge level={family.origin.confidence} note={family.origin.confidenceNote} />}
                 <ol className="panel-list">
                   {family.variants.map((v) => (
                     <li key={v.id} onMouseEnter={() => setHoverPin(v.id)} onMouseLeave={() => setHoverPin(null)}>

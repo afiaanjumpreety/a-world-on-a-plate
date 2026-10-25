@@ -17,7 +17,7 @@ export const ricePudding: DishFamily = {
   tagline: "Rice, milk and patience, sweetened differently everywhere",
   category: "dessert",
   motif: "pudding",
-  color: "#B5637A",
+  color: "#BC6788",
   origin: {
     region: "The Indian subcontinent, with early Persian and Arab traditions",
     country: "IND",

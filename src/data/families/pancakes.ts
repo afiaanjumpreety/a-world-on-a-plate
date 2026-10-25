@@ -1,0 +1,172 @@
+import type { DishFamily } from '../types';
+
+export const pancakes: DishFamily = {
+  id: 'pancakes', name: 'Pancakes', alsoKnownAs: ['Crêpes', 'Pannenkoeken', 'Hotcakes', 'Pajeon'],
+  tagline: 'A little batter meets a hot pan, in many kitchens', category: 'bread', motif: 'pancakes', color: '#9972BB',
+  mapMode: 'comparison',
+  origin: {
+    region: 'Regional traditions across Europe, North America and Korea', country: 'FRA', coords: [-1.68, 48.11],
+    era: 'Multiple traditions; no shared invention date', confidence: 'contested',
+    confidenceNote: 'This is a comparison family based on cooking method, not a claim of common descent. The references describe distinct regional traditions and do not establish one birthplace for every pancake. No migration arrows are drawn. [1, 2, 3, 4, 5]',
+  },
+  intro: 'Pour batter into a hot pan and the possibilities open up: a delicate French crêpe, an apple-studded Dutch pannenkoek, a soft American breakfast stack or crisp Korean pajeon. These dishes share a method while keeping their own histories, textures and ways of serving. [1, 2, 3, 4, 5]',
+  history: [
+    'Pancake is a broad cooking category: a pourable batter sets on a hot pan or griddle. Similar methods alone do not establish a single origin or prove that one regional dish descended from another. This family therefore maps examples for comparison. [1]',
+    'Brittany has a strong crêpe and galette tradition, with names and grains varying locally. Dutch pannenkoeken are broad, relatively thin pancakes that can take sweet or savoury toppings. Neither needs to be treated as an ancestor of the other. [2, 3]',
+    'American breakfast pancakes use a raising agent for a tender, thicker crumb. Korean pajeon takes a savoury route with scallions and, in haemul pajeon, seafood. The point of the comparison is how batter, heat and filling produce very different meals. [4, 5]',
+  ],
+  etymology: 'Crêpe is linked to the French word’s Latin root for curled or crinkled. Pannenkoek is Dutch for pancake. In pajeon, pa means scallion and jeon names a pan-fried preparation. [2, 3, 5]',
+  timeline: [
+    { when: 'Breton tradition', event: 'Crêpes and buckwheat galettes become characteristic foods of Brittany; terminology varies within the region. [2]' },
+    { when: 'Dutch tradition', event: 'Large sweet and savoury pannenkoeken become a recognisable Dutch meal. [3]' },
+    { when: 'American breakfast', event: 'Raising agents give griddle pancakes their thick, soft crumb. [4]' },
+    { when: 'Korean tradition', event: 'Pajeon belongs to a wider set of savoury jeon preparations. These entries are regional snapshots, not a dated migration sequence. [5]' },
+  ],
+  commonThreads: ['A pourable, starch-based batter', 'Direct contact with a hot pan or griddle', 'A cooked surface enclosing a softer interior', 'A topping or filling that makes the meal local'],
+  divergences: [
+    { title: 'Thin or lifted', text: 'Crêpes spread thinly; American pancakes use a raising agent to create a thicker crumb. [2, 4]' },
+    { title: 'Sweet or savoury', text: 'Dutch toppings move between both, while scallions give pajeon its savoury identity. [3, 5]' },
+    { title: 'Fill, fold or stack', text: 'The recipes here show folded crêpes, broad topped pancakes, breakfast stacks and a shared savoury pancake cut into pieces.' },
+  ],
+  compareAxes: [
+    { key: 'batter', label: 'Batter' }, { key: 'lift', label: 'Raising agent' }, { key: 'filling', label: 'Filling or topping' },
+    { key: 'texture', label: 'Texture' }, { key: 'serving', label: 'Serving style' },
+  ],
+  variants: [
+    {
+      id: 'breton-crepes', name: 'Breton Crêpes', native: [{ text: 'crêpes', lang: 'French' }, { text: 'krampouezh', lang: 'Breton' }],
+      country: 'FRA', place: 'Rennes, Brittany', coords: [-1.68, 48.11], from: 'origin',
+      arrival: 'A regional Breton tradition, compared here without a claimed migration route. [2]',
+      summary: 'Thin wheat pancakes are folded around butter and sugar or another sweet filling. [2]',
+      story: [
+        'Brittany is strongly associated with crêpes and galettes. The distinction between wheat and buckwheat preparations also depends on local naming traditions. [2]',
+        'This sweet wheat-flour home version uses a rested batter and a thin coating in the pan. It sits beside, rather than replaces, the region’s savoury buckwheat galettes.',
+      ],
+      signature: ['A thin, flowing batter', 'A delicate, flexible pancake', 'Sweet butter-and-sugar finish', 'Folded rather than stacked'],
+      traits: { batter: 'Wheat, milk and eggs', lift: 'None', filling: 'Butter and sugar', texture: 'Thin and flexible', serving: 'Folded, one at a time' },
+      servedWith: ['Sugar and lemon', 'Salted butter caramel', 'Fruit preserves'], whenEaten: 'Dessert, a snack or a crêperie meal', sourceRefs: [2],
+      recipe: {
+        serves: 4, prepMinutes: 15, cookMinutes: 20, restMinutes: 30, difficulty: 'Easy', yield: '8 thin crêpes',
+        ingredients: [{ items: [
+          { qty: 150, unit: 'g', item: 'plain flour' }, { qty: 2, unit: 'piece', item: 'eggs' },
+          { qty: 350, unit: 'ml', item: 'milk' }, { qty: 25, unit: 'g', item: 'butter', note: 'melted, plus a little for the pan' },
+          { qty: 1, unit: 'tbsp', item: 'sugar' }, { qty: 1, unit: 'pinch', item: 'salt' },
+          { qty: 20, unit: 'g', item: 'salted butter', note: 'for serving' }, { qty: 2, unit: 'tbsp', item: 'caster sugar', note: 'for serving' },
+        ] }],
+        steps: [
+          { title: 'Mix a smooth batter', text: 'Whisk the flour, sugar and salt together. Add the eggs and a little milk to make a smooth paste, then gradually whisk in the remaining milk and melted butter.' },
+          { title: 'Rest', text: 'Cover and rest for 30 minutes. Stir, adding a splash of milk if needed so the batter flows freely from a ladle.' },
+          { title: 'Coat the pan', text: 'Heat a 22 cm non-stick frying pan over medium heat and wipe with a little butter. Add a small ladle of batter and immediately tilt to coat the base thinly.' },
+          { title: 'Cook both sides', text: 'Cook for about 1 minute until the edges lift and the underside has golden patches. Turn carefully and cook the second side for 20 to 30 seconds.' },
+          { title: 'Butter and fold', text: 'Repeat with the remaining batter. Brush each warm crêpe with a little salted butter, scatter with sugar and fold into quarters to serve.' },
+        ],
+        tips: ['A well-rested batter spreads more evenly.', 'The first crêpe is a useful check of the pan’s heat and how much batter to use.'],
+      },
+    },
+    {
+      id: 'dutch-pannenkoeken', name: 'Dutch Pannenkoeken', native: [{ text: 'pannenkoeken', lang: 'Dutch' }],
+      country: 'NLD', place: 'Amsterdam', coords: [4.9, 52.37], from: 'origin',
+      arrival: 'A Dutch regional tradition; shown as a comparison, not a descendant of French crêpes. [3]',
+      summary: 'A broad, fairly thin pancake leaves room for apple, syrup or savoury toppings. [3]',
+      story: [
+        'Dutch pannenkoeken have a broad surface and a thinner consistency than fluffy American pancakes. Sweet and savoury toppings both fit the format. [3]',
+        'The home recipe below cooks thin apple slices into the batter. It makes a substantial pancake for lunch or a casual supper, with syrup offered separately.',
+      ],
+      signature: ['Broad, plate-sized pancakes', 'No baking powder', 'Sweet or savoury toppings', 'Apple slices in this version'],
+      traits: { batter: 'Wheat, milk and eggs', lift: 'None', filling: 'Apple, syrup or savoury', texture: 'Thin, soft centre', serving: 'One broad pancake' },
+      servedWith: ['Dutch stroop or golden syrup', 'Icing sugar'], whenEaten: 'Lunch, a casual dinner or a pancake-house meal', sourceRefs: [3],
+      recipe: {
+        serves: 4, prepMinutes: 15, cookMinutes: 25, restMinutes: 15, difficulty: 'Easy', yield: '4 large apple pancakes',
+        ingredients: [{ items: [
+          { qty: 200, unit: 'g', item: 'plain flour' }, { qty: 2, unit: 'piece', item: 'eggs' },
+          { qty: 450, unit: 'ml', item: 'milk' }, { qty: 0.25, unit: 'tsp', item: 'salt' },
+          { qty: 2, unit: 'piece', item: 'apples', note: 'cored and thinly sliced' },
+          { qty: 30, unit: 'g', item: 'butter' }, { qty: 4, unit: 'tbsp', item: 'stroop or golden syrup', note: 'to serve' },
+        ] }],
+        steps: [
+          { title: 'Make the batter', text: 'Whisk the flour and salt with the eggs and half the milk until smooth. Stir in the remaining milk and rest for 15 minutes.' },
+          { title: 'Soften the apples', text: 'Heat a little butter in a 24 cm non-stick frying pan over medium heat. Add a quarter of the apple slices in a flat layer and cook for 1 to 2 minutes.' },
+          { title: 'Pour around the fruit', text: 'Stir the batter, pour a quarter over the apples and tilt the pan so it reaches the edges. Cook for 2 to 3 minutes until the top is mostly set.' },
+          { title: 'Turn carefully', text: 'Slide onto a plate, invert back into the pan and cook for about 1 minute more, until the centre is cooked through. Repeat with the remaining ingredients.' },
+          { title: 'Serve warm', text: 'Serve one large pancake per person, with syrup at the table. Use a warm plate to hold cooked pancakes while finishing the batch.' },
+        ],
+        tips: ['Slice apples thinly so they soften before the batter over-browns.', 'A plate makes it easier to turn a large pancake without breaking it.'],
+      },
+    },
+    {
+      id: 'american-pancakes', name: 'American Griddle Pancakes', native: [{ text: 'pancakes / hotcakes', lang: 'English' }],
+      country: 'USA', place: 'New York City', coords: [-74.01, 40.71], from: 'origin',
+      arrival: 'A widespread American breakfast style; New York is a representative pin, not an invention claim. [4]',
+      summary: 'Baking powder lifts a thick batter into soft pancakes served in a warm stack. [4]',
+      story: [
+        'The American griddle style uses a raising agent to make a thicker, tender pancake. Butter and syrup suit the soft crumb, and small rounds can cook together on a broad griddle. [4]',
+        'This is an original home-kitchen formula for a modest breakfast stack. Gentle mixing keeps it tender; pressing the pancakes flat while cooking loses the lift.',
+      ],
+      signature: ['Baking-powder lift', 'Small, thick rounds', 'A tender, airy crumb', 'Stacked with butter and syrup'],
+      traits: { batter: 'Wheat, milk and eggs', lift: 'Baking powder', filling: 'Butter and maple syrup', texture: 'Thick and fluffy', serving: 'A warm stack' },
+      servedWith: ['Maple syrup', 'Butter', 'Fresh berries'], whenEaten: 'Breakfast or weekend brunch', sourceRefs: [4],
+      recipe: {
+        serves: 4, prepMinutes: 10, cookMinutes: 15, restMinutes: 5, difficulty: 'Easy', yield: '12 small pancakes',
+        ingredients: [{ items: [
+          { qty: 200, unit: 'g', item: 'plain flour' }, { qty: 2, unit: 'tsp', item: 'baking powder' },
+          { qty: 25, unit: 'g', item: 'sugar' }, { qty: 0.25, unit: 'tsp', item: 'salt' },
+          { qty: 250, unit: 'ml', item: 'milk' }, { qty: 1, unit: 'piece', item: 'large egg' },
+          { qty: 30, unit: 'g', item: 'butter', note: 'melted, plus a little for the griddle' },
+          { qty: 1, unit: 'tsp', item: 'vanilla extract', note: 'optional' },
+          { qty: 4, unit: 'tbsp', item: 'maple syrup', note: 'to serve' },
+        ] }],
+        steps: [
+          { title: 'Combine the dry ingredients', text: 'Whisk the flour, baking powder, sugar and salt in a large bowl.' },
+          { title: 'Add the liquids', text: 'Beat the milk, egg, melted butter and vanilla together. Fold into the flour just until no dry patches remain; small lumps are fine. Rest for 5 minutes.' },
+          { title: 'Heat the griddle', text: 'Warm a non-stick pan or griddle over medium-low heat and wipe lightly with butter. A small drop of batter should begin to set without scorching.' },
+          { title: 'Cook and turn', text: 'Spoon about 3 tablespoons of batter for each pancake. Cook until bubbles appear and the edges look set, about 2 minutes, then turn and cook for another minute until the centre is cooked.' },
+          { title: 'Stack and serve', text: 'Keep the pancakes warm while cooking the rest. Serve three per person with maple syrup and butter if liked.' },
+        ],
+        tips: ['Over-mixing develops gluten and makes pancakes tougher.', 'If the outside browns before the centre cooks, lower the heat.'],
+      },
+    },
+    {
+      id: 'korean-pajeon', name: 'Korean Pajeon', native: [{ text: '파전', lang: 'Korean', translit: 'pajeon' }],
+      country: 'KOR', place: 'Seoul', coords: [126.98, 37.57], from: 'origin',
+      arrival: 'A Korean jeon tradition; Seoul is a representative pin rather than a birthplace claim. [5]',
+      summary: 'Scallions run through a savoury pancake with a crisp edge and a tangy dipping sauce. [5]',
+      story: [
+        'Pajeon takes its name from scallions and pan-frying. Seafood versions are called haemul pajeon, within a wider Korean family of savoury jeon. [5]',
+        'The contrast with sweet breakfast pancakes is useful: cold batter and enough oil encourage crispness, while the scallions provide structure and flavour. This version adds cooked prawns for a simple home preparation. [5]',
+      ],
+      signature: ['Long scallion pieces', 'Savoury flour-and-starch batter', 'A crisp pan-fried edge', 'Soy-vinegar dipping sauce'],
+      traits: { batter: 'Wheat and rice flour', lift: 'None in this recipe', filling: 'Scallions and prawns', texture: 'Crisp outside, tender inside', serving: 'Shared, cut into pieces' },
+      servedWith: ['Soy-vinegar dipping sauce', 'Kimchi'], whenEaten: 'A snack, starter or shared meal', sourceRefs: [5],
+      recipe: {
+        serves: 4, prepMinutes: 15, cookMinutes: 15, restMinutes: 0, difficulty: 'Easy', yield: '2 large savoury pancakes',
+        ingredients: [
+          { title: 'Pancakes', items: [
+            { qty: 100, unit: 'g', item: 'plain flour' }, { qty: 40, unit: 'g', item: 'rice flour' },
+            { qty: 180, unit: 'ml', item: 'ice-cold water' }, { qty: 1, unit: 'piece', item: 'egg' },
+            { qty: 0.5, unit: 'tsp', item: 'salt' }, { qty: 150, unit: 'g', item: 'scallions', note: 'trimmed and cut into 10 cm lengths' },
+            { qty: 150, unit: 'g', item: 'cooked peeled prawns', note: 'patted dry and chopped' }, { qty: 4, unit: 'tbsp', item: 'neutral oil' },
+          ] },
+          { title: 'Dipping sauce', items: [
+            { qty: 2, unit: 'tbsp', item: 'soy sauce' }, { qty: 1, unit: 'tbsp', item: 'rice vinegar' },
+            { qty: 1, unit: 'tbsp', item: 'water' }, { qty: 0.5, unit: 'tsp', item: 'toasted sesame seeds' },
+          ] },
+        ],
+        steps: [
+          { title: 'Mix the sauce', text: 'Stir the soy sauce, vinegar, water and sesame seeds in a small bowl and set aside.' },
+          { title: 'Make the cold batter', text: 'Combine the flours and salt. Lightly beat the egg with the cold water, then stir into the flour just until combined.' },
+          { title: 'Build the first pancake', text: 'Heat 2 tablespoons of oil in a 24 cm non-stick pan over medium-high heat. Spread half the scallions in the pan, scatter with half the prawns and pour over half the batter.' },
+          { title: 'Fry until crisp', text: 'Cook for 3 to 4 minutes until the underside is golden and firm enough to turn. Flip carefully and cook for about 3 minutes more until the batter is set throughout.' },
+          { title: 'Finish the batch', text: 'Repeat with the remaining oil, scallions, prawns and batter. Cut the hot pancakes into pieces and serve immediately with dipping sauce.' },
+        ],
+        tips: ['Dry the scallions and prawns so extra water does not dilute the batter.', 'Avoid crowding the surface with filling; the batter needs contact with the pan.'],
+      },
+    },
+  ],
+  sources: [
+    { title: 'Pancake', publisher: 'Oxford Companion to Food, via ckbk', author: 'Alan Davidson', url: 'https://app.ckbk.com/reference/food77337c16s001e032/pancake', supports: 'The accessible entry’s definition of the batter-and-hot-surface cooking category; it is not used to assert a common origin.', accessed: '2026-10-22' },
+    { title: 'The 5-minute essential guide to Breton crêpes', publisher: 'Atout France', url: 'https://www.france.fr/en/article/all-you-need-to-know-about-breton-crepes-in-5-minutes/', supports: 'Breton crêpes, galettes, local terminology and the word crêpe; early-origin anecdotes are not treated as proof.', accessed: '2026-10-22' },
+    { title: 'Dutch foods to try in Amsterdam', publisher: 'I amsterdam', url: 'https://www.iamsterdam.com/en/see-and-do/restaurant-and-bars/dutch-foods-to-try', supports: 'Broad, relatively thin pannenkoeken and sweet or savoury toppings.', accessed: '2026-10-22' },
+    { title: 'Simply Perfect Pancakes', publisher: 'King Arthur Baking', url: 'https://www.kingarthurbaking.com/recipes/simply-perfect-pancakes-recipe', supports: 'American griddle-pancake technique, baking-powder lift and serving context; our quantities and instructions are an editorial adaptation.', accessed: '2026-10-22' },
+    { title: 'Haemul Pajeon (Seafood Scallion Pancake)', publisher: 'Korean Bapsang', author: 'Hyosun', url: 'https://www.koreanbapsang.com/haemul-pajeon/', supports: 'Scallion and seafood jeon, the name, cold batter, crisp frying and dipping sauce; the home recipe here is an adaptation.', accessed: '2026-10-22' },
+  ],
+};

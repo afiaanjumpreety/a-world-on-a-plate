@@ -7,7 +7,7 @@ export const pilaf: DishFamily = {
   tagline: "Rice cooked in stock, layered with meat, sealed to steam.",
   category: "rice",
   motif: "rice",
-  color: "#C9971C",
+  color: "#838E34",
   origin: {
     region: "Greater Iran and Central Asia (historic Khorasan and Transoxiana)",
     country: "IRN",

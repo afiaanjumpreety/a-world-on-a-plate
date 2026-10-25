@@ -1,0 +1,72 @@
+{
+  "pancakes": {
+    "title": "Foodiesfeed.com pouring-honey-on-pancakes-with-walnuts.jpg",
+    "src": "images/pancakes/_family.jpg",
+    "width": 960,
+    "height": 1200,
+    "alt": "A stack of golden pancakes with walnuts and a drizzle of honey",
+    "author": "Mae Mu",
+    "license": "CC0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Foodiesfeed.com_pouring-honey-on-pancakes-with-walnuts.jpg",
+    "licenseRevision": "https://commons.wikimedia.org/w/index.php?oldid=1256271368",
+    "licenseChecked": "2026-10-22",
+    "changes": "Resized; may be cropped in page layouts."
+  },
+  "pancakes/american-pancakes": {
+    "title": "Foodiesfeed.com pouring-honey-on-pancakes-with-walnuts.jpg",
+    "src": "images/pancakes/american-pancakes.jpg",
+    "width": 960,
+    "height": 1200,
+    "alt": "Thick American-style pancakes stacked with walnuts and honey",
+    "author": "Mae Mu",
+    "license": "CC0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Foodiesfeed.com_pouring-honey-on-pancakes-with-walnuts.jpg",
+    "licenseRevision": "https://commons.wikimedia.org/w/index.php?oldid=1256271368",
+    "licenseChecked": "2026-10-22",
+    "changes": "Resized; may be cropped in page layouts."
+  },
+  "pancakes/breton-crepes": {
+    "title": "Crepes dsc07085.jpg",
+    "src": "images/pancakes/breton-crepes.jpg",
+    "width": 960,
+    "height": 580,
+    "alt": "A stack of thin golden French crêpes",
+    "author": "David Monniaux",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Crepes_dsc07085.jpg",
+    "licenseRevision": "https://commons.wikimedia.org/w/index.php?oldid=1154255569",
+    "licenseChecked": "2026-10-22",
+    "changes": "Resized; may be cropped in page layouts."
+  },
+  "pancakes/dutch-pannenkoeken": {
+    "title": "2015 01 Spekpannenkoek.jpg",
+    "src": "images/pancakes/dutch-pannenkoeken.jpg",
+    "width": 960,
+    "height": 698,
+    "alt": "A broad Dutch pannenkoek with a savoury bacon topping",
+    "author": "Takeaway",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2015_01_Spekpannenkoek.jpg",
+    "licenseRevision": "https://commons.wikimedia.org/w/index.php?oldid=1248382263",
+    "licenseChecked": "2026-10-22",
+    "changes": "Resized; may be cropped in page layouts."
+  },
+  "pancakes/korean-pajeon": {
+    "title": "Korean pancake-Pajeon-05.jpg",
+    "src": "images/pancakes/korean-pajeon.jpg",
+    "width": 960,
+    "height": 742,
+    "alt": "Korean scallion pajeon cut into pieces for sharing",
+    "author": "by Tales of an LA Addict (Abby) at Flickr",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Korean_pancake-Pajeon-05.jpg",
+    "licenseRevision": "https://commons.wikimedia.org/w/index.php?oldid=1251218508",
+    "licenseChecked": "2026-10-22",
+    "changes": "Resized; may be cropped in page layouts."
+  }
+}

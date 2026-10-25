@@ -7,7 +7,7 @@ export const empanada: DishFamily = {
   tagline: "A filling folded into dough, carried across two oceans",
   category: "pastry",
   motif: "halfmoon",
-  color: "#6E7F3A",
+  color: "#427935",
   origin: {
     region: "The Iberian Peninsula, notably Galicia and Catalonia",
     country: "ESP",

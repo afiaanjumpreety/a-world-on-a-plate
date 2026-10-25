@@ -30,14 +30,14 @@ export function FamilyPage() {
               <span aria-hidden="true">/</span>
               <span aria-current="page">{family.name}</span>
             </nav>
-            <span className="eyebrow">{family.category} · roots in {family.origin.region}</span>
+            <span className="eyebrow">{family.category} · {family.mapMode === 'comparison' ? family.origin.region : `roots in ${family.origin.region}`}</span>
             <h1 className="display">{family.name}</h1>
             <p className="family-aka">{family.alsoKnownAs.join(' · ')}</p>
             <p className="lede">
               <Cited text={family.intro} family={family} />
             </p>
             <div className="family-hero-meta">
-              <ConfidenceBadge level={family.origin.confidence} note={family.origin.confidenceNote} />
+              {family.mapMode === 'comparison' ? <span className="meta-pill">Regional comparison</span> : <ConfidenceBadge level={family.origin.confidence} note={family.origin.confidenceNote} />}
               <span className="meta-pill">{family.origin.era}</span>
               <span className="meta-pill">
                 {family.variants.length} versions · {countries.length} countries
@@ -67,11 +67,12 @@ export function FamilyPage() {
         <div className="section-head">
           <div>
             <h2 id="journey-title" className="section-title">
-              The journey
+              {family.mapMode === 'comparison' ? 'Around the table' : 'The journey'}
             </h2>
             <p className="section-sub">
-              The hatched country marks a representative origin. Arcs show interpreted connections, rather than
-              verified travel routes. Click a pin to explore a version.
+              {family.mapMode === 'comparison'
+                ? 'These pins show regional traditions with a shared cooking method. No common birthplace or migration route is claimed. Click a pin to explore a version.'
+                : 'The hatched country marks a representative origin. Arcs show interpreted connections, rather than verified travel routes. Click a pin to explore a version.'}
             </p>
           </div>
         </div>
@@ -81,7 +82,7 @@ export function FamilyPage() {
       <section className="wrap section history" aria-labelledby="history-title">
         <div className="history-main">
           <h2 id="history-title" className="section-title">
-            Where it began
+            {family.mapMode === 'comparison' ? 'Regional traditions' : 'Where it began'}
           </h2>
           <div className="prose dropcap">
             {family.history.map((p, k) => (
@@ -104,7 +105,7 @@ export function FamilyPage() {
           </aside>
         </div>
         <div className="history-side">
-          <h3 className="side-title">Timeline</h3>
+          <h3 className="side-title">{family.mapMode === 'comparison' ? 'Regional snapshots' : 'Timeline'}</h3>
           <Timeline family={family} />
         </div>
       </section>

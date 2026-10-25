@@ -15,7 +15,7 @@ export const paratha: DishFamily = {
   tagline: 'Wheat dough, fat and folding, from Lahore to Port of Spain.',
   category: 'bread',
   motif: 'flatbread',
-  color: '#A87A35',
+  color: '#856C05',
   origin: {
     region: 'Punjab and the North Indian plains',
     country: 'IND',

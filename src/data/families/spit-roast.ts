@@ -7,7 +7,7 @@ export const spitRoast: DishFamily = {
   tagline: "Meat stacked high, turned before a flame, shaved thin",
   category: "grill",
   motif: "spit",
-  color: "#566573",
+  color: "#5C86CB",
   origin: {
     region: "Ottoman Anatolia (Bursa and Kastamonu both claim it)",
     country: "TUR",

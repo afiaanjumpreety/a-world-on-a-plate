@@ -7,7 +7,7 @@ export const dumplings: DishFamily = {
   tagline: 'A pinch of dough around meat, folded along the Silk Road',
   category: 'dumpling',
   motif: 'dumpling',
-  color: '#4D7A9C',
+  color: '#026B98',
   origin: {
     region: 'Northern China and the eastern Central Asian steppe',
     country: 'CHN',

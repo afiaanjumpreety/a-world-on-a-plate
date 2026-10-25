@@ -7,7 +7,7 @@ export const flan: DishFamily = {
   tagline: 'Eggs, milk and burnt sugar, turned out onto a plate',
   category: 'dessert',
   motif: 'flan',
-  color: '#C07F2E',
+  color: '#625EA8',
   origin: {
     region: 'Roman Italy, then medieval France and Iberia',
     country: 'ITA',

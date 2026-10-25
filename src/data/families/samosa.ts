@@ -7,7 +7,7 @@ export const samosa: DishFamily = {
   tagline: 'A Persian pastry pocket, refolded by every coast it reached.',
   category: 'pastry',
   motif: 'samosa',
-  color: '#8A4B2E',
+  color: '#0A90A4',
   origin: {
     region: 'Greater Khorasan and the Persian-speaking world',
     country: 'IRN',

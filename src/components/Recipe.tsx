@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { createPortal } from 'react-dom';
 import type { DishFamily, Variant } from '../data/types';
 import { formatIngredientAmount, formatMinutes, totalMinutes } from '../lib/format';
 
@@ -126,7 +127,7 @@ export function RecipeView({ family, variant }: { family: DishFamily; variant: V
         </div>
       </div>
 
-      {cooking && <CookMode family={family} variant={variant} onClose={() => setCooking(false)} />}
+      {cooking && createPortal(<CookMode family={family} variant={variant} onClose={() => setCooking(false)} />, document.body)}
     </section>
   );
 }

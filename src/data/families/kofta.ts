@@ -7,7 +7,7 @@ export const kofta: DishFamily = {
   tagline: "Pounded meat, seasoned and shaped by hand.",
   category: "grill",
   motif: "meatball",
-  color: "#7A3446",
+  color: "#884880",
   origin: {
     region: "Persia (the Iranian plateau)",
     country: "IRN",
