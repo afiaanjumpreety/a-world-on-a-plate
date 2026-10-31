@@ -22,6 +22,15 @@ npm run sources    # validates citations and checks reference URLs
 npm run sources -- --offline # validates references without network access
 ```
 
+## Publish on GitHub Pages
+
+In the repository's [Pages settings](https://github.com/afiaanjumpreety/a-world-on-a-plate/settings/pages),
+set **Build and deployment → Source** to **GitHub Actions**. Then run **Deploy to GitHub Pages** from the
+[Actions tab](https://github.com/afiaanjumpreety/a-world-on-a-plate/actions/workflows/pages.yml), or push to `main`.
+The workflow builds and deploys `dist/` automatically.
+
+After deployment, the site is available at https://afiaanjumpreety.github.io/a-world-on-a-plate/.
+
 ## Adding or editing dishes
 
 Every family is one file in `src/data/families/`, typed by `src/data/types.ts`. Any file there that exports a
