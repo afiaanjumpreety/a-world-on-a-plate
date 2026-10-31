@@ -1,11 +1,12 @@
 import { useMemo, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { activeCountries, countryRefs, families, getFamily, photoFor, stats } from '../data';
+import { activeCountries, countryRefs, families, getFamily, photoFor } from '../data';
 import { country, countryByNumeric } from '../data/countries';
 import { WorldMap, type MapPin } from '../components/WorldMap';
 import { CountryTooltip, FamilyCard, Reveal, familyLayers, ConfidenceBadge } from '../components/Dish';
-import { Motif, Plate } from '../components/Motif';
+import { Motif } from '../components/Motif';
 import { PhotoImg } from '../components/Photo';
+import { Hero } from '../components/Hero';
 import { plural } from '../lib/format';
 
 const STEPS = [24, 40, 56, 72, 88];
@@ -47,78 +48,7 @@ export function HomePage() {
 
   return (
     <>
-      <section className="hero">
-        <div className="wrap">
-          {/* Styled like a butter-stick wrapper: fine print, printed headline, a measuring ruler and a navy bar. */}
-          <div className="hero-pack">
-            <div className="hero-fine">
-              <span>An atlas of dishes that travelled</span>
-              <span>Where historians disagree, we say so</span>
-            </div>
-            <div className="hero-inner">
-              <div className="hero-copy">
-                <h1 className="display hero-title">
-                  One dish, <em>many</em> homes.
-                </h1>
-                <p className="lede">
-                  The paratha you tear in Dhaka, the roti canai flipped in Penang and the buss-up-shut of Port of Spain
-                  are one idea, carried by traders, workers and families. Trace where each dish began, see how every
-                  country made it its own, then cook every version.
-                </p>
-                <div className="hero-actions">
-                  <button
-                    type="button"
-                    className="btn btn-primary btn-lg"
-                    onClick={() => document.getElementById('atlas')?.scrollIntoView({ behavior: 'smooth' })}
-                  >
-                    Explore the atlas <span aria-hidden="true">↓</span>
-                  </button>
-                  <Link to="/dishes" className="btn btn-ghost btn-lg">
-                    Browse all dishes
-                  </Link>
-                </div>
-              </div>
-              <ul className="hero-mosaic" aria-label="Featured dishes">
-                {families.slice(0, 5).map((f, i) => {
-                  const photo = photoFor(f.id, f.id === 'paratha' ? 'lachha-paratha' : undefined) ?? photoFor(f.id);
-                  return (
-                    <li key={f.id} className={`hero-tile ht-${i}`} style={{ ['--c' as string]: f.color }}>
-                      <Link to={`/dish/${f.id}`}>
-                        {photo ? <PhotoImg photo={photo} eager={i < 2} /> : <Plate motif={f.motif} color={f.color} size={120} pattern={i} />}
-                        <span className="hero-tile-label">
-                          <i aria-hidden="true" />
-                          <strong>{f.name}</strong>
-                          {i === 0 && <span>{plural(f.variants.length, 'version')}</span>}
-                        </span>
-                      </Link>
-                    </li>
-                  );
-                })}
-              </ul>
-            </div>
-            <ol className="hero-ruler" aria-label="Dish families">
-              {families.slice(0, 8).map((f, i) => (
-                <li key={f.id}>
-                  <Link to={`/dish/${f.id}`}>
-                    <span aria-hidden="true">{i + 1}</span>
-                    {f.name}
-                  </Link>
-                </li>
-              ))}
-            </ol>
-            <div className="hero-bar">
-              <p>
-                <strong>{stats.families}</strong> dish families = <strong>{stats.variants}</strong> regional versions ={' '}
-                <strong>{stats.countries}</strong> countries
-              </p>
-              <p className="hero-bar-links">
-                <Link to="/sources">Explore the research ↗</Link>
-                <Link to="/credits">Meet the photographers ↗</Link>
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+      <Hero />
 
       <section id="atlas" className="atlas wrap" aria-labelledby="atlas-title">
         <div className="atlas-head">
